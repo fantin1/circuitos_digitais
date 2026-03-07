@@ -1,0 +1,12 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/p-fan/apps/cd_pfs/pfs_full_adder.bdf
+source_file = 1, C:/Users/p-fan/apps/cd_pfs/db/pfs_full_adder.cbx.xml
+source_file = 1, C:/Users/p-fan/apps/cd_pfs/pfs_half_adder.bdf
+design_name = pfs_full_adder
+instance = comp, \sum~output\, sum~output, pfs_full_adder, 1
+instance = comp, \cout~output\, cout~output, pfs_full_adder, 1
+instance = comp, \x~input\, x~input, pfs_full_adder, 1
+instance = comp, \z~input\, z~input, pfs_full_adder, 1
+instance = comp, \y~input\, y~input, pfs_full_adder, 1
+instance = comp, \inst1|inst~0\, inst1|inst~0, pfs_full_adder, 1
+instance = comp, \inst2~0\, inst2~0, pfs_full_adder, 1

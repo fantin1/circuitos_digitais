@@ -1,0 +1,157 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\p-fan\apps\cd_pfs\simulation\qsim
+vpfs_full_adder
+Z1 IJeb5Cd8PF2B7EDKlWPzJF2
+Z2 VB_Qg`>0DI]TlVB^o^<mVD2
+Z3 dC:\Users\p-fan\apps\cd_pfs\simulation\qsim
+Z4 w1772903464
+Z5 8pfs_full_adder.vo
+Z6 Fpfs_full_adder.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+!i10b 1
+Z9 !s100 dMLl2O@Cicc116EX2BUW=0
+!s85 0
+Z10 !s108 1772903465.195000
+Z11 !s107 pfs_full_adder.vo|
+Z12 !s90 -work|work|pfs_full_adder.vo|
+!s101 -O0
+vpfs_full_adder_vlg_check_tst
+!i10b 1
+!s100 @FNc[ibd>l@gBf2MF=f5H1
+IB@oJ=:h]0:XYV`DZlBR;`0
+VLCla[AkJgdLn=LCnkm4iV3
+R3
+Z13 w1772903462
+Z14 8Waveform1.vwf.vt
+Z15 FWaveform1.vwf.vt
+L0 61
+R7
+r1
+!s85 0
+31
+Z16 !s108 1772903465.260000
+Z17 !s107 Waveform1.vwf.vt|
+Z18 !s90 -work|work|Waveform1.vwf.vt|
+!s101 -O0
+R8
+vpfs_full_adder_vlg_sample_tst
+!i10b 1
+!s100 Kin[Nlh00bOBNnFC]Xh982
+I]RSnUl2IFk6a3ZUFN1ZTT1
+VVX>IE:eC^L8Bie]>JAE<n2
+R3
+R13
+R14
+R15
+L0 29
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8
+vpfs_full_adder_vlg_vec_tst
+!i10b 1
+!s100 bC=jN5bKMYD1kg@B?D9j]2
+I?VGSa=GEeT7l:68An6h8S0
+V@;l<d_;1g8@FSf7_@O<4c0
+R3
+R13
+R14
+R15
+L0 183
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8
+vpfs_half_adder
+Z19 I6Fa00Wi7YZZ`IX_Mi2G=42
+Z20 V7RSfE:VS[LJM4JaY;KHE01
+R3
+Z21 w1772902750
+Z22 8pfs_half_adder.vo
+Z23 Fpfs_half_adder.vo
+L0 31
+R7
+r1
+31
+R8
+Z24 !s100 ^T9AfUeZno?:6aG8nNilT3
+Z25 !s108 1772902752.599000
+Z26 !s107 pfs_half_adder.vo|
+Z27 !s90 -work|work|pfs_half_adder.vo|
+!i10b 1
+!s85 0
+!s101 -O0
+vpfs_half_adder_vlg_check_tst
+Z28 IfE7?L2`L1D;;WAEY9Afg:0
+Z29 Vl_gmHa^@adllb9P`SY5?02
+R3
+Z30 w1772902748
+Z31 8Waveform.vwf.vt
+Z32 FWaveform.vwf.vt
+L0 59
+R7
+r1
+31
+Z33 !s108 1772902752.719000
+Z34 !s107 Waveform.vwf.vt|
+Z35 !s90 -work|work|Waveform.vwf.vt|
+R8
+Z36 !s100 dB9MgB;ehhQg^IHa_6WgH1
+!i10b 1
+!s85 0
+!s101 -O0
+vpfs_half_adder_vlg_sample_tst
+Z37 IJC3PRe][KS74GFYWFam743
+Z38 VRSc0]C3E5bO`EX>O37QL32
+R3
+R30
+R31
+R32
+L0 29
+R7
+r1
+31
+R33
+R34
+R35
+R8
+Z39 !s100 n`Rk7^6VH<9VU5BkHNQH[2
+!i10b 1
+!s85 0
+!s101 -O0
+vpfs_half_adder_vlg_vec_tst
+Z40 I9W?N>gV]3SK0H<oTU`59J1
+Z41 VN^KQCG]i_l;^zCdk4_@EE1
+R3
+R30
+R31
+R32
+Z42 L0 181
+R7
+r1
+31
+R33
+R34
+R35
+R8
+Z43 !s100 SMMB?7WT8O41R8Md=oW`S2
+!i10b 1
+!s85 0
+!s101 -O0
