@@ -54,8 +54,8 @@ applicable agreement for further details.
 	(port
 		(pt 96 48)
 		(output)
-		(text "co" (rect 0 0 14 14)(font "Arial" (font_size 8)))
-		(text "co" (rect 61 43 75 57)(font "Arial" (font_size 8)))
+		(text "cout" (rect 0 0 24 14)(font "Arial" (font_size 8)))
+		(text "cout" (rect 51 43 75 57)(font "Arial" (font_size 8)))
 		(line (pt 96 48)(pt 80 48))
 	)
 	(drawing

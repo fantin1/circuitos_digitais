@@ -22,5 +22,5 @@
 # Loading work.pfs_full_adder_vlg_sample_tst
 # Loading work.pfs_full_adder_vlg_check_tst
 # Simulation passed !
-# ** Note: $finish    : Waveform1.vwf.vt(179)
+# ** Note: $finish    : Waveform2.vwf.vt(179)
 #    Time: 1 us  Iteration: 0  Instance: /pfs_full_adder_vlg_vec_tst/tb_out

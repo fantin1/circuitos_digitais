@@ -1,5 +1,5 @@
 EDA Netlist Writer report for pfs_full_adder
-Sat Mar 07 14:11:04 2026
+Thu Mar 12 15:09:23 2026
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Sat Mar 07 14:11:04 2026 ;
+; EDA Netlist Writer Status ; Successful - Thu Mar 12 15:09:23 2026 ;
 ; Revision Name             ; pfs_full_adder                        ;
 ; Top-level Entity Name     ; pfs_full_adder                        ;
 ; Family                    ; Cyclone IV GX                         ;
@@ -93,12 +93,12 @@ Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: programming logic devices manufactured by Altera and sold by 
     Info: Altera or its authorized distributors.  Please refer to the 
     Info: applicable agreement for further details.
-    Info: Processing started: Sat Mar 07 14:11:03 2026
+    Info: Processing started: Thu Mar 12 15:09:22 2026
 Info: Command: quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/p-fan/apps/cd_pfs/simulation/qsim/ pfs_full_adder -c pfs_full_adder
 Info (204019): Generated file pfs_full_adder.vo in folder "C:/Users/p-fan/apps/cd_pfs/simulation/qsim//" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4588 megabytes
-    Info: Processing ended: Sat Mar 07 14:11:04 2026
+    Info: Processing ended: Thu Mar 12 15:09:23 2026
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
