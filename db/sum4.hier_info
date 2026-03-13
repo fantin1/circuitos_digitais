@@ -1,0 +1,101 @@
+|pfs_sum4
+s0 <= pfs_full_adder:inst3.sum
+cin => pfs_full_adder:inst3.x
+x0 => pfs_full_adder:inst3.y
+y0 => pfs_full_adder:inst3.z
+s1 <= pfs_full_adder:inst2.sum
+x1 => pfs_full_adder:inst2.y
+y1 => pfs_full_adder:inst2.z
+s2 <= pfs_full_adder:inst1.sum
+x2 => pfs_full_adder:inst1.y
+y2 => pfs_full_adder:inst1.z
+s3 <= pfs_full_adder:inst.sum
+x3 => pfs_full_adder:inst.y
+y3 => pfs_full_adder:inst.z
+co <= pfs_full_adder:inst.co
+
+
+|pfs_sum4|pfs_full_adder:inst3
+sum <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => pfs_maj3:inst2.a
+y => inst.IN1
+y => pfs_maj3:inst2.b
+z => inst1.IN1
+z => pfs_maj3:inst2.c
+co <= pfs_maj3:inst2.s
+
+
+|pfs_sum4|pfs_full_adder:inst3|pfs_maj3:inst2
+s <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+a => inst1.IN0
+a => inst.IN0
+c => inst1.IN1
+c => inst2.IN1
+b => inst2.IN0
+b => inst.IN1
+
+
+|pfs_sum4|pfs_full_adder:inst2
+sum <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => pfs_maj3:inst2.a
+y => inst.IN1
+y => pfs_maj3:inst2.b
+z => inst1.IN1
+z => pfs_maj3:inst2.c
+co <= pfs_maj3:inst2.s
+
+
+|pfs_sum4|pfs_full_adder:inst2|pfs_maj3:inst2
+s <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+a => inst1.IN0
+a => inst.IN0
+c => inst1.IN1
+c => inst2.IN1
+b => inst2.IN0
+b => inst.IN1
+
+
+|pfs_sum4|pfs_full_adder:inst1
+sum <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => pfs_maj3:inst2.a
+y => inst.IN1
+y => pfs_maj3:inst2.b
+z => inst1.IN1
+z => pfs_maj3:inst2.c
+co <= pfs_maj3:inst2.s
+
+
+|pfs_sum4|pfs_full_adder:inst1|pfs_maj3:inst2
+s <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+a => inst1.IN0
+a => inst.IN0
+c => inst1.IN1
+c => inst2.IN1
+b => inst2.IN0
+b => inst.IN1
+
+
+|pfs_sum4|pfs_full_adder:inst
+sum <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => pfs_maj3:inst2.a
+y => inst.IN1
+y => pfs_maj3:inst2.b
+z => inst1.IN1
+z => pfs_maj3:inst2.c
+co <= pfs_maj3:inst2.s
+
+
+|pfs_sum4|pfs_full_adder:inst|pfs_maj3:inst2
+s <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+a => inst1.IN0
+a => inst.IN0
+c => inst1.IN1
+c => inst2.IN1
+b => inst2.IN0
+b => inst.IN1
+
+
