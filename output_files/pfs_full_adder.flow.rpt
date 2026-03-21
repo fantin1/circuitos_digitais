@@ -1,5 +1,5 @@
 Flow report for pfs_full_adder
-Thu Mar 12 15:09:23 2026
+Sat Mar 21 10:59:41 2026
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Thu Mar 12 15:09:23 2026      ;
+; Flow Status                        ; Successful - Sat Mar 21 10:59:41 2026      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; pfs_full_adder                             ;
 ; Top-level Entity Name              ; pfs_full_adder                             ;
@@ -103,7 +103,9 @@ applicable agreement for further details.
 ; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4588 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4588 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4588 MB             ; 00:00:01                           ;
-; Total                     ; 00:00:15     ; --                      ; --                  ; 00:00:15                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4588 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4588 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:16     ; --                      ; --                  ; 00:00:17                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -116,6 +118,8 @@ applicable agreement for further details.
 ; Fitter                    ; DESKTOP-B0TD6TU  ; Windows 7 ; 6.2        ; x86_64         ;
 ; Assembler                 ; DESKTOP-B0TD6TU  ; Windows 7 ; 6.2        ; x86_64         ;
 ; TimeQuest Timing Analyzer ; DESKTOP-B0TD6TU  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-B0TD6TU  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-B0TD6TU  ; Windows 7 ; 6.2        ; x86_64         ;
 ; EDA Netlist Writer        ; DESKTOP-B0TD6TU  ; Windows 7 ; 6.2        ; x86_64         ;
 ; EDA Netlist Writer        ; DESKTOP-B0TD6TU  ; Windows 7 ; 6.2        ; x86_64         ;
 ; EDA Netlist Writer        ; DESKTOP-B0TD6TU  ; Windows 7 ; 6.2        ; x86_64         ;
@@ -135,6 +139,8 @@ quartus_eda --read_settings_files=off --write_settings_files=off pfs_full_adder 
 quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog pfs_full_adder -c pfs_full_adder --vector_source=C:/Users/p-fan/apps/cd_pfs/Waveform1.vwf --testbench_file=C:/Users/p-fan/apps/cd_pfs/simulation/qsim/Waveform1.vwf.vt
 quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/p-fan/apps/cd_pfs/simulation/qsim/ pfs_full_adder -c pfs_full_adder
 quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog pfs_full_adder -c pfs_full_adder --vector_source=C:/Users/p-fan/apps/cd_pfs/Waveform2.vwf --testbench_file=C:/Users/p-fan/apps/cd_pfs/simulation/qsim/Waveform2.vwf.vt
+quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/p-fan/apps/cd_pfs/simulation/qsim/ pfs_full_adder -c pfs_full_adder
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog pfs_full_adder -c pfs_full_adder --vector_source=C:/Users/p-fan/apps/cd_pfs/Waveform7.vwf --testbench_file=C:/Users/p-fan/apps/cd_pfs/simulation/qsim/Waveform7.vwf.vt
 quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/p-fan/apps/cd_pfs/simulation/qsim/ pfs_full_adder -c pfs_full_adder
 
 

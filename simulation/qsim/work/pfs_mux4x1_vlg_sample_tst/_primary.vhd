@@ -1,0 +1,9 @@
+library verilog;
+use verilog.vl_types.all;
+entity pfs_mux4x1_vlg_sample_tst is
+    port(
+        e               : in     vl_logic_vector(0 to 3);
+        s               : in     vl_logic_vector(1 downto 0);
+        sampler_tx      : out    vl_logic
+    );
+end pfs_mux4x1_vlg_sample_tst;

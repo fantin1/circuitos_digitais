@@ -49,3 +49,4 @@ set_global_assignment -name BDF_FILE pfs_full_adder.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform2.vwf
 set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR "C:/Users/p-fan/apps/cd_pfs/simulation/qsim/" -section_id eda_simulation
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform7.vwf

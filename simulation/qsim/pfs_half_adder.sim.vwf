@@ -52,7 +52,7 @@ SIGNAL("b")
 	PARENT = "";
 }
 
-SIGNAL("sum")
+SIGNAL("cout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -62,7 +62,7 @@ SIGNAL("sum")
 	PARENT = "";
 }
 
-SIGNAL("cout")
+SIGNAL("sum")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -126,6 +126,28 @@ TRANSITION_LIST("b")
 	}
 }
 
+TRANSITION_LIST("cout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 150.0;
+			LEVEL 1 FOR 50.0;
+			LEVEL 0 FOR 150.0;
+			LEVEL 1 FOR 50.0;
+			LEVEL 0 FOR 150.0;
+			LEVEL 1 FOR 50.0;
+			LEVEL 0 FOR 150.0;
+			LEVEL 1 FOR 50.0;
+			LEVEL 0 FOR 150.0;
+			LEVEL 1 FOR 50.0;
+		}
+	}
+}
+
 TRANSITION_LIST("sum")
 {
 	NODE
@@ -145,28 +167,6 @@ TRANSITION_LIST("sum")
 			LEVEL 0 FOR 100.0;
 			LEVEL 1 FOR 100.0;
 			LEVEL 0 FOR 50.0;
-		}
-	}
-}
-
-TRANSITION_LIST("cout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 1;
-			LEVEL 0 FOR 150.0;
-			LEVEL 1 FOR 50.0;
-			LEVEL 0 FOR 150.0;
-			LEVEL 1 FOR 50.0;
-			LEVEL 0 FOR 150.0;
-			LEVEL 1 FOR 50.0;
-			LEVEL 0 FOR 150.0;
-			LEVEL 1 FOR 50.0;
-			LEVEL 0 FOR 150.0;
-			LEVEL 1 FOR 50.0;
 		}
 	}
 }
@@ -191,7 +191,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "sum";
+	CHANNEL = "cout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 2;
@@ -200,7 +200,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "cout";
+	CHANNEL = "sum";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 3;

@@ -1,0 +1,8 @@
+|pfs_mux2x1
+out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+sel => inst2.IN0
+sel => inst3.IN0
+e1 => inst2.IN1
+e0 => inst1.IN0
+
+

@@ -1,0 +1,9 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/p-fan/apps/cd_pfs/full_adder_1/pfs_half_adder.bdf
+source_file = 1, C:/Users/p-fan/apps/cd_pfs/full_adder_1/Waveform.vwf
+source_file = 1, C:/Users/p-fan/apps/cd_pfs/full_adder_1/db/pfs_half_adder.cbx.xml
+design_name = pfs_half_adder
+instance = comp, \sum~output , sum~output, pfs_half_adder, 1
+instance = comp, \cout~output , cout~output, pfs_half_adder, 1
+instance = comp, \a~input , a~input, pfs_half_adder, 1
+instance = comp, \b~input , b~input, pfs_half_adder, 1
