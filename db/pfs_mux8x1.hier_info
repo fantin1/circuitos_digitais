@@ -1,0 +1,95 @@
+|pfs_mux8x1
+out <= pfs_mux2x1:inst3.out
+e[7] => pfs_mux4x1:inst1.e[3]
+e[6] => pfs_mux4x1:inst1.e[2]
+e[5] => pfs_mux4x1:inst1.e[1]
+e[4] => pfs_mux4x1:inst1.e[0]
+e[3] => pfs_mux4x1:inst.e[3]
+e[2] => pfs_mux4x1:inst.e[2]
+e[1] => pfs_mux4x1:inst.e[1]
+e[0] => pfs_mux4x1:inst.e[0]
+s[0] => pfs_mux4x1:inst.s[0]
+s[0] => pfs_mux4x1:inst1.s[0]
+s[1] => pfs_mux4x1:inst.s[1]
+s[1] => pfs_mux4x1:inst1.s[1]
+s[2] => pfs_mux2x1:inst3.sel
+
+
+|pfs_mux8x1|pfs_mux2x1:inst3
+out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+sel => inst2.IN0
+sel => inst3.IN0
+e1 => inst2.IN1
+e0 => inst1.IN0
+
+
+|pfs_mux8x1|pfs_mux4x1:inst
+out <= pfs_mux2x1:inst2.out
+e[3] => pfs_mux2x1:inst4.e1
+e[2] => pfs_mux2x1:inst4.e0
+e[1] => pfs_mux2x1:inst.e1
+e[0] => pfs_mux2x1:inst.e0
+s[0] => pfs_mux2x1:inst.sel
+s[0] => pfs_mux2x1:inst4.sel
+s[1] => pfs_mux2x1:inst2.sel
+
+
+|pfs_mux8x1|pfs_mux4x1:inst|pfs_mux2x1:inst2
+out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+sel => inst2.IN0
+sel => inst3.IN0
+e1 => inst2.IN1
+e0 => inst1.IN0
+
+
+|pfs_mux8x1|pfs_mux4x1:inst|pfs_mux2x1:inst
+out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+sel => inst2.IN0
+sel => inst3.IN0
+e1 => inst2.IN1
+e0 => inst1.IN0
+
+
+|pfs_mux8x1|pfs_mux4x1:inst|pfs_mux2x1:inst4
+out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+sel => inst2.IN0
+sel => inst3.IN0
+e1 => inst2.IN1
+e0 => inst1.IN0
+
+
+|pfs_mux8x1|pfs_mux4x1:inst1
+out <= pfs_mux2x1:inst2.out
+e[3] => pfs_mux2x1:inst4.e1
+e[2] => pfs_mux2x1:inst4.e0
+e[1] => pfs_mux2x1:inst.e1
+e[0] => pfs_mux2x1:inst.e0
+s[0] => pfs_mux2x1:inst.sel
+s[0] => pfs_mux2x1:inst4.sel
+s[1] => pfs_mux2x1:inst2.sel
+
+
+|pfs_mux8x1|pfs_mux4x1:inst1|pfs_mux2x1:inst2
+out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+sel => inst2.IN0
+sel => inst3.IN0
+e1 => inst2.IN1
+e0 => inst1.IN0
+
+
+|pfs_mux8x1|pfs_mux4x1:inst1|pfs_mux2x1:inst
+out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+sel => inst2.IN0
+sel => inst3.IN0
+e1 => inst2.IN1
+e0 => inst1.IN0
+
+
+|pfs_mux8x1|pfs_mux4x1:inst1|pfs_mux2x1:inst4
+out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+sel => inst2.IN0
+sel => inst3.IN0
+e1 => inst2.IN1
+e0 => inst1.IN0
+
+
