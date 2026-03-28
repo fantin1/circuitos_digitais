@@ -1,5 +1,5 @@
 Analysis & Synthesis report for pfs_mux8x1
-Thu Mar 26 17:10:01 2026
+Fri Mar 27 17:41:50 2026
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -41,7 +41,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Mar 26 17:10:01 2026      ;
+; Analysis & Synthesis Status        ; Successful - Fri Mar 27 17:41:50 2026      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; pfs_mux8x1                                 ;
 ; Top-level Entity Name              ; pfs_mux8x1                                 ;
@@ -226,12 +226,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Thu Mar 26 17:10:00 2026
+    Info: Processing started: Fri Mar 27 17:41:48 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pfs_mux8x1 -c pfs_mux8x1
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file pfs_mux8x1.bdf
     Info (12023): Found entity 1: pfs_mux8x1
 Info (12127): Elaborating entity "pfs_mux8x1" for the top level hierarchy
+Warning (275080): Converted elements in bus name "e" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "e[4..7]" to "e4..7"
+    Warning (275081): Converted element name(s) from "e[0..3]" to "e0..3"
 Warning (12125): Using design file pfs_mux2x1.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: pfs_mux2x1
 Info (12128): Elaborating entity "pfs_mux2x1" for hierarchy "pfs_mux2x1:inst3"
@@ -245,10 +248,10 @@ Info (21057): Implemented 17 device resources after synthesis - the final resour
     Info (21058): Implemented 11 input pins
     Info (21059): Implemented 1 output pins
     Info (21061): Implemented 5 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4669 megabytes
-    Info: Processing ended: Thu Mar 26 17:10:01 2026
-    Info: Elapsed time: 00:00:01
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 4673 megabytes
+    Info: Processing ended: Fri Mar 27 17:41:50 2026
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
 

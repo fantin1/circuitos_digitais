@@ -1,5 +1,5 @@
 Fitter report for pfs_mux8x1
-Thu Mar 26 17:10:08 2026
+Fri Mar 27 17:42:00 2026
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -63,7 +63,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Fitter Summary                                                                  ;
 +------------------------------------+--------------------------------------------+
-; Fitter Status                      ; Successful - Thu Mar 26 17:10:07 2026      ;
+; Fitter Status                      ; Successful - Fri Mar 27 17:41:59 2026      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; pfs_mux8x1                                 ;
 ; Top-level Entity Name              ; pfs_mux8x1                                 ;
@@ -161,16 +161,16 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Pin Name ; Reason                        ;
 +----------+-------------------------------+
 ; out      ; Incomplete set of assignments ;
-; e[5]     ; Incomplete set of assignments ;
+; e5       ; Incomplete set of assignments ;
 ; s[0]     ; Incomplete set of assignments ;
-; e[6]     ; Incomplete set of assignments ;
+; e6       ; Incomplete set of assignments ;
 ; s[1]     ; Incomplete set of assignments ;
-; e[4]     ; Incomplete set of assignments ;
-; e[7]     ; Incomplete set of assignments ;
-; e[2]     ; Incomplete set of assignments ;
-; e[1]     ; Incomplete set of assignments ;
-; e[0]     ; Incomplete set of assignments ;
-; e[3]     ; Incomplete set of assignments ;
+; e4       ; Incomplete set of assignments ;
+; e7       ; Incomplete set of assignments ;
+; e2       ; Incomplete set of assignments ;
+; e1       ; Incomplete set of assignments ;
+; e0       ; Incomplete set of assignments ;
+; e3       ; Incomplete set of assignments ;
 ; s[2]     ; Incomplete set of assignments ;
 +----------+-------------------------------+
 
@@ -345,14 +345,14 @@ The pin-out file can be found in C:/Users/p-fan/apps/cd_pfs/output_files/pfs_mux
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+
 ; Name ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Termination Control Block ; Location assigned by ;
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+
-; e[0] ; K9    ; 4        ; 22           ; 0            ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
-; e[1] ; L7    ; 3        ; 14           ; 0            ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
-; e[2] ; A8    ; 8        ; 12           ; 31           ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
-; e[3] ; G13   ; 5        ; 33           ; 16           ; 21           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
-; e[4] ; N8    ; 4        ; 20           ; 0            ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
-; e[5] ; M6    ; 3        ; 12           ; 0            ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
-; e[6] ; N6    ; 3        ; 12           ; 0            ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
-; e[7] ; L4    ; 3        ; 8            ; 0            ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
+; e0   ; K9    ; 4        ; 22           ; 0            ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
+; e1   ; L7    ; 3        ; 14           ; 0            ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
+; e2   ; A8    ; 8        ; 12           ; 31           ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
+; e3   ; G13   ; 5        ; 33           ; 16           ; 21           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
+; e4   ; N8    ; 4        ; 20           ; 0            ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
+; e5   ; M6    ; 3        ; 12           ; 0            ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
+; e6   ; N6    ; 3        ; 12           ; 0            ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
+; e7   ; L4    ; 3        ; 8            ; 0            ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
 ; s[0] ; N11   ; 4        ; 26           ; 0            ; 0            ; 3                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
 ; s[1] ; M4    ; 3        ; 8            ; 0            ; 0            ; 3                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
 ; s[2] ; H13   ; 5        ; 33           ; 16           ; 14           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
@@ -379,7 +379,7 @@ The pin-out file can be found in C:/Users/p-fan/apps/cd_pfs/output_files/pfs_mux
 ; J5       ; CONF_DONE             ; -                        ; -                ; Dedicated Programming Pin ;
 ; K6       ; nSTATUS               ; -                        ; -                ; Dedicated Programming Pin ;
 ; N5       ; DIFFIO_B1n, NCEO      ; Use as programming pin   ; ~ALTERA_NCEO~    ; Dual Purpose Pin          ;
-; M6       ; DIFFIO_B2p, INIT_DONE ; Use as regular IO        ; e[5]             ; Dual Purpose Pin          ;
+; M6       ; DIFFIO_B2p, INIT_DONE ; Use as regular IO        ; e5               ; Dual Purpose Pin          ;
 ; A6       ; CLKUSR                ; Use as regular IO        ; out              ; Dual Purpose Pin          ;
 ; A5       ; DATA0                 ; As input tri-stated      ; ~ALTERA_DATA0~   ; Dual Purpose Pin          ;
 ; B5       ; ASDO                  ; As input tri-stated      ; ~ALTERA_ASDO~    ; Dual Purpose Pin          ;
@@ -420,7 +420,7 @@ The pin-out file can be found in C:/Users/p-fan/apps/cd_pfs/output_files/pfs_mux
 ; A5       ; 90         ; 9        ; ~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; On           ;
 ; A6       ; 89         ; 8        ; out                                              ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; A7       ; 87         ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                  ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; A8       ; 88         ; 8        ; e[2]                                             ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; A8       ; 88         ; 8        ; e2                                               ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; A9       ; 81         ; 7        ; GND+                                             ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; A10      ; 82         ; 7        ; GND+                                             ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; A11      ; 79         ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                  ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -503,7 +503,7 @@ The pin-out file can be found in C:/Users/p-fan/apps/cd_pfs/output_files/pfs_mux
 ; G10      ; 59         ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                  ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; G11      ;            ; 6        ; VCCIO6                                           ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; G12      ;            ;          ; GND                                              ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; G13      ; 55         ; 5        ; e[3]                                             ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; G13      ; 55         ; 5        ; e3                                               ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; H1       ;            ;          ; GND                                              ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; H2       ;            ;          ; GND                                              ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; H3       ;            ; --       ; VCCL_GXB                                         ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
@@ -538,7 +538,7 @@ The pin-out file can be found in C:/Users/p-fan/apps/cd_pfs/output_files/pfs_mux
 ; K6       ; 20         ; 3        ; ^nSTATUS                                         ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; K7       ;            ; 3A       ; VCC_CLKIN3A                                      ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; K8       ; 35         ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                  ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
-; K9       ; 36         ; 4        ; e[0]                                             ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; K9       ; 36         ; 4        ; e0                                               ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; K10      ; 43         ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                  ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; K11      ; 48         ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                  ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; K12      ; 47         ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                  ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -546,10 +546,10 @@ The pin-out file can be found in C:/Users/p-fan/apps/cd_pfs/output_files/pfs_mux
 ; L1       ;            ;          ; RREF                                             ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; L2       ;            ;          ; GND                                              ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; L3       ; 16         ; 3        ; ^MSEL2                                           ;        ;              ;         ; --         ;                 ; --       ; --           ;
-; L4       ; 21         ; 3        ; e[7]                                             ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; L4       ; 21         ; 3        ; e7                                               ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; L5       ; 27         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                  ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; L6       ;            ; 3        ; VCCIO3                                           ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
-; L7       ; 28         ; 3        ; e[1]                                             ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; L7       ; 28         ; 3        ; e1                                               ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; L8       ;            ; 4        ; VCCIO4                                           ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; L9       ; 37         ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                  ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; L10      ;            ; 4        ; VCCIO4                                           ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
@@ -561,7 +561,7 @@ The pin-out file can be found in C:/Users/p-fan/apps/cd_pfs/output_files/pfs_mux
 ; M3       ;            ;          ; NC                                               ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; M4       ; 22         ; 3        ; s[1]                                             ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; M5       ;            ;          ; GND                                              ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; M6       ; 25         ; 3        ; e[5]                                             ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; M6       ; 25         ; 3        ; e5                                               ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; M7       ; 31         ; 4        ; GND+                                             ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; M8       ;            ;          ; GND                                              ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; M9       ; 38         ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                  ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -574,9 +574,9 @@ The pin-out file can be found in C:/Users/p-fan/apps/cd_pfs/output_files/pfs_mux
 ; N3       ; 17         ; 3        ; ^MSEL1                                           ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; N4       ; 23         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                  ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; N5       ; 24         ; 3        ; ~ALTERA_NCEO~ / RESERVED_OUTPUT_OPEN_DRAIN       ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; N6       ; 26         ; 3        ; e[6]                                             ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; N6       ; 26         ; 3        ; e6                                               ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; N7       ; 32         ; 4        ; GND+                                             ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
-; N8       ; 33         ; 4        ; e[4]                                             ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; N8       ; 33         ; 4        ; e4                                               ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; N9       ; 34         ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                  ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; N10      ; 39         ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                  ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; N11      ; 40         ; 4        ; s[0]                                             ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
@@ -604,16 +604,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name ; Pin Type ; Pad to Core 0 ; Pad to Core 1 ; Pad to Input Register ; TCO ; TCOE ;
 +------+----------+---------------+---------------+-----------------------+-----+------+
 ; out  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; e[5] ; Input    ; (6) 1313 ps   ; --            ; --                    ; --  ; --   ;
+; e5   ; Input    ; (6) 1313 ps   ; --            ; --                    ; --  ; --   ;
 ; s[0] ; Input    ; (6) 1313 ps   ; --            ; --                    ; --  ; --   ;
-; e[6] ; Input    ; (6) 1313 ps   ; --            ; --                    ; --  ; --   ;
+; e6   ; Input    ; (6) 1313 ps   ; --            ; --                    ; --  ; --   ;
 ; s[1] ; Input    ; (6) 1313 ps   ; --            ; --                    ; --  ; --   ;
-; e[4] ; Input    ; --            ; (6) 1313 ps   ; --                    ; --  ; --   ;
-; e[7] ; Input    ; --            ; (6) 1313 ps   ; --                    ; --  ; --   ;
-; e[2] ; Input    ; (6) 1313 ps   ; --            ; --                    ; --  ; --   ;
-; e[1] ; Input    ; (6) 1313 ps   ; --            ; --                    ; --  ; --   ;
-; e[0] ; Input    ; (6) 1313 ps   ; --            ; --                    ; --  ; --   ;
-; e[3] ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
+; e4   ; Input    ; --            ; (6) 1313 ps   ; --                    ; --  ; --   ;
+; e7   ; Input    ; --            ; (6) 1313 ps   ; --                    ; --  ; --   ;
+; e2   ; Input    ; (6) 1313 ps   ; --            ; --                    ; --  ; --   ;
+; e1   ; Input    ; (6) 1313 ps   ; --            ; --                    ; --  ; --   ;
+; e0   ; Input    ; (6) 1313 ps   ; --            ; --                    ; --  ; --   ;
+; e3   ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
 ; s[2] ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
 +------+----------+---------------+---------------+-----------------------+-----+------+
 
@@ -623,29 +623,29 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------------------------+-------------------+---------+
 ; Source Pin / Fanout                            ; Pad To Core Index ; Setting ;
 +------------------------------------------------+-------------------+---------+
-; e[5]                                           ;                   ;         ;
+; e5                                             ;                   ;         ;
 ;      - pfs_mux4x1:inst|pfs_mux2x1:inst2|inst~1 ; 0                 ; 6       ;
 ; s[0]                                           ;                   ;         ;
 ;      - pfs_mux4x1:inst|pfs_mux2x1:inst2|inst~0 ; 0                 ; 6       ;
 ;      - pfs_mux4x1:inst|pfs_mux2x1:inst2|inst~1 ; 0                 ; 6       ;
 ;      - pfs_mux4x1:inst|pfs_mux2x1:inst2|inst~2 ; 0                 ; 6       ;
-; e[6]                                           ;                   ;         ;
+; e6                                             ;                   ;         ;
 ;      - pfs_mux4x1:inst|pfs_mux2x1:inst2|inst~0 ; 0                 ; 6       ;
 ; s[1]                                           ;                   ;         ;
 ;      - pfs_mux4x1:inst|pfs_mux2x1:inst2|inst~0 ; 0                 ; 6       ;
 ;      - pfs_mux4x1:inst|pfs_mux2x1:inst2|inst~2 ; 0                 ; 6       ;
 ;      - pfs_mux4x1:inst|pfs_mux2x1:inst2|inst~3 ; 0                 ; 6       ;
-; e[4]                                           ;                   ;         ;
+; e4                                             ;                   ;         ;
 ;      - pfs_mux4x1:inst|pfs_mux2x1:inst2|inst~0 ; 1                 ; 6       ;
-; e[7]                                           ;                   ;         ;
+; e7                                             ;                   ;         ;
 ;      - pfs_mux4x1:inst|pfs_mux2x1:inst2|inst~1 ; 1                 ; 6       ;
-; e[2]                                           ;                   ;         ;
+; e2                                             ;                   ;         ;
 ;      - pfs_mux4x1:inst|pfs_mux2x1:inst2|inst~3 ; 0                 ; 6       ;
-; e[1]                                           ;                   ;         ;
+; e1                                             ;                   ;         ;
 ;      - pfs_mux4x1:inst|pfs_mux2x1:inst2|inst~2 ; 0                 ; 6       ;
-; e[0]                                           ;                   ;         ;
+; e0                                             ;                   ;         ;
 ;      - pfs_mux4x1:inst|pfs_mux2x1:inst2|inst~2 ; 0                 ; 6       ;
-; e[3]                                           ;                   ;         ;
+; e3                                             ;                   ;         ;
 ; s[2]                                           ;                   ;         ;
 +------------------------------------------------+-------------------+---------+
 
@@ -658,14 +658,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; s[1]~input                              ; 3       ;
 ; s[0]~input                              ; 3       ;
 ; s[2]~input                              ; 1       ;
-; e[3]~input                              ; 1       ;
-; e[0]~input                              ; 1       ;
-; e[1]~input                              ; 1       ;
-; e[2]~input                              ; 1       ;
-; e[7]~input                              ; 1       ;
-; e[4]~input                              ; 1       ;
-; e[6]~input                              ; 1       ;
-; e[5]~input                              ; 1       ;
+; e3~input                                ; 1       ;
+; e0~input                                ; 1       ;
+; e1~input                                ; 1       ;
+; e2~input                                ; 1       ;
+; e7~input                                ; 1       ;
+; e4~input                                ; 1       ;
+; e6~input                                ; 1       ;
+; e5~input                                ; 1       ;
 ; pfs_mux4x1:inst|pfs_mux2x1:inst2|inst~4 ; 1       ;
 ; pfs_mux4x1:inst|pfs_mux2x1:inst2|inst~3 ; 1       ;
 ; pfs_mux4x1:inst|pfs_mux2x1:inst2|inst~2 ; 1       ;
@@ -825,16 +825,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Total Inapplicable ; 12           ; 12           ; 12           ; 12           ; 12           ; 0         ; 12           ; 12           ; 0         ; 0         ; 12           ; 11           ; 12           ; 12           ; 1            ; 12           ; 11           ; 1            ; 12           ; 12           ; 12           ; 11           ; 12           ; 12           ; 12           ; 12           ; 12           ; 0         ; 12           ; 12           ;
 ; Total Fail         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
 ; out                ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; e[5]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; e5                 ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; s[0]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; e[6]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; e6                 ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; s[1]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; e[4]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; e[7]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; e[2]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; e[1]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; e[0]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; e[3]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; e4                 ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; e7                 ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; e2                 ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; e1                 ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; e0                 ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; e3                 ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; s[2]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 +--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
 
@@ -896,16 +896,16 @@ Info (169124): Fitter converted 5 user pins into dedicated programming pins
 Warning (15714): Some pins have incomplete I/O assignments. Refer to the I/O Assignment Warnings report for details
 Critical Warning (169085): No exact pin location assignment(s) for 12 pins of 12 total pins
     Info (169086): Pin out not assigned to an exact location on the device
-    Info (169086): Pin e[5] not assigned to an exact location on the device
+    Info (169086): Pin e5 not assigned to an exact location on the device
     Info (169086): Pin s[0] not assigned to an exact location on the device
-    Info (169086): Pin e[6] not assigned to an exact location on the device
+    Info (169086): Pin e6 not assigned to an exact location on the device
     Info (169086): Pin s[1] not assigned to an exact location on the device
-    Info (169086): Pin e[4] not assigned to an exact location on the device
-    Info (169086): Pin e[7] not assigned to an exact location on the device
-    Info (169086): Pin e[2] not assigned to an exact location on the device
-    Info (169086): Pin e[1] not assigned to an exact location on the device
-    Info (169086): Pin e[0] not assigned to an exact location on the device
-    Info (169086): Pin e[3] not assigned to an exact location on the device
+    Info (169086): Pin e4 not assigned to an exact location on the device
+    Info (169086): Pin e7 not assigned to an exact location on the device
+    Info (169086): Pin e2 not assigned to an exact location on the device
+    Info (169086): Pin e1 not assigned to an exact location on the device
+    Info (169086): Pin e0 not assigned to an exact location on the device
+    Info (169086): Pin e3 not assigned to an exact location on the device
     Info (169086): Pin s[2] not assigned to an exact location on the device
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'pfs_mux8x1.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332144): No user constrained base clocks found in the design
@@ -932,7 +932,7 @@ Info (176215): I/O bank details before I/O pin placement
         Info (176213): I/O bank number 8A does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  2 pins available
         Info (176213): I/O bank number 8 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  5 pins available
         Info (176213): I/O bank number 9 does not use VREF pins and has undetermined VCCIO pins. 4 total pin(s) used --  0 pins available
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
@@ -945,7 +945,7 @@ Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.13 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.05 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -953,9 +953,9 @@ Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Info (144001): Generated suppressed messages file C:/Users/p-fan/apps/cd_pfs/output_files/pfs_mux8x1.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 5018 megabytes
-    Info: Processing ended: Thu Mar 26 17:10:08 2026
-    Info: Elapsed time: 00:00:05
+    Info: Peak virtual memory: 5030 megabytes
+    Info: Processing ended: Fri Mar 27 17:42:00 2026
+    Info: Elapsed time: 00:00:09
     Info: Total CPU time (on all processors): 00:00:05
 
 

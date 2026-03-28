@@ -1,18 +1,18 @@
 |pfs_mux8x1
 out <= pfs_mux2x1:inst3.out
-e[7] => pfs_mux4x1:inst1.e[3]
-e[6] => pfs_mux4x1:inst1.e[2]
-e[5] => pfs_mux4x1:inst1.e[1]
-e[4] => pfs_mux4x1:inst1.e[0]
-e[3] => pfs_mux4x1:inst.e[3]
-e[2] => pfs_mux4x1:inst.e[2]
-e[1] => pfs_mux4x1:inst.e[1]
-e[0] => pfs_mux4x1:inst.e[0]
+e0 => pfs_mux4x1:inst.e[0]
+e1 => pfs_mux4x1:inst.e[1]
+e2 => pfs_mux4x1:inst.e[2]
+e3 => pfs_mux4x1:inst.e[3]
 s[0] => pfs_mux4x1:inst.s[0]
 s[0] => pfs_mux4x1:inst1.s[0]
 s[1] => pfs_mux4x1:inst.s[1]
 s[1] => pfs_mux4x1:inst1.s[1]
 s[2] => pfs_mux2x1:inst3.sel
+e4 => pfs_mux4x1:inst1.e[0]
+e5 => pfs_mux4x1:inst1.e[1]
+e6 => pfs_mux4x1:inst1.e[2]
+e7 => pfs_mux4x1:inst1.e[3]
 
 
 |pfs_mux8x1|pfs_mux2x1:inst3
