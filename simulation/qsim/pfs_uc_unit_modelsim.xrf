@@ -1,0 +1,13 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/p-fan/apps/cd_pfs/pfs_uc_unit.bdf
+source_file = 1, C:/Users/p-fan/apps/cd_pfs/Waveform5.vwf
+source_file = 1, C:/Users/p-fan/apps/cd_pfs/Waveform6.vwf
+source_file = 1, C:/Users/p-fan/apps/cd_pfs/db/pfs_uc_unit.cbx.xml
+design_name = pfs_uc_unit
+instance = comp, \sq~output , sq~output, pfs_uc_unit, 1
+instance = comp, \sand~output , sand~output, pfs_uc_unit, 1
+instance = comp, \ck~input , ck~input, pfs_uc_unit, 1
+instance = comp, \eand~input , eand~input, pfs_uc_unit, 1
+instance = comp, \eq~input , eq~input, pfs_uc_unit, 1
+instance = comp, \inst~0 , inst~0, pfs_uc_unit, 1
+instance = comp, \reset~input , reset~input, pfs_uc_unit, 1

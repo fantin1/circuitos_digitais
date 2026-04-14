@@ -1,0 +1,9 @@
+|pfs_uc_unit
+sq <= inst.DB_MAX_OUTPUT_PORT_TYPE
+reset => inst4.IN0
+ck => inst.CLK
+eand => inst3.IN0
+eq => inst3.IN1
+sand <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+

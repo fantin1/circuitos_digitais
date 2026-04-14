@@ -2,6 +2,7 @@ vendor_name = ModelSim
 source_file = 1, C:/Users/p-fan/apps/cd_pfs/pfs_mux8x1.bdf
 source_file = 1, C:/Users/p-fan/apps/cd_pfs/Waveform1.vwf
 source_file = 1, C:/Users/p-fan/apps/cd_pfs/Waveform2.vwf
+source_file = 1, C:/Users/p-fan/apps/cd_pfs/Waveform8.vwf
 source_file = 1, C:/Users/p-fan/apps/cd_pfs/db/pfs_mux8x1.cbx.xml
 source_file = 1, C:/Users/p-fan/apps/cd_pfs/pfs_mux2x1.bdf
 source_file = 1, C:/Users/p-fan/apps/cd_pfs/pfs_mux4x1.bdf
