@@ -1,0 +1,9 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/p-fan/apps/cd_pfs/pfs_toggle_ff.bdf
+source_file = 1, C:/Users/p-fan/apps/cd_pfs/db/pfs_toggle_ff.cbx.xml
+design_name = pfs_toggle_ff
+instance = comp, \q~output\, q~output, pfs_toggle_ff, 1
+instance = comp, \ck~input\, ck~input, pfs_toggle_ff, 1
+instance = comp, \t~input\, t~input, pfs_toggle_ff, 1
+instance = comp, \inst~0\, inst~0, pfs_toggle_ff, 1
+instance = comp, \reset~input\, reset~input, pfs_toggle_ff, 1

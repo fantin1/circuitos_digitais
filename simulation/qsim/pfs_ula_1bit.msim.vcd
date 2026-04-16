@@ -1,0 +1,292 @@
+$comment
+	File created using the following command:
+		vcd file pfs_ula_1bit.msim.vcd -direction
+$end
+$date
+	Thu Apr 16 18:29:58 2026
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module pfs_ula_1bit_vlg_vec_tst $end
+$var reg 1 ! cin $end
+$var reg 3 " sel [2:0] $end
+$var reg 1 # x $end
+$var reg 1 $ y $end
+$var wire 1 % cout $end
+$var wire 1 & s $end
+$var wire 1 ' xsel [2] $end
+$var wire 1 ( xsel [1] $end
+$var wire 1 ) xsel [0] $end
+$var wire 1 * sampler $end
+$scope module i1 $end
+$var wire 1 + gnd $end
+$var wire 1 , vcc $end
+$var wire 1 - unknown $end
+$var tri1 1 . devclrn $end
+$var tri1 1 / devpor $end
+$var tri1 1 0 devoe $end
+$var wire 1 1 cout~output_o $end
+$var wire 1 2 xsel[2]~output_o $end
+$var wire 1 3 xsel[1]~output_o $end
+$var wire 1 4 xsel[0]~output_o $end
+$var wire 1 5 s~output_o $end
+$var wire 1 6 sel[1]~input_o $end
+$var wire 1 7 sel[2]~input_o $end
+$var wire 1 8 x~input_o $end
+$var wire 1 9 sel[0]~input_o $end
+$var wire 1 : cin~input_o $end
+$var wire 1 ; y~input_o $end
+$var wire 1 < inst8~0_combout $end
+$var wire 1 = inst8~1_combout $end
+$var wire 1 > inst|inst3|inst~1_combout $end
+$var wire 1 ? inst|inst3|inst~2_combout $end
+$var wire 1 @ inst|inst3|inst~0_combout $end
+$var wire 1 A inst|inst3|inst~3_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+b100 "
+0#
+0$
+0%
+0&
+1)
+1(
+0'
+x*
+0+
+1,
+x-
+1.
+1/
+10
+01
+02
+13
+14
+05
+06
+17
+08
+09
+0:
+0;
+0<
+0=
+0>
+1?
+0@
+0A
+$end
+#50000
+1#
+18
+0*
+1>
+1A
+15
+1&
+#100000
+1$
+0#
+1;
+08
+1*
+1@
+0>
+#150000
+1#
+18
+0*
+1>
+1<
+0A
+1=
+05
+11
+0&
+1%
+#200000
+1!
+0$
+0#
+1:
+0;
+08
+1*
+0<
+0>
+0=
+1A
+01
+15
+0%
+1&
+#250000
+1#
+18
+0*
+1>
+1<
+0A
+1=
+05
+11
+0&
+1%
+#300000
+1$
+0#
+1;
+08
+1*
+0@
+0>
+#350000
+1#
+18
+0*
+1>
+1A
+15
+1&
+#400000
+0!
+0$
+0#
+0:
+0;
+08
+1*
+0<
+0>
+0=
+0A
+01
+05
+0%
+0&
+#450000
+1#
+18
+0*
+1>
+1A
+15
+1&
+#500000
+1$
+0#
+1;
+08
+1*
+1@
+0>
+#550000
+1#
+18
+0*
+1>
+1<
+0A
+1=
+05
+11
+0&
+1%
+#600000
+1!
+0$
+0#
+1:
+0;
+08
+1*
+0<
+0>
+0=
+1A
+01
+15
+0%
+1&
+#650000
+1#
+18
+0*
+1>
+1<
+0A
+1=
+05
+11
+0&
+1%
+#700000
+1$
+0#
+1;
+08
+1*
+0@
+0>
+#750000
+1#
+18
+0*
+1>
+1A
+15
+1&
+#800000
+0!
+0$
+0#
+0:
+0;
+08
+1*
+0<
+0>
+0=
+0A
+01
+05
+0%
+0&
+#850000
+1#
+18
+0*
+1>
+1A
+15
+1&
+#900000
+1$
+0#
+1;
+08
+1*
+1@
+0>
+#950000
+1#
+18
+0*
+1>
+1<
+0A
+1=
+05
+11
+0&
+1%
+#1000000

@@ -1,26 +1,26 @@
-# do pfs_mux8x1.do 
+# do pfs_ula_1bit.do 
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module pfs_mux8x1
+# -- Compiling module pfs_ula_1bit
 # 
 # Top level modules:
-# 	pfs_mux8x1
+# 	pfs_ula_1bit
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module pfs_mux8x1_vlg_sample_tst
-# -- Compiling module pfs_mux8x1_vlg_check_tst
-# -- Compiling module pfs_mux8x1_vlg_vec_tst
+# -- Compiling module pfs_ula_1bit_vlg_sample_tst
+# -- Compiling module pfs_ula_1bit_vlg_check_tst
+# -- Compiling module pfs_ula_1bit_vlg_vec_tst
 # 
 # Top level modules:
-# 	pfs_mux8x1_vlg_vec_tst
-# vsim -L cycloneiv_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -voptargs=\"+acc\" -t 1ps -novopt work.pfs_mux8x1_vlg_vec_tst 
-# Loading work.pfs_mux8x1_vlg_vec_tst
-# Loading work.pfs_mux8x1
+# 	pfs_ula_1bit_vlg_vec_tst
+# vsim -L cycloneiv_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -voptargs=\"+acc\" -t 1ps -novopt work.pfs_ula_1bit_vlg_vec_tst 
+# Loading work.pfs_ula_1bit_vlg_vec_tst
+# Loading work.pfs_ula_1bit
 # Loading cycloneiv_ver.cycloneiv_io_obuf
 # Loading cycloneiv_ver.cycloneiv_io_ibuf
 # Loading cycloneiv_ver.cycloneiv_lcell_comb
-# Loading work.pfs_mux8x1_vlg_sample_tst
-# Loading work.pfs_mux8x1_vlg_check_tst
+# Loading work.pfs_ula_1bit_vlg_sample_tst
+# Loading work.pfs_ula_1bit_vlg_check_tst
 # Simulation passed !
-# ** Note: $finish    : Waveform8.vwf.vt(164)
-#    Time: 1 us  Iteration: 0  Instance: /pfs_mux8x1_vlg_vec_tst/tb_out
+# ** Note: $finish    : Waveform19.vwf.vt(186)
+#    Time: 1 us  Iteration: 0  Instance: /pfs_ula_1bit_vlg_vec_tst/tb_out

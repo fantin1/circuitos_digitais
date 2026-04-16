@@ -1,0 +1,6 @@
+|pfs_freq_half
+q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+reset => inst3.IN0
+ck => inst.CLK
+
+

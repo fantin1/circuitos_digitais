@@ -1,0 +1,7 @@
+|pfs_toggle_ff
+q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+reset => inst5.IN0
+ck => inst.CLK
+t => inst2.IN1
+
+
