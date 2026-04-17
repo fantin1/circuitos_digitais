@@ -637,7 +637,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 664 504 728 552)
+	(rect 728 504 792 552)
 	(text "OR3" (rect 1 0 19 10)(font "Arial" (font_size 6)))
 	(text "inst8" (rect 3 37 26 49)(font "Arial" ))
 	(port
@@ -793,11 +793,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "cout" (rect 736 512 757 524)(font "Arial" ))
-	(pt 728 528)
-	(pt 784 528)
-)
-(connector
 	(text "sel2" (rect 448 480 468 492)(font "Arial" ))
 	(pt 488 496)
 	(pt 464 496)
@@ -827,14 +822,6 @@ applicable agreement for further details.
 (connector
 	(pt 552 504)
 	(pt 624 504)
-)
-(connector
-	(pt 624 504)
-	(pt 624 520)
-)
-(connector
-	(pt 624 520)
-	(pt 664 520)
 )
 (connector
 	(pt 280 608)
@@ -903,18 +890,6 @@ applicable agreement for further details.
 	(pt 128 728)
 )
 (connector
-	(pt 624 528)
-	(pt 624 632)
-)
-(connector
-	(pt 624 528)
-	(pt 664 528)
-)
-(connector
-	(pt 664 536)
-	(pt 648 536)
-)
-(connector
 	(text "xneg" (rect 288 696 311 708)(font "Arial" ))
 	(pt 280 712)
 	(pt 312 712)
@@ -929,10 +904,6 @@ applicable agreement for further details.
 	(pt 552 752)
 )
 (connector
-	(pt 648 536)
-	(pt 648 752)
-)
-(connector
 	(text "sel2" (rect 472 728 492 740)(font "Arial" ))
 	(pt 464 744)
 	(pt 488 744)
@@ -945,4 +916,33 @@ applicable agreement for further details.
 (connector
 	(pt 280 728)
 	(pt 488 728)
+)
+(connector
+	(pt 624 504)
+	(pt 624 520)
+)
+(connector
+	(pt 624 632)
+	(pt 624 528)
+)
+(connector
+	(pt 648 752)
+	(pt 648 536)
+)
+(connector
+	(text "cout" (rect 872 512 893 524)(font "Arial" ))
+	(pt 792 528)
+	(pt 920 528)
+)
+(connector
+	(pt 624 528)
+	(pt 728 528)
+)
+(connector
+	(pt 648 536)
+	(pt 728 536)
+)
+(connector
+	(pt 624 520)
+	(pt 728 520)
 )
