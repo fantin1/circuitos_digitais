@@ -1,32 +1,31 @@
 |pfs_ula_4bits
 cout <= pfs_ula_1bit:inst.cout
-x[0] => pfs_ula_1bit:inst4.x
-x[1] => pfs_ula_1bit:inst3.x
-x[2] => pfs_ula_1bit:inst7.x
-x[3] => pfs_ula_1bit:inst.x
-y[0] => pfs_ula_1bit:inst4.y
-y[1] => pfs_ula_1bit:inst3.y
-y[2] => pfs_ula_1bit:inst7.y
-y[3] => pfs_ula_1bit:inst.y
-sel[0] => inst11[0].IN0
-sel[0] => inst12.IN2
+x[0] => inst9.IN0
+x[1] => inst12.IN0
+x[1] => inst5.IN0
+x[2] => inst14.IN0
+x[2] => inst8.IN0
+x[3] => inst17.IN0
+x[3] => inst16.IN0
+sel[0] => pfs_decod_3x8:inst1.a[0]
 sel[0] => pfs_ula_1bit:inst4.sel[0]
 sel[0] => pfs_ula_1bit:inst3.sel[0]
 sel[0] => pfs_ula_1bit:inst7.sel[0]
 sel[0] => pfs_ula_1bit:inst.sel[0]
-sel[1] => inst13.IN1
-sel[1] => inst11[1].IN0
+sel[1] => pfs_decod_3x8:inst1.a[1]
 sel[1] => pfs_ula_1bit:inst4.sel[1]
 sel[1] => pfs_ula_1bit:inst3.sel[1]
 sel[1] => pfs_ula_1bit:inst7.sel[1]
 sel[1] => pfs_ula_1bit:inst.sel[1]
-sel[2] => inst13.IN0
-sel[2] => inst11[2].IN0
-sel[2] => inst12.IN0
+sel[2] => pfs_decod_3x8:inst1.a[2]
 sel[2] => pfs_ula_1bit:inst4.sel[2]
 sel[2] => pfs_ula_1bit:inst3.sel[2]
 sel[2] => pfs_ula_1bit:inst7.sel[2]
 sel[2] => pfs_ula_1bit:inst.sel[2]
+y[0] => pfs_ula_1bit:inst4.y
+y[1] => pfs_ula_1bit:inst3.y
+y[2] => pfs_ula_1bit:inst7.y
+y[3] => pfs_ula_1bit:inst.y
 debug <= pfs_ula_1bit:inst4.cout
 s[0] <= pfs_ula_1bit:inst4.s
 s[1] <= pfs_ula_1bit:inst3.s
@@ -223,6 +222,32 @@ sel => inst2.IN0
 sel => inst3.IN0
 e1 => inst2.IN1
 e0 => inst1.IN0
+
+
+|pfs_ula_4bits|pfs_decod_3x8:inst1
+out0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a[0] => inst1[0].IN0
+a[0] => inst3.IN2
+a[0] => inst5.IN2
+a[0] => inst7.IN2
+a[0] => inst9.IN2
+a[1] => inst1[1].IN0
+a[1] => inst4.IN1
+a[1] => inst5.IN1
+a[1] => inst8.IN1
+a[1] => inst9.IN1
+a[2] => inst1[2].IN0
+a[2] => inst6.IN0
+a[2] => inst7.IN0
+a[2] => inst8.IN0
+a[2] => inst9.IN0
+out1 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+out2 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+out3 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+out4 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+out5 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+out6 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+out7 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pfs_ula_4bits|pfs_ula_1bit:inst7

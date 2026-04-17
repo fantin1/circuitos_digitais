@@ -1,0 +1,26 @@
+|pfs_decod_3x8
+out0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a[0] => inst1[0].IN0
+a[0] => inst3.IN2
+a[0] => inst5.IN2
+a[0] => inst7.IN2
+a[0] => inst9.IN2
+a[1] => inst1[1].IN0
+a[1] => inst4.IN1
+a[1] => inst5.IN1
+a[1] => inst8.IN1
+a[1] => inst9.IN1
+a[2] => inst1[2].IN0
+a[2] => inst6.IN0
+a[2] => inst7.IN0
+a[2] => inst8.IN0
+a[2] => inst9.IN0
+out1 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+out2 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+out3 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+out4 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+out5 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+out6 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+out7 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+
+

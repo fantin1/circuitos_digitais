@@ -1,5 +1,5 @@
 Fitter report for pfs_ula_4bits
-Fri Apr 17 08:31:21 2026
+Fri Apr 17 10:01:40 2026
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -63,15 +63,15 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Fitter Summary                                                                  ;
 +------------------------------------+--------------------------------------------+
-; Fitter Status                      ; Successful - Fri Apr 17 08:31:21 2026      ;
+; Fitter Status                      ; Successful - Fri Apr 17 10:01:40 2026      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; pfs_ula_4bits                              ;
 ; Top-level Entity Name              ; pfs_ula_4bits                              ;
 ; Family                             ; Cyclone IV GX                              ;
 ; Device                             ; EP4CGX15BF14C6                             ;
 ; Timing Models                      ; Final                                      ;
-; Total logic elements               ; 35 / 14,400 ( < 1 % )                      ;
-;     Total combinational functions  ; 35 / 14,400 ( < 1 % )                      ;
+; Total logic elements               ; 47 / 14,400 ( < 1 % )                      ;
+;     Total combinational functions  ; 47 / 14,400 ( < 1 % )                      ;
 ;     Dedicated logic registers      ; 0 / 14,400 ( 0 % )                         ;
 ; Total registers                    ; 0                                          ;
 ; Total pins                         ; 17 / 81 ( 21 % )                           ;
@@ -168,13 +168,13 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; s[0]     ; Incomplete set of assignments ;
 ; sel[2]   ; Incomplete set of assignments ;
 ; sel[1]   ; Incomplete set of assignments ;
-; x[2]     ; Incomplete set of assignments ;
 ; sel[0]   ; Incomplete set of assignments ;
-; y[2]     ; Incomplete set of assignments ;
+; x[2]     ; Incomplete set of assignments ;
+; y[0]     ; Incomplete set of assignments ;
+; x[0]     ; Incomplete set of assignments ;
 ; x[1]     ; Incomplete set of assignments ;
 ; y[1]     ; Incomplete set of assignments ;
-; x[0]     ; Incomplete set of assignments ;
-; y[0]     ; Incomplete set of assignments ;
+; y[2]     ; Incomplete set of assignments ;
 ; x[3]     ; Incomplete set of assignments ;
 ; y[3]     ; Incomplete set of assignments ;
 +----------+-------------------------------+
@@ -186,8 +186,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Type                ; Total [A + B]     ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+-------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                   ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 80 ) ; 0.00 % ( 0 / 80 )          ; 0.00 % ( 0 / 80 )        ;
-;     -- Achieved     ; 0.00 % ( 0 / 80 ) ; 0.00 % ( 0 / 80 )          ; 0.00 % ( 0 / 80 )        ;
+;     -- Requested    ; 0.00 % ( 0 / 92 ) ; 0.00 % ( 0 / 92 )          ; 0.00 % ( 0 / 92 )        ;
+;     -- Achieved     ; 0.00 % ( 0 / 92 ) ; 0.00 % ( 0 / 92 )          ; 0.00 % ( 0 / 92 )        ;
 ;                     ;                   ;                            ;                          ;
 ; Routing (by net)    ;                   ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )  ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -210,7 +210,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 70 )     ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 82 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 10 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -226,26 +226,26 @@ The pin-out file can be found in C:/Users/p-fan/apps/cd_pfs/output_files/pfs_ula
 +---------------------------------------------+-----------------------+
 ; Resource                                    ; Usage                 ;
 +---------------------------------------------+-----------------------+
-; Total logic elements                        ; 35 / 14,400 ( < 1 % ) ;
-;     -- Combinational with no register       ; 35                    ;
+; Total logic elements                        ; 47 / 14,400 ( < 1 % ) ;
+;     -- Combinational with no register       ; 47                    ;
 ;     -- Register only                        ; 0                     ;
 ;     -- Combinational with a register        ; 0                     ;
 ;                                             ;                       ;
 ; Logic element usage by number of LUT inputs ;                       ;
-;     -- 4 input functions                    ; 26                    ;
-;     -- 3 input functions                    ; 6                     ;
-;     -- <=2 input functions                  ; 3                     ;
+;     -- 4 input functions                    ; 35                    ;
+;     -- 3 input functions                    ; 11                    ;
+;     -- <=2 input functions                  ; 1                     ;
 ;     -- Register only                        ; 0                     ;
 ;                                             ;                       ;
 ; Logic elements by mode                      ;                       ;
-;     -- normal mode                          ; 35                    ;
+;     -- normal mode                          ; 47                    ;
 ;     -- arithmetic mode                      ; 0                     ;
 ;                                             ;                       ;
 ; Total registers*                            ; 0 / 14,733 ( 0 % )    ;
 ;     -- Dedicated logic registers            ; 0 / 14,400 ( 0 % )    ;
 ;     -- I/O registers                        ; 0 / 333 ( 0 % )       ;
 ;                                             ;                       ;
-; Total LABs:  partially or completely used   ; 5 / 900 ( < 1 % )     ;
+; Total LABs:  partially or completely used   ; 3 / 900 ( < 1 % )     ;
 ; Virtual pins                                ; 0                     ;
 ; I/O pins                                    ; 17 / 81 ( 21 % )      ;
 ;     -- Clock pins                           ; 1 / 6 ( 17 % )        ;
@@ -267,10 +267,10 @@ The pin-out file can be found in C:/Users/p-fan/apps/cd_pfs/output_files/pfs_ula
 ; Impedance control blocks                    ; 0 / 3 ( 0 % )         ;
 ; Average interconnect usage (total/H/V)      ; 0% / 0% / 0%          ;
 ; Peak interconnect usage (total/H/V)         ; 0% / 0% / 0%          ;
-; Maximum fan-out                             ; 17                    ;
-; Highest non-global fan-out                  ; 17                    ;
-; Total fan-out                               ; 156                   ;
-; Average fan-out                             ; 1.97                  ;
+; Maximum fan-out                             ; 24                    ;
+; Highest non-global fan-out                  ; 24                    ;
+; Total fan-out                               ; 203                   ;
+; Average fan-out                             ; 2.23                  ;
 +---------------------------------------------+-----------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -283,26 +283,26 @@ The pin-out file can be found in C:/Users/p-fan/apps/cd_pfs/output_files/pfs_ula
 +---------------------------------------------+----------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                  ; Low                            ;
 ;                                             ;                      ;                                ;
-; Total logic elements                        ; 35 / 14400 ( < 1 % ) ; 0 / 14400 ( 0 % )              ;
-;     -- Combinational with no register       ; 35                   ; 0                              ;
+; Total logic elements                        ; 47 / 14400 ( < 1 % ) ; 0 / 14400 ( 0 % )              ;
+;     -- Combinational with no register       ; 47                   ; 0                              ;
 ;     -- Register only                        ; 0                    ; 0                              ;
 ;     -- Combinational with a register        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic element usage by number of LUT inputs ;                      ;                                ;
-;     -- 4 input functions                    ; 26                   ; 0                              ;
-;     -- 3 input functions                    ; 6                    ; 0                              ;
-;     -- <=2 input functions                  ; 3                    ; 0                              ;
+;     -- 4 input functions                    ; 35                   ; 0                              ;
+;     -- 3 input functions                    ; 11                   ; 0                              ;
+;     -- <=2 input functions                  ; 1                    ; 0                              ;
 ;     -- Register only                        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic elements by mode                      ;                      ;                                ;
-;     -- normal mode                          ; 35                   ; 0                              ;
+;     -- normal mode                          ; 47                   ; 0                              ;
 ;     -- arithmetic mode                      ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Total registers                             ; 0                    ; 0                              ;
 ;     -- Dedicated logic registers            ; 0 / 14400 ( 0 % )    ; 0 / 14400 ( 0 % )              ;
 ;     -- I/O registers                        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
-; Total LABs:  partially or completely used   ; 5 / 900 ( < 1 % )    ; 0 / 900 ( 0 % )                ;
+; Total LABs:  partially or completely used   ; 3 / 900 ( < 1 % )    ; 0 / 900 ( 0 % )                ;
 ;                                             ;                      ;                                ;
 ; Virtual pins                                ; 0                    ; 0                              ;
 ; I/O pins                                    ; 17                   ; 0                              ;
@@ -317,7 +317,7 @@ The pin-out file can be found in C:/Users/p-fan/apps/cd_pfs/output_files/pfs_ula
 ;     -- Registered Output Connections        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Internal Connections                        ;                      ;                                ;
-;     -- Total Connections                    ; 151                  ; 5                              ;
+;     -- Total Connections                    ; 198                  ; 5                              ;
 ;     -- Registered Connections               ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; External Connections                        ;                      ;                                ;
@@ -350,16 +350,16 @@ The pin-out file can be found in C:/Users/p-fan/apps/cd_pfs/output_files/pfs_ula
 +--------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+
 ; Name   ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Termination Control Block ; Location assigned by ;
 +--------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+
-; sel[0] ; L12   ; 5        ; 33           ; 12           ; 0            ; 17                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
-; sel[1] ; M11   ; 4        ; 29           ; 0            ; 7            ; 14                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
-; sel[2] ; N10   ; 4        ; 26           ; 0            ; 7            ; 14                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
-; x[0]   ; L13   ; 5        ; 33           ; 12           ; 7            ; 3                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
-; x[1]   ; K11   ; 5        ; 33           ; 11           ; 0            ; 6                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
-; x[2]   ; H10   ; 5        ; 33           ; 14           ; 0            ; 5                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
-; x[3]   ; G13   ; 5        ; 33           ; 16           ; 21           ; 4                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
-; y[0]   ; K13   ; 5        ; 33           ; 15           ; 0            ; 3                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
-; y[1]   ; K10   ; 4        ; 31           ; 0            ; 7            ; 6                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
-; y[2]   ; G9    ; 6        ; 33           ; 22           ; 0            ; 5                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
+; sel[0] ; H12   ; 5        ; 33           ; 14           ; 7            ; 20                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
+; sel[1] ; K9    ; 4        ; 22           ; 0            ; 0            ; 24                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
+; sel[2] ; N11   ; 4        ; 26           ; 0            ; 0            ; 23                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
+; x[0]   ; G9    ; 6        ; 33           ; 22           ; 0            ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
+; x[1]   ; K8    ; 4        ; 22           ; 0            ; 7            ; 5                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
+; x[2]   ; K13   ; 5        ; 33           ; 15           ; 0            ; 4                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
+; x[3]   ; G13   ; 5        ; 33           ; 16           ; 21           ; 5                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
+; y[0]   ; L12   ; 5        ; 33           ; 12           ; 0            ; 4                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
+; y[1]   ; N13   ; 5        ; 33           ; 10           ; 7            ; 5                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
+; y[2]   ; N10   ; 4        ; 26           ; 0            ; 7            ; 5                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
 ; y[3]   ; H13   ; 5        ; 33           ; 16           ; 14           ; 4                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
 +--------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+
 
@@ -369,12 +369,12 @@ The pin-out file can be found in C:/Users/p-fan/apps/cd_pfs/output_files/pfs_ula
 +-------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
 ; Name  ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Output Register ; Output Enable Register ; Power Up High ; Slew Rate ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination                       ; Termination Control Block ; Output Buffer Pre-emphasis ; Voltage Output Differential ; Location assigned by ; Output Enable Source ; Output Enable Group ;
 +-------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
-; cout  ; B13   ; 7        ; 26           ; 31           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; debug ; L9    ; 4        ; 24           ; 0            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; s[0]  ; J13   ; 5        ; 33           ; 15           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; s[1]  ; K12   ; 5        ; 33           ; 11           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; s[2]  ; D13   ; 7        ; 29           ; 31           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; s[3]  ; H12   ; 5        ; 33           ; 14           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; cout  ; L9    ; 4        ; 24           ; 0            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; debug ; J13   ; 5        ; 33           ; 15           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; s[0]  ; K11   ; 5        ; 33           ; 11           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; s[1]  ; L13   ; 5        ; 33           ; 12           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; s[2]  ; M9    ; 4        ; 24           ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; s[3]  ; H10   ; 5        ; 33           ; 14           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
 +-------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
 
 
@@ -406,10 +406,10 @@ The pin-out file can be found in C:/Users/p-fan/apps/cd_pfs/output_files/pfs_ula
 ; QL0      ; 0 / 8 ( 0 % )    ; --            ; --           ; --               ;
 ; 3        ; 1 / 8 ( 13 % )   ; 2.5V          ; --           ; --               ;
 ; 3A       ; 0 / 2 ( 0 % )    ; --            ; --           ; 2.5V             ;
-; 4        ; 4 / 14 ( 29 % )  ; 2.5V          ; --           ; --               ;
+; 4        ; 6 / 14 ( 43 % )  ; 2.5V          ; --           ; --               ;
 ; 5        ; 10 / 12 ( 83 % ) ; 2.5V          ; --           ; --               ;
 ; 6        ; 1 / 12 ( 8 % )   ; 2.5V          ; --           ; --               ;
-; 7        ; 2 / 14 ( 14 % )  ; 2.5V          ; --           ; --               ;
+; 7        ; 0 / 14 ( 0 % )   ; 2.5V          ; --           ; --               ;
 ; 8A       ; 0 / 2 ( 0 % )    ; --            ; --           ; 2.5V             ;
 ; 8        ; 0 / 5 ( 0 % )    ; 2.5V          ; --           ; --               ;
 ; 9        ; 4 / 4 ( 100 % )  ; 2.5V          ; --           ; --               ;
@@ -446,7 +446,7 @@ The pin-out file can be found in C:/Users/p-fan/apps/cd_pfs/output_files/pfs_ula
 ; B10      ; 76         ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                  ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; B11      ; 75         ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                  ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; B12      ;            ;          ; GND                                              ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; B13      ; 74         ; 7        ; cout                                             ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; B13      ; 74         ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                  ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; C1       ; 9          ; QL0      ; GXB_NC                                           ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; C2       ; 8          ; QL0      ; GXB_NC                                           ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; C3       ;            ; 9        ; VCCIO9                                           ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
@@ -472,7 +472,7 @@ The pin-out file can be found in C:/Users/p-fan/apps/cd_pfs/output_files/pfs_ula
 ; D10      ; 65         ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                  ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; D11      ; 68         ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                  ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; D12      ; 67         ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                  ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; D13      ; 72         ; 7        ; s[2]                                             ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; D13      ; 72         ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                  ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; E1       ; 11         ; QL0      ; GXB_GND*                                         ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; E2       ; 10         ; QL0      ; GXB_GND*                                         ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; E3       ;            ;          ; GND                                              ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -507,7 +507,7 @@ The pin-out file can be found in C:/Users/p-fan/apps/cd_pfs/output_files/pfs_ula
 ; G6       ;            ;          ; VCCINT                                           ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; G7       ;            ;          ; GND                                              ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; G8       ;            ;          ; VCCINT                                           ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
-; G9       ; 60         ; 6        ; y[2]                                             ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; G9       ; 60         ; 6        ; x[0]                                             ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; G10      ; 59         ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                  ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; G11      ;            ; 6        ; VCCIO6                                           ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; G12      ;            ;          ; GND                                              ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -521,9 +521,9 @@ The pin-out file can be found in C:/Users/p-fan/apps/cd_pfs/output_files/pfs_ula
 ; H7       ;            ;          ; VCCINT                                           ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; H8       ;            ;          ; GND                                              ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; H9       ;            ; --       ; VCCA                                             ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
-; H10      ; 52         ; 5        ; x[2]                                             ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; H10      ; 52         ; 5        ; s[3]                                             ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; H11      ;            ; 5        ; VCCIO5                                           ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
-; H12      ; 51         ; 5        ; s[3]                                             ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; H12      ; 51         ; 5        ; sel[0]                                           ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; H13      ; 56         ; 5        ; y[3]                                             ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; J1       ; 15         ; QL0      ; GXB_GND*                                         ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; J2       ; 14         ; QL0      ; GXB_GND*                                         ;        ;              ;         ; --         ;                 ; --       ; --           ;
@@ -537,7 +537,7 @@ The pin-out file can be found in C:/Users/p-fan/apps/cd_pfs/output_files/pfs_ula
 ; J10      ;            ;          ; VCCD_PLL                                         ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; J11      ;            ; 5        ; VCCIO5                                           ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; J12      ;            ;          ; GND                                              ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; J13      ; 53         ; 5        ; s[0]                                             ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; J13      ; 53         ; 5        ; debug                                            ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; K1       ;            ;          ; GND                                              ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; K2       ;            ;          ; GND                                              ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; K3       ;            ;          ; GND                                              ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -545,12 +545,12 @@ The pin-out file can be found in C:/Users/p-fan/apps/cd_pfs/output_files/pfs_ula
 ; K5       ; 18         ; 3        ; ^MSEL0                                           ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; K6       ; 20         ; 3        ; ^nSTATUS                                         ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; K7       ;            ; 3A       ; VCC_CLKIN3A                                      ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
-; K8       ; 35         ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                  ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
-; K9       ; 36         ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                  ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; K10      ; 43         ; 4        ; y[1]                                             ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; K11      ; 48         ; 5        ; x[1]                                             ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; K12      ; 47         ; 5        ; s[1]                                             ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; K13      ; 54         ; 5        ; y[0]                                             ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; K8       ; 35         ; 4        ; x[1]                                             ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; K9       ; 36         ; 4        ; sel[1]                                           ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; K10      ; 43         ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                  ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; K11      ; 48         ; 5        ; s[0]                                             ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; K12      ; 47         ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                  ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; K13      ; 54         ; 5        ; x[2]                                             ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; L1       ;            ;          ; RREF                                             ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; L2       ;            ;          ; GND                                              ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; L3       ; 16         ; 3        ; ^MSEL2                                           ;        ;              ;         ; --         ;                 ; --       ; --           ;
@@ -559,11 +559,11 @@ The pin-out file can be found in C:/Users/p-fan/apps/cd_pfs/output_files/pfs_ula
 ; L6       ;            ; 3        ; VCCIO3                                           ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; L7       ; 28         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                  ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; L8       ;            ; 4        ; VCCIO4                                           ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
-; L9       ; 37         ; 4        ; debug                                            ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; L9       ; 37         ; 4        ; cout                                             ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; L10      ;            ; 4        ; VCCIO4                                           ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; L11      ; 44         ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                  ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; L12      ; 50         ; 5        ; sel[0]                                           ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; L13      ; 49         ; 5        ; x[0]                                             ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; L12      ; 50         ; 5        ; y[0]                                             ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; L13      ; 49         ; 5        ; s[1]                                             ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; M1       ;            ;          ; GND                                              ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; M2       ;            ; --       ; VCCA_GXB                                         ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; M3       ;            ;          ; NC                                               ;        ;              ;         ; --         ;                 ; --       ; --           ;
@@ -572,9 +572,9 @@ The pin-out file can be found in C:/Users/p-fan/apps/cd_pfs/output_files/pfs_ula
 ; M6       ; 25         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                  ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; M7       ; 31         ; 4        ; GND+                                             ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; M8       ;            ;          ; GND                                              ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; M9       ; 38         ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                  ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; M9       ; 38         ; 4        ; s[2]                                             ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; M10      ;            ;          ; GND                                              ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; M11      ; 41         ; 4        ; sel[1]                                           ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; M11      ; 41         ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                  ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; M12      ;            ;          ; GND                                              ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; M13      ; 46         ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                  ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; N1       ;            ; --       ; VCCL_GXB                                         ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
@@ -586,37 +586,43 @@ The pin-out file can be found in C:/Users/p-fan/apps/cd_pfs/output_files/pfs_ula
 ; N7       ; 32         ; 4        ; GND+                                             ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; N8       ; 33         ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                  ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; N9       ; 34         ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                  ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; N10      ; 39         ; 4        ; sel[2]                                           ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; N11      ; 40         ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                  ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; N10      ; 39         ; 4        ; y[2]                                             ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; N11      ; 40         ; 4        ; sel[2]                                           ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; N12      ; 42         ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                  ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; N13      ; 45         ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                  ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; N13      ; 45         ; 5        ; y[1]                                             ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 +----------+------------+----------+--------------------------------------------------+--------+--------------+---------+------------+-----------------+----------+--------------+
 Note: Pin directions (input, output or bidir) are based on device operating in user mode.
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                                           ;
-+------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+-----------+------+--------------+--------------+-------------------+------------------+-----------------------------------------------------------------------+--------------+
-; Compilation Hierarchy Node   ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                                   ; Library Name ;
-+------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+-----------+------+--------------+--------------+-------------------+------------------+-----------------------------------------------------------------------+--------------+
-; |pfs_ula_4bits               ; 35 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 17   ; 0            ; 35 (0)       ; 0 (0)             ; 0 (0)            ; |pfs_ula_4bits                                                        ; work         ;
-;    |pfs_ula_1bit:inst3|      ; 12 (5)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 12 (5)       ; 0 (0)             ; 0 (0)            ; |pfs_ula_4bits|pfs_ula_1bit:inst3                                     ; work         ;
-;       |pfs_full_adder:inst7| ; 2 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 2 (1)        ; 0 (0)             ; 0 (0)            ; |pfs_ula_4bits|pfs_ula_1bit:inst3|pfs_full_adder:inst7                ; work         ;
-;          |pfs_maj3:inst2|    ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |pfs_ula_4bits|pfs_ula_1bit:inst3|pfs_full_adder:inst7|pfs_maj3:inst2 ; work         ;
-;       |pfs_mux8x1:inst|      ; 5 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 5 (0)        ; 0 (0)             ; 0 (0)            ; |pfs_ula_4bits|pfs_ula_1bit:inst3|pfs_mux8x1:inst                     ; work         ;
-;          |pfs_mux2x1:inst3|  ; 5 (5)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 5 (5)        ; 0 (0)             ; 0 (0)            ; |pfs_ula_4bits|pfs_ula_1bit:inst3|pfs_mux8x1:inst|pfs_mux2x1:inst3    ; work         ;
-;    |pfs_ula_1bit:inst4|      ; 5 (3)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 5 (3)        ; 0 (0)             ; 0 (0)            ; |pfs_ula_4bits|pfs_ula_1bit:inst4                                     ; work         ;
-;       |pfs_mux8x1:inst|      ; 2 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; |pfs_ula_4bits|pfs_ula_1bit:inst4|pfs_mux8x1:inst                     ; work         ;
-;          |pfs_mux2x1:inst3|  ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |pfs_ula_4bits|pfs_ula_1bit:inst4|pfs_mux8x1:inst|pfs_mux2x1:inst3    ; work         ;
-;    |pfs_ula_1bit:inst7|      ; 8 (3)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 8 (3)        ; 0 (0)             ; 0 (0)            ; |pfs_ula_4bits|pfs_ula_1bit:inst7                                     ; work         ;
-;       |pfs_full_adder:inst7| ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |pfs_ula_4bits|pfs_ula_1bit:inst7|pfs_full_adder:inst7                ; work         ;
-;       |pfs_mux8x1:inst|      ; 4 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 4 (0)        ; 0 (0)             ; 0 (0)            ; |pfs_ula_4bits|pfs_ula_1bit:inst7|pfs_mux8x1:inst                     ; work         ;
-;          |pfs_mux2x1:inst3|  ; 4 (4)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; |pfs_ula_4bits|pfs_ula_1bit:inst7|pfs_mux8x1:inst|pfs_mux2x1:inst3    ; work         ;
-;    |pfs_ula_1bit:inst|       ; 10 (3)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 10 (3)       ; 0 (0)             ; 0 (0)            ; |pfs_ula_4bits|pfs_ula_1bit:inst                                      ; work         ;
-;       |pfs_full_adder:inst7| ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |pfs_ula_4bits|pfs_ula_1bit:inst|pfs_full_adder:inst7                 ; work         ;
-;       |pfs_mux8x1:inst|      ; 6 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 6 (0)        ; 0 (0)             ; 0 (0)            ; |pfs_ula_4bits|pfs_ula_1bit:inst|pfs_mux8x1:inst                      ; work         ;
-;          |pfs_mux2x1:inst3|  ; 6 (6)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 0 (0)            ; |pfs_ula_4bits|pfs_ula_1bit:inst|pfs_mux8x1:inst|pfs_mux2x1:inst3     ; work         ;
-+------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+-----------+------+--------------+--------------+-------------------+------------------+-----------------------------------------------------------------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                                                          ;
++--------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+-----------+------+--------------+--------------+-------------------+------------------+------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node     ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                                                ; Library Name ;
++--------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+-----------+------+--------------+--------------+-------------------+------------------+------------------------------------------------------------------------------------+--------------+
+; |pfs_ula_4bits                 ; 47 (5)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 17   ; 0            ; 47 (5)       ; 0 (0)             ; 0 (0)            ; |pfs_ula_4bits                                                                     ; work         ;
+;    |pfs_decod_3x8:inst1|       ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |pfs_ula_4bits|pfs_decod_3x8:inst1                                                 ; work         ;
+;    |pfs_ula_1bit:inst3|        ; 10 (4)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 10 (4)       ; 0 (0)             ; 0 (0)            ; |pfs_ula_4bits|pfs_ula_1bit:inst3                                                  ; work         ;
+;       |pfs_full_adder:inst7|   ; 1 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; |pfs_ula_4bits|pfs_ula_1bit:inst3|pfs_full_adder:inst7                             ; work         ;
+;          |pfs_maj3:inst2|      ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |pfs_ula_4bits|pfs_ula_1bit:inst3|pfs_full_adder:inst7|pfs_maj3:inst2              ; work         ;
+;       |pfs_mux8x1:inst|        ; 5 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 5 (0)        ; 0 (0)             ; 0 (0)            ; |pfs_ula_4bits|pfs_ula_1bit:inst3|pfs_mux8x1:inst                                  ; work         ;
+;          |pfs_mux2x1:inst3|    ; 5 (5)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 5 (5)        ; 0 (0)             ; 0 (0)            ; |pfs_ula_4bits|pfs_ula_1bit:inst3|pfs_mux8x1:inst|pfs_mux2x1:inst3                 ; work         ;
+;    |pfs_ula_1bit:inst4|        ; 7 (4)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 7 (4)        ; 0 (0)             ; 0 (0)            ; |pfs_ula_4bits|pfs_ula_1bit:inst4                                                  ; work         ;
+;       |pfs_mux8x1:inst|        ; 3 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 3 (0)        ; 0 (0)             ; 0 (0)            ; |pfs_ula_4bits|pfs_ula_1bit:inst4|pfs_mux8x1:inst                                  ; work         ;
+;          |pfs_mux2x1:inst3|    ; 3 (3)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; |pfs_ula_4bits|pfs_ula_1bit:inst4|pfs_mux8x1:inst|pfs_mux2x1:inst3                 ; work         ;
+;    |pfs_ula_1bit:inst7|        ; 11 (3)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 11 (3)       ; 0 (0)             ; 0 (0)            ; |pfs_ula_4bits|pfs_ula_1bit:inst7                                                  ; work         ;
+;       |pfs_full_adder:inst7|   ; 2 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 2 (1)        ; 0 (0)             ; 0 (0)            ; |pfs_ula_4bits|pfs_ula_1bit:inst7|pfs_full_adder:inst7                             ; work         ;
+;          |pfs_maj3:inst2|      ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |pfs_ula_4bits|pfs_ula_1bit:inst7|pfs_full_adder:inst7|pfs_maj3:inst2              ; work         ;
+;       |pfs_mux8x1:inst|        ; 6 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 6 (0)        ; 0 (0)             ; 0 (0)            ; |pfs_ula_4bits|pfs_ula_1bit:inst7|pfs_mux8x1:inst                                  ; work         ;
+;          |pfs_mux2x1:inst3|    ; 5 (5)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 5 (5)        ; 0 (0)             ; 0 (0)            ; |pfs_ula_4bits|pfs_ula_1bit:inst7|pfs_mux8x1:inst|pfs_mux2x1:inst3                 ; work         ;
+;          |pfs_mux4x1:inst|     ; 1 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; |pfs_ula_4bits|pfs_ula_1bit:inst7|pfs_mux8x1:inst|pfs_mux4x1:inst                  ; work         ;
+;             |pfs_mux2x1:inst4| ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |pfs_ula_4bits|pfs_ula_1bit:inst7|pfs_mux8x1:inst|pfs_mux4x1:inst|pfs_mux2x1:inst4 ; work         ;
+;    |pfs_ula_1bit:inst|         ; 13 (3)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 13 (3)       ; 0 (0)             ; 0 (0)            ; |pfs_ula_4bits|pfs_ula_1bit:inst                                                   ; work         ;
+;       |pfs_full_adder:inst9|   ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |pfs_ula_4bits|pfs_ula_1bit:inst|pfs_full_adder:inst9                              ; work         ;
+;       |pfs_mux8x1:inst|        ; 9 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 9 (0)        ; 0 (0)             ; 0 (0)            ; |pfs_ula_4bits|pfs_ula_1bit:inst|pfs_mux8x1:inst                                   ; work         ;
+;          |pfs_mux2x1:inst3|    ; 8 (8)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 0 (0)            ; |pfs_ula_4bits|pfs_ula_1bit:inst|pfs_mux8x1:inst|pfs_mux2x1:inst3                  ; work         ;
+;          |pfs_mux4x1:inst|     ; 1 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; |pfs_ula_4bits|pfs_ula_1bit:inst|pfs_mux8x1:inst|pfs_mux4x1:inst                   ; work         ;
+;             |pfs_mux2x1:inst4| ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |pfs_ula_4bits|pfs_ula_1bit:inst|pfs_mux8x1:inst|pfs_mux4x1:inst|pfs_mux2x1:inst4  ; work         ;
++--------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+-----------+------+--------------+--------------+-------------------+------------------+------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -633,162 +639,193 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; s[0]   ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; sel[2] ; Input    ; (6) 1313 ps   ; --            ; --                    ; --  ; --   ;
 ; sel[1] ; Input    ; (6) 1313 ps   ; --            ; --                    ; --  ; --   ;
-; x[2]   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; sel[0] ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
-; y[2]   ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
-; x[1]   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; y[1]   ; Input    ; --            ; (6) 1313 ps   ; --                    ; --  ; --   ;
+; x[2]   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; y[0]   ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
 ; x[0]   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; y[0]   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; x[1]   ; Input    ; (6) 1313 ps   ; --            ; --                    ; --  ; --   ;
+; y[1]   ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; y[2]   ; Input    ; (6) 1313 ps   ; --            ; --                    ; --  ; --   ;
 ; x[3]   ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
 ; y[3]   ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
 +--------+----------+---------------+---------------+-----------------------+-----+------+
 
 
-+-----------------------------------------------------------------------------------------------------+
-; Pad To Core Delay Chain Fanout                                                                      ;
-+-----------------------------------------------------------------------+-------------------+---------+
-; Source Pin / Fanout                                                   ; Pad To Core Index ; Setting ;
-+-----------------------------------------------------------------------+-------------------+---------+
-; sel[2]                                                                ;                   ;         ;
-;      - pfs_ula_1bit:inst3|inst8~0                                     ; 0                 ; 6       ;
-;      - pfs_ula_1bit:inst4|inst8~0                                     ; 0                 ; 6       ;
-;      - pfs_ula_1bit:inst|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~0      ; 0                 ; 6       ;
-;      - pfs_ula_1bit:inst3|pfs_full_adder:inst7|pfs_maj3:inst2|inst3~0 ; 0                 ; 6       ;
-;      - pfs_ula_1bit:inst3|inst8~4                                     ; 0                 ; 6       ;
-;      - pfs_ula_1bit:inst7|inst8~2                                     ; 0                 ; 6       ;
-;      - pfs_ula_1bit:inst|inst8~2                                      ; 0                 ; 6       ;
-;      - pfs_ula_1bit:inst4|inst8~2                                     ; 0                 ; 6       ;
-;      - pfs_ula_1bit:inst|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~3      ; 0                 ; 6       ;
-;      - pfs_ula_1bit:inst7|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~1     ; 0                 ; 6       ;
-;      - pfs_ula_1bit:inst3|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~1     ; 0                 ; 6       ;
-;      - pfs_ula_1bit:inst3|pfs_full_adder:inst7|inst1                  ; 0                 ; 6       ;
-;      - pfs_ula_1bit:inst3|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~4     ; 0                 ; 6       ;
-;      - pfs_ula_1bit:inst4|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~0     ; 0                 ; 6       ;
-; sel[1]                                                                ;                   ;         ;
-;      - pfs_ula_1bit:inst3|inst8~0                                     ; 0                 ; 6       ;
-;      - pfs_ula_1bit:inst|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~0      ; 0                 ; 6       ;
-;      - pfs_ula_1bit:inst4|inst8~1                                     ; 0                 ; 6       ;
-;      - pfs_ula_1bit:inst3|inst8~3                                     ; 0                 ; 6       ;
-;      - pfs_ula_1bit:inst7|inst8~1                                     ; 0                 ; 6       ;
-;      - pfs_ula_1bit:inst|inst8~0                                      ; 0                 ; 6       ;
-;      - pfs_ula_1bit:inst|inst8~2                                      ; 0                 ; 6       ;
-;      - pfs_ula_1bit:inst|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~1      ; 0                 ; 6       ;
-;      - pfs_ula_1bit:inst|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~2      ; 0                 ; 6       ;
-;      - pfs_ula_1bit:inst7|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~0     ; 0                 ; 6       ;
-;      - pfs_ula_1bit:inst3|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~0     ; 0                 ; 6       ;
-;      - pfs_ula_1bit:inst3|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~3     ; 0                 ; 6       ;
-;      - pfs_ula_1bit:inst4|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~0     ; 0                 ; 6       ;
-;      - pfs_ula_1bit:inst4|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~1     ; 0                 ; 6       ;
-; x[2]                                                                  ;                   ;         ;
-;      - pfs_ula_1bit:inst7|inst8~0                                     ; 0                 ; 6       ;
-;      - pfs_ula_1bit:inst7|inst8~1                                     ; 0                 ; 6       ;
-;      - pfs_ula_1bit:inst7|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~0     ; 0                 ; 6       ;
-;      - pfs_ula_1bit:inst7|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~2     ; 0                 ; 6       ;
-;      - pfs_ula_1bit:inst7|pfs_full_adder:inst7|inst1                  ; 0                 ; 6       ;
-; sel[0]                                                                ;                   ;         ;
-;      - pfs_ula_1bit:inst7|inst8~0                                     ; 1                 ; 6       ;
-;      - pfs_ula_1bit:inst3|inst8~1                                     ; 1                 ; 6       ;
-;      - pfs_ula_1bit:inst4|inst8~0                                     ; 1                 ; 6       ;
-;      - pfs_ula_1bit:inst|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~0      ; 1                 ; 6       ;
-;      - pfs_ula_1bit:inst3|inst8~2                                     ; 1                 ; 6       ;
-;      - pfs_ula_1bit:inst3|inst8~3                                     ; 1                 ; 6       ;
-;      - pfs_ula_1bit:inst7|inst8~1                                     ; 1                 ; 6       ;
-;      - pfs_ula_1bit:inst|inst8~0                                      ; 1                 ; 6       ;
-;      - pfs_ula_1bit:inst|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~1      ; 1                 ; 6       ;
-;      - pfs_ula_1bit:inst|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~2      ; 1                 ; 6       ;
-;      - pfs_ula_1bit:inst|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~5      ; 1                 ; 6       ;
-;      - pfs_ula_1bit:inst7|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~0     ; 1                 ; 6       ;
-;      - pfs_ula_1bit:inst7|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~3     ; 1                 ; 6       ;
-;      - pfs_ula_1bit:inst3|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~0     ; 1                 ; 6       ;
-;      - pfs_ula_1bit:inst3|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~2     ; 1                 ; 6       ;
-;      - pfs_ula_1bit:inst3|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~3     ; 1                 ; 6       ;
-;      - pfs_ula_1bit:inst4|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~0     ; 1                 ; 6       ;
-; y[2]                                                                  ;                   ;         ;
-;      - pfs_ula_1bit:inst7|inst8~0                                     ; 1                 ; 6       ;
-;      - pfs_ula_1bit:inst7|inst8~1                                     ; 1                 ; 6       ;
-;      - pfs_ula_1bit:inst7|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~0     ; 1                 ; 6       ;
-;      - pfs_ula_1bit:inst7|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~1     ; 1                 ; 6       ;
-;      - pfs_ula_1bit:inst7|pfs_full_adder:inst7|inst1                  ; 1                 ; 6       ;
-; x[1]                                                                  ;                   ;         ;
-;      - pfs_ula_1bit:inst3|inst8~1                                     ; 0                 ; 6       ;
-;      - pfs_ula_1bit:inst3|pfs_full_adder:inst7|pfs_maj3:inst2|inst3~0 ; 0                 ; 6       ;
-;      - pfs_ula_1bit:inst3|inst8~3                                     ; 0                 ; 6       ;
-;      - pfs_ula_1bit:inst3|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~1     ; 0                 ; 6       ;
-;      - pfs_ula_1bit:inst3|pfs_full_adder:inst7|inst1                  ; 0                 ; 6       ;
-;      - pfs_ula_1bit:inst3|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~3     ; 0                 ; 6       ;
-; y[1]                                                                  ;                   ;         ;
-;      - pfs_ula_1bit:inst3|inst8~1                                     ; 1                 ; 6       ;
-;      - pfs_ula_1bit:inst3|pfs_full_adder:inst7|pfs_maj3:inst2|inst3~0 ; 1                 ; 6       ;
-;      - pfs_ula_1bit:inst3|inst8~3                                     ; 1                 ; 6       ;
-;      - pfs_ula_1bit:inst3|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~0     ; 1                 ; 6       ;
-;      - pfs_ula_1bit:inst3|pfs_full_adder:inst7|inst1                  ; 1                 ; 6       ;
-;      - pfs_ula_1bit:inst3|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~3     ; 1                 ; 6       ;
-; x[0]                                                                  ;                   ;         ;
-;      - pfs_ula_1bit:inst4|inst8~0                                     ; 0                 ; 6       ;
-;      - pfs_ula_1bit:inst4|inst8~1                                     ; 0                 ; 6       ;
-;      - pfs_ula_1bit:inst4|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~1     ; 0                 ; 6       ;
-; y[0]                                                                  ;                   ;         ;
-;      - pfs_ula_1bit:inst4|inst8~0                                     ; 0                 ; 6       ;
-;      - pfs_ula_1bit:inst4|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~0     ; 0                 ; 6       ;
-;      - pfs_ula_1bit:inst4|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~1     ; 0                 ; 6       ;
-; x[3]                                                                  ;                   ;         ;
-; y[3]                                                                  ;                   ;         ;
-+-----------------------------------------------------------------------+-------------------+---------+
++-----------------------------------------------------------------------------------------------------------------+
+; Pad To Core Delay Chain Fanout                                                                                  ;
++-----------------------------------------------------------------------------------+-------------------+---------+
+; Source Pin / Fanout                                                               ; Pad To Core Index ; Setting ;
++-----------------------------------------------------------------------------------+-------------------+---------+
+; sel[2]                                                                            ;                   ;         ;
+;      - pfs_ula_1bit:inst|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~0                  ; 0                 ; 6       ;
+;      - pfs_ula_1bit:inst4|inst8~0                                                 ; 0                 ; 6       ;
+;      - pfs_ula_1bit:inst4|inst8~1                                                 ; 0                 ; 6       ;
+;      - inst9~0                                                                    ; 0                 ; 6       ;
+;      - inst5~0                                                                    ; 0                 ; 6       ;
+;      - pfs_ula_1bit:inst3|inst8~1                                                 ; 0                 ; 6       ;
+;      - pfs_decod_3x8:inst1|inst~0                                                 ; 0                 ; 6       ;
+;      - pfs_ula_1bit:inst3|pfs_full_adder:inst7|pfs_maj3:inst2|inst3~0             ; 0                 ; 6       ;
+;      - pfs_ula_1bit:inst|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~1                  ; 0                 ; 6       ;
+;      - pfs_ula_1bit:inst7|inst8~1                                                 ; 0                 ; 6       ;
+;      - inst16~0                                                                   ; 0                 ; 6       ;
+;      - inst14~0                                                                   ; 0                 ; 6       ;
+;      - pfs_ula_1bit:inst|inst8~2                                                  ; 0                 ; 6       ;
+;      - pfs_ula_1bit:inst4|inst8~3                                                 ; 0                 ; 6       ;
+;      - pfs_ula_1bit:inst|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~3                  ; 0                 ; 6       ;
+;      - pfs_ula_1bit:inst|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~5                  ; 0                 ; 6       ;
+;      - pfs_ula_1bit:inst|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~6                  ; 0                 ; 6       ;
+;      - pfs_ula_1bit:inst7|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~1                 ; 0                 ; 6       ;
+;      - pfs_ula_1bit:inst3|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~0                 ; 0                 ; 6       ;
+;      - pfs_ula_1bit:inst3|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~1                 ; 0                 ; 6       ;
+;      - pfs_ula_1bit:inst3|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~2                 ; 0                 ; 6       ;
+;      - pfs_ula_1bit:inst4|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~0                 ; 0                 ; 6       ;
+;      - pfs_ula_1bit:inst4|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~1                 ; 0                 ; 6       ;
+; sel[1]                                                                            ;                   ;         ;
+;      - pfs_ula_1bit:inst|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~0                  ; 0                 ; 6       ;
+;      - pfs_ula_1bit:inst4|inst8~0                                                 ; 0                 ; 6       ;
+;      - pfs_ula_1bit:inst4|inst8~1                                                 ; 0                 ; 6       ;
+;      - inst9~0                                                                    ; 0                 ; 6       ;
+;      - inst5~0                                                                    ; 0                 ; 6       ;
+;      - pfs_ula_1bit:inst3|inst8~0                                                 ; 0                 ; 6       ;
+;      - pfs_decod_3x8:inst1|inst~0                                                 ; 0                 ; 6       ;
+;      - pfs_ula_1bit:inst|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~1                  ; 0                 ; 6       ;
+;      - pfs_ula_1bit:inst7|inst8~1                                                 ; 0                 ; 6       ;
+;      - inst16~0                                                                   ; 0                 ; 6       ;
+;      - inst14~0                                                                   ; 0                 ; 6       ;
+;      - pfs_ula_1bit:inst|inst8~0                                                  ; 0                 ; 6       ;
+;      - pfs_ula_1bit:inst|inst8~2                                                  ; 0                 ; 6       ;
+;      - pfs_ula_1bit:inst|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~3                  ; 0                 ; 6       ;
+;      - pfs_ula_1bit:inst|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~4                  ; 0                 ; 6       ;
+;      - pfs_ula_1bit:inst|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~6                  ; 0                 ; 6       ;
+;      - pfs_ula_1bit:inst7|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~0                 ; 0                 ; 6       ;
+;      - pfs_ula_1bit:inst7|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~1                 ; 0                 ; 6       ;
+;      - pfs_ula_1bit:inst3|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~1                 ; 0                 ; 6       ;
+;      - pfs_ula_1bit:inst3|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~2                 ; 0                 ; 6       ;
+;      - pfs_ula_1bit:inst4|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~1                 ; 0                 ; 6       ;
+;      - pfs_ula_1bit:inst4|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~2                 ; 0                 ; 6       ;
+;      - pfs_ula_1bit:inst3|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~3                 ; 0                 ; 6       ;
+;      - pfs_ula_1bit:inst3|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~4                 ; 0                 ; 6       ;
+; sel[0]                                                                            ;                   ;         ;
+;      - pfs_ula_1bit:inst|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~0                  ; 1                 ; 6       ;
+;      - pfs_ula_1bit:inst4|inst8~0                                                 ; 1                 ; 6       ;
+;      - pfs_ula_1bit:inst4|inst8~1                                                 ; 1                 ; 6       ;
+;      - inst9~0                                                                    ; 1                 ; 6       ;
+;      - inst5~0                                                                    ; 1                 ; 6       ;
+;      - pfs_ula_1bit:inst3|inst8~0                                                 ; 1                 ; 6       ;
+;      - pfs_decod_3x8:inst1|inst~0                                                 ; 1                 ; 6       ;
+;      - pfs_ula_1bit:inst|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~1                  ; 1                 ; 6       ;
+;      - inst16~0                                                                   ; 1                 ; 6       ;
+;      - inst14~0                                                                   ; 1                 ; 6       ;
+;      - pfs_ula_1bit:inst|inst8~0                                                  ; 1                 ; 6       ;
+;      - pfs_ula_1bit:inst|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~3                  ; 1                 ; 6       ;
+;      - pfs_ula_1bit:inst|pfs_mux8x1:inst|pfs_mux4x1:inst|pfs_mux2x1:inst4|inst~0  ; 1                 ; 6       ;
+;      - pfs_ula_1bit:inst|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~4                  ; 1                 ; 6       ;
+;      - pfs_ula_1bit:inst|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~6                  ; 1                 ; 6       ;
+;      - pfs_ula_1bit:inst7|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~0                 ; 1                 ; 6       ;
+;      - pfs_ula_1bit:inst7|pfs_mux8x1:inst|pfs_mux4x1:inst|pfs_mux2x1:inst4|inst~0 ; 1                 ; 6       ;
+;      - pfs_ula_1bit:inst3|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~1                 ; 1                 ; 6       ;
+;      - pfs_ula_1bit:inst3|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~2                 ; 1                 ; 6       ;
+;      - pfs_ula_1bit:inst4|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~1                 ; 1                 ; 6       ;
+; x[2]                                                                              ;                   ;         ;
+;      - inst13~0                                                                   ; 0                 ; 6       ;
+;      - pfs_ula_1bit:inst7|inst8~0                                                 ; 0                 ; 6       ;
+;      - pfs_ula_1bit:inst7|inst8~1                                                 ; 0                 ; 6       ;
+;      - inst14~0                                                                   ; 0                 ; 6       ;
+; y[0]                                                                              ;                   ;         ;
+;      - pfs_ula_1bit:inst4|inst8~0                                                 ; 1                 ; 6       ;
+;      - pfs_ula_1bit:inst4|inst8~1                                                 ; 1                 ; 6       ;
+;      - pfs_ula_1bit:inst4|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~1                 ; 1                 ; 6       ;
+;      - pfs_ula_1bit:inst4|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~2                 ; 1                 ; 6       ;
+; x[0]                                                                              ;                   ;         ;
+;      - inst9~0                                                                    ; 0                 ; 6       ;
+;      - pfs_ula_1bit:inst4|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~0                 ; 0                 ; 6       ;
+; x[1]                                                                              ;                   ;         ;
+;      - inst5~0                                                                    ; 0                 ; 6       ;
+;      - pfs_ula_1bit:inst3|inst8~0                                                 ; 0                 ; 6       ;
+;      - pfs_ula_1bit:inst3|inst8~2                                                 ; 0                 ; 6       ;
+;      - inst13~0                                                                   ; 0                 ; 6       ;
+;      - pfs_ula_1bit:inst3|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~0                 ; 0                 ; 6       ;
+; y[1]                                                                              ;                   ;         ;
+;      - pfs_ula_1bit:inst3|inst8~0                                                 ; 1                 ; 6       ;
+;      - pfs_ula_1bit:inst3|inst8~2                                                 ; 1                 ; 6       ;
+;      - pfs_ula_1bit:inst3|pfs_full_adder:inst7|pfs_maj3:inst2|inst3~0             ; 1                 ; 6       ;
+;      - pfs_ula_1bit:inst3|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~1                 ; 1                 ; 6       ;
+;      - pfs_ula_1bit:inst3|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~2                 ; 1                 ; 6       ;
+; y[2]                                                                              ;                   ;         ;
+;      - pfs_ula_1bit:inst7|inst8~0                                                 ; 0                 ; 6       ;
+;      - pfs_ula_1bit:inst7|pfs_full_adder:inst7|pfs_maj3:inst2|inst3~0             ; 0                 ; 6       ;
+;      - pfs_ula_1bit:inst7|pfs_mux8x1:inst|pfs_mux4x1:inst|pfs_mux2x1:inst4|inst~0 ; 0                 ; 6       ;
+;      - pfs_ula_1bit:inst7|pfs_full_adder:inst7|inst1                              ; 0                 ; 6       ;
+;      - pfs_ula_1bit:inst7|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~4                 ; 0                 ; 6       ;
+; x[3]                                                                              ;                   ;         ;
+; y[3]                                                                              ;                   ;         ;
++-----------------------------------------------------------------------------------+-------------------+---------+
 
 
-+--------------------------------------------------------------------------+
-; Non-Global High Fan-Out Signals                                          ;
-+----------------------------------------------------------------+---------+
-; Name                                                           ; Fan-Out ;
-+----------------------------------------------------------------+---------+
-; sel[0]~input                                                   ; 17      ;
-; sel[1]~input                                                   ; 14      ;
-; sel[2]~input                                                   ; 14      ;
-; y[1]~input                                                     ; 6       ;
-; x[1]~input                                                     ; 6       ;
-; pfs_ula_1bit:inst3|inst8~0                                     ; 6       ;
-; y[2]~input                                                     ; 5       ;
-; x[2]~input                                                     ; 5       ;
-; pfs_ula_1bit:inst4|inst8~1                                     ; 5       ;
-; y[3]~input                                                     ; 4       ;
-; x[3]~input                                                     ; 4       ;
-; pfs_ula_1bit:inst7|inst8~2                                     ; 4       ;
-; pfs_ula_1bit:inst|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~0      ; 4       ;
-; y[0]~input                                                     ; 3       ;
-; x[0]~input                                                     ; 3       ;
-; pfs_ula_1bit:inst3|inst8~4                                     ; 3       ;
-; pfs_ula_1bit:inst|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~1      ; 2       ;
-; pfs_ula_1bit:inst4|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~1     ; 1       ;
-; pfs_ula_1bit:inst4|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~0     ; 1       ;
-; pfs_ula_1bit:inst3|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~4     ; 1       ;
-; pfs_ula_1bit:inst3|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~3     ; 1       ;
-; pfs_ula_1bit:inst3|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~2     ; 1       ;
-; pfs_ula_1bit:inst3|pfs_full_adder:inst7|inst1                  ; 1       ;
-; pfs_ula_1bit:inst3|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~1     ; 1       ;
-; pfs_ula_1bit:inst3|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~0     ; 1       ;
-; pfs_ula_1bit:inst7|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~3     ; 1       ;
-; pfs_ula_1bit:inst7|pfs_full_adder:inst7|inst1                  ; 1       ;
-; pfs_ula_1bit:inst7|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~2     ; 1       ;
-; pfs_ula_1bit:inst7|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~1     ; 1       ;
-; pfs_ula_1bit:inst7|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~0     ; 1       ;
-; pfs_ula_1bit:inst|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~5      ; 1       ;
-; pfs_ula_1bit:inst|pfs_full_adder:inst7|inst1                   ; 1       ;
-; pfs_ula_1bit:inst|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~4      ; 1       ;
-; pfs_ula_1bit:inst|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~3      ; 1       ;
-; pfs_ula_1bit:inst|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~2      ; 1       ;
-; pfs_ula_1bit:inst4|inst8~2                                     ; 1       ;
-; pfs_ula_1bit:inst|inst8~2                                      ; 1       ;
-; pfs_ula_1bit:inst|inst8~1                                      ; 1       ;
-; pfs_ula_1bit:inst|inst8~0                                      ; 1       ;
-; pfs_ula_1bit:inst7|inst8~1                                     ; 1       ;
-; pfs_ula_1bit:inst3|inst8~3                                     ; 1       ;
-; pfs_ula_1bit:inst3|inst8~2                                     ; 1       ;
-; pfs_ula_1bit:inst3|pfs_full_adder:inst7|pfs_maj3:inst2|inst3~0 ; 1       ;
-; pfs_ula_1bit:inst4|inst8~0                                     ; 1       ;
-; pfs_ula_1bit:inst3|inst8~1                                     ; 1       ;
-; pfs_ula_1bit:inst7|inst8~0                                     ; 1       ;
-+----------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------+
+; Non-Global High Fan-Out Signals                                                      ;
++----------------------------------------------------------------------------+---------+
+; Name                                                                       ; Fan-Out ;
++----------------------------------------------------------------------------+---------+
+; sel[1]~input                                                               ; 24      ;
+; sel[2]~input                                                               ; 23      ;
+; sel[0]~input                                                               ; 20      ;
+; x[3]~input                                                                 ; 5       ;
+; y[2]~input                                                                 ; 5       ;
+; y[1]~input                                                                 ; 5       ;
+; x[1]~input                                                                 ; 5       ;
+; inst14~0                                                                   ; 5       ;
+; inst16~0                                                                   ; 5       ;
+; pfs_ula_1bit:inst3|inst8~3                                                 ; 5       ;
+; y[3]~input                                                                 ; 4       ;
+; y[0]~input                                                                 ; 4       ;
+; x[2]~input                                                                 ; 4       ;
+; pfs_ula_1bit:inst|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~1                  ; 4       ;
+; pfs_decod_3x8:inst1|inst~0                                                 ; 4       ;
+; pfs_ula_1bit:inst4|inst8~2                                                 ; 4       ;
+; pfs_ula_1bit:inst|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~0                  ; 4       ;
+; pfs_ula_1bit:inst7|inst8~2                                                 ; 3       ;
+; x[0]~input                                                                 ; 2       ;
+; pfs_ula_1bit:inst3|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~2                 ; 2       ;
+; pfs_ula_1bit:inst|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~6                  ; 2       ;
+; pfs_ula_1bit:inst|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~3                  ; 2       ;
+; pfs_ula_1bit:inst|pfs_full_adder:inst9|inst1~0                             ; 2       ;
+; inst13~0                                                                   ; 2       ;
+; inst5~0                                                                    ; 2       ;
+; inst9~0                                                                    ; 2       ;
+; pfs_ula_1bit:inst3|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~4                 ; 1       ;
+; pfs_ula_1bit:inst3|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~3                 ; 1       ;
+; pfs_ula_1bit:inst4|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~2                 ; 1       ;
+; pfs_ula_1bit:inst4|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~1                 ; 1       ;
+; pfs_ula_1bit:inst4|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~0                 ; 1       ;
+; pfs_ula_1bit:inst3|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~1                 ; 1       ;
+; pfs_ula_1bit:inst3|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~0                 ; 1       ;
+; pfs_ula_1bit:inst7|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~4                 ; 1       ;
+; pfs_ula_1bit:inst7|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~3                 ; 1       ;
+; pfs_ula_1bit:inst7|pfs_full_adder:inst7|inst1                              ; 1       ;
+; pfs_ula_1bit:inst7|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~2                 ; 1       ;
+; pfs_ula_1bit:inst7|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~1                 ; 1       ;
+; pfs_ula_1bit:inst7|pfs_mux8x1:inst|pfs_mux4x1:inst|pfs_mux2x1:inst4|inst~0 ; 1       ;
+; pfs_ula_1bit:inst7|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~0                 ; 1       ;
+; pfs_ula_1bit:inst|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~7                  ; 1       ;
+; pfs_ula_1bit:inst|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~5                  ; 1       ;
+; pfs_ula_1bit:inst|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~4                  ; 1       ;
+; pfs_ula_1bit:inst|pfs_mux8x1:inst|pfs_mux4x1:inst|pfs_mux2x1:inst4|inst~0  ; 1       ;
+; pfs_ula_1bit:inst|pfs_mux8x1:inst|pfs_mux2x1:inst3|inst~2                  ; 1       ;
+; pfs_ula_1bit:inst4|inst8~3                                                 ; 1       ;
+; pfs_ula_1bit:inst|inst8~2                                                  ; 1       ;
+; pfs_ula_1bit:inst|inst8~1                                                  ; 1       ;
+; pfs_ula_1bit:inst|inst8~0                                                  ; 1       ;
+; pfs_ula_1bit:inst7|pfs_full_adder:inst7|pfs_maj3:inst2|inst3~0             ; 1       ;
+; pfs_ula_1bit:inst7|inst8~1                                                 ; 1       ;
+; pfs_ula_1bit:inst7|inst8~0                                                 ; 1       ;
+; pfs_ula_1bit:inst3|pfs_full_adder:inst7|pfs_maj3:inst2|inst3~0             ; 1       ;
+; pfs_ula_1bit:inst3|inst8~2                                                 ; 1       ;
+; pfs_ula_1bit:inst3|inst8~1                                                 ; 1       ;
+; pfs_ula_1bit:inst3|inst8~0                                                 ; 1       ;
+; pfs_ula_1bit:inst4|inst8~1                                                 ; 1       ;
+; pfs_ula_1bit:inst4|inst8~0                                                 ; 1       ;
++----------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------+
@@ -796,53 +833,28 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------+-----------------------+
 ; Routing Resource Type             ; Usage                 ;
 +-----------------------------------+-----------------------+
-; Block interconnects               ; 37 / 42,960 ( < 1 % ) ;
-; C16 interconnects                 ; 5 / 1,518 ( < 1 % )   ;
-; C4 interconnects                  ; 26 / 26,928 ( < 1 % ) ;
-; Direct links                      ; 3 / 42,960 ( < 1 % )  ;
+; Block interconnects               ; 41 / 42,960 ( < 1 % ) ;
+; C16 interconnects                 ; 9 / 1,518 ( < 1 % )   ;
+; C4 interconnects                  ; 23 / 26,928 ( < 1 % ) ;
+; Direct links                      ; 11 / 42,960 ( < 1 % ) ;
 ; GXB block output buffers          ; 0 / 1,200 ( 0 % )     ;
 ; Global clocks                     ; 0 / 20 ( 0 % )        ;
 ; Interquad Reference Clock Outputs ; 0 / 1 ( 0 % )         ;
 ; Interquad TXRX Clocks             ; 0 / 8 ( 0 % )         ;
 ; Interquad TXRX PCSRX outputs      ; 0 / 4 ( 0 % )         ;
 ; Interquad TXRX PCSTX outputs      ; 0 / 4 ( 0 % )         ;
-; Local interconnects               ; 26 / 14,400 ( < 1 % ) ;
-; R24 interconnects                 ; 0 / 1,710 ( 0 % )     ;
+; Local interconnects               ; 33 / 14,400 ( < 1 % ) ;
+; R24 interconnects                 ; 6 / 1,710 ( < 1 % )   ;
 ; R4 interconnects                  ; 16 / 37,740 ( < 1 % ) ;
 +-----------------------------------+-----------------------+
 
 
-+--------------------------------------------------------------------------+
-; LAB Logic Elements                                                       ;
-+--------------------------------------------+-----------------------------+
-; Number of Logic Elements  (Average = 7.00) ; Number of LABs  (Total = 5) ;
-+--------------------------------------------+-----------------------------+
-; 1                                          ; 3                           ;
-; 2                                          ; 0                           ;
-; 3                                          ; 0                           ;
-; 4                                          ; 0                           ;
-; 5                                          ; 0                           ;
-; 6                                          ; 0                           ;
-; 7                                          ; 0                           ;
-; 8                                          ; 0                           ;
-; 9                                          ; 0                           ;
-; 10                                         ; 0                           ;
-; 11                                         ; 0                           ;
-; 12                                         ; 0                           ;
-; 13                                         ; 0                           ;
-; 14                                         ; 0                           ;
-; 15                                         ; 0                           ;
-; 16                                         ; 2                           ;
-+--------------------------------------------+-----------------------------+
-
-
 +---------------------------------------------------------------------------+
-; LAB Signals Sourced                                                       ;
+; LAB Logic Elements                                                        ;
 +---------------------------------------------+-----------------------------+
-; Number of Signals Sourced  (Average = 7.00) ; Number of LABs  (Total = 5) ;
+; Number of Logic Elements  (Average = 15.67) ; Number of LABs  (Total = 3) ;
 +---------------------------------------------+-----------------------------+
-; 0                                           ; 0                           ;
-; 1                                           ; 3                           ;
+; 1                                           ; 0                           ;
 ; 2                                           ; 0                           ;
 ; 3                                           ; 0                           ;
 ; 4                                           ; 0                           ;
@@ -856,43 +868,74 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 12                                          ; 0                           ;
 ; 13                                          ; 0                           ;
 ; 14                                          ; 0                           ;
-; 15                                          ; 0                           ;
+; 15                                          ; 1                           ;
 ; 16                                          ; 2                           ;
 +---------------------------------------------+-----------------------------+
+
+
++----------------------------------------------------------------------------+
+; LAB Signals Sourced                                                        ;
++----------------------------------------------+-----------------------------+
+; Number of Signals Sourced  (Average = 15.67) ; Number of LABs  (Total = 3) ;
++----------------------------------------------+-----------------------------+
+; 0                                            ; 0                           ;
+; 1                                            ; 0                           ;
+; 2                                            ; 0                           ;
+; 3                                            ; 0                           ;
+; 4                                            ; 0                           ;
+; 5                                            ; 0                           ;
+; 6                                            ; 0                           ;
+; 7                                            ; 0                           ;
+; 8                                            ; 0                           ;
+; 9                                            ; 0                           ;
+; 10                                           ; 0                           ;
+; 11                                           ; 0                           ;
+; 12                                           ; 0                           ;
+; 13                                           ; 0                           ;
+; 14                                           ; 0                           ;
+; 15                                           ; 1                           ;
+; 16                                           ; 2                           ;
++----------------------------------------------+-----------------------------+
 
 
 +-------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                       ;
 +-------------------------------------------------+-----------------------------+
-; Number of Signals Sourced Out  (Average = 2.20) ; Number of LABs  (Total = 5) ;
+; Number of Signals Sourced Out  (Average = 5.67) ; Number of LABs  (Total = 3) ;
 +-------------------------------------------------+-----------------------------+
 ; 0                                               ; 0                           ;
-; 1                                               ; 3                           ;
+; 1                                               ; 0                           ;
 ; 2                                               ; 0                           ;
-; 3                                               ; 1                           ;
-; 4                                               ; 0                           ;
+; 3                                               ; 0                           ;
+; 4                                               ; 1                           ;
 ; 5                                               ; 1                           ;
+; 6                                               ; 0                           ;
+; 7                                               ; 0                           ;
+; 8                                               ; 1                           ;
 +-------------------------------------------------+-----------------------------+
 
 
-+---------------------------------------------------------------------------+
-; LAB Distinct Inputs                                                       ;
-+---------------------------------------------+-----------------------------+
-; Number of Distinct Inputs  (Average = 5.00) ; Number of LABs  (Total = 5) ;
-+---------------------------------------------+-----------------------------+
-; 0                                           ; 0                           ;
-; 1                                           ; 0                           ;
-; 2                                           ; 3                           ;
-; 3                                           ; 0                           ;
-; 4                                           ; 0                           ;
-; 5                                           ; 0                           ;
-; 6                                           ; 0                           ;
-; 7                                           ; 0                           ;
-; 8                                           ; 1                           ;
-; 9                                           ; 0                           ;
-; 10                                          ; 0                           ;
-; 11                                          ; 1                           ;
-+---------------------------------------------+-----------------------------+
++----------------------------------------------------------------------------+
+; LAB Distinct Inputs                                                        ;
++----------------------------------------------+-----------------------------+
+; Number of Distinct Inputs  (Average = 10.00) ; Number of LABs  (Total = 3) ;
++----------------------------------------------+-----------------------------+
+; 0                                            ; 0                           ;
+; 1                                            ; 0                           ;
+; 2                                            ; 0                           ;
+; 3                                            ; 0                           ;
+; 4                                            ; 0                           ;
+; 5                                            ; 0                           ;
+; 6                                            ; 0                           ;
+; 7                                            ; 0                           ;
+; 8                                            ; 2                           ;
+; 9                                            ; 0                           ;
+; 10                                           ; 0                           ;
+; 11                                           ; 0                           ;
+; 12                                           ; 0                           ;
+; 13                                           ; 0                           ;
+; 14                                           ; 1                           ;
++----------------------------------------------+-----------------------------+
 
 
 +------------------------------------------+
@@ -964,13 +1007,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; s[0]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; sel[2]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; sel[1]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; x[2]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; sel[0]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; y[2]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; x[2]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; y[0]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; x[0]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; x[1]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; y[1]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; x[0]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; y[0]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; y[2]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; x[3]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; y[3]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 +--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
@@ -1040,13 +1083,13 @@ Critical Warning (169085): No exact pin location assignment(s) for 17 pins of 17
     Info (169086): Pin s[0] not assigned to an exact location on the device
     Info (169086): Pin sel[2] not assigned to an exact location on the device
     Info (169086): Pin sel[1] not assigned to an exact location on the device
-    Info (169086): Pin x[2] not assigned to an exact location on the device
     Info (169086): Pin sel[0] not assigned to an exact location on the device
-    Info (169086): Pin y[2] not assigned to an exact location on the device
+    Info (169086): Pin x[2] not assigned to an exact location on the device
+    Info (169086): Pin y[0] not assigned to an exact location on the device
+    Info (169086): Pin x[0] not assigned to an exact location on the device
     Info (169086): Pin x[1] not assigned to an exact location on the device
     Info (169086): Pin y[1] not assigned to an exact location on the device
-    Info (169086): Pin x[0] not assigned to an exact location on the device
-    Info (169086): Pin y[0] not assigned to an exact location on the device
+    Info (169086): Pin y[2] not assigned to an exact location on the device
     Info (169086): Pin x[3] not assigned to an exact location on the device
     Info (169086): Pin y[3] not assigned to an exact location on the device
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'pfs_ula_4bits.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
@@ -1087,7 +1130,7 @@ Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.11 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.17 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -1095,9 +1138,9 @@ Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Info (144001): Generated suppressed messages file C:/Users/p-fan/apps/cd_pfs/output_files/pfs_ula_4bits.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 5034 megabytes
-    Info: Processing ended: Fri Apr 17 08:31:22 2026
-    Info: Elapsed time: 00:00:08
+    Info: Peak virtual memory: 5030 megabytes
+    Info: Processing ended: Fri Apr 17 10:01:40 2026
+    Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:05
 
 

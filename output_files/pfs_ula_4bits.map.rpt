@@ -1,5 +1,5 @@
 Analysis & Synthesis report for pfs_ula_4bits
-Fri Apr 17 08:31:13 2026
+Fri Apr 17 10:01:34 2026
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -42,13 +42,13 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Apr 17 08:31:13 2026      ;
+; Analysis & Synthesis Status        ; Successful - Fri Apr 17 10:01:34 2026      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; pfs_ula_4bits                              ;
 ; Top-level Entity Name              ; pfs_ula_4bits                              ;
 ; Family                             ; Cyclone IV GX                              ;
-; Total logic elements               ; 35                                         ;
-;     Total combinational functions  ; 35                                         ;
+; Total logic elements               ; 47                                         ;
+;     Total combinational functions  ; 47                                         ;
 ;     Dedicated logic registers      ; 0                                          ;
 ; Total registers                    ; 0                                          ;
 ; Total pins                         ; 17                                         ;
@@ -172,6 +172,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; pfs_mux8x1.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/p-fan/apps/cd_pfs/pfs_mux8x1.bdf     ;         ;
 ; pfs_mux2x1.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/p-fan/apps/cd_pfs/pfs_mux2x1.bdf     ;         ;
 ; pfs_mux4x1.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/p-fan/apps/cd_pfs/pfs_mux4x1.bdf     ;         ;
+; pfs_decod_3x8.bdf                ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/p-fan/apps/cd_pfs/pfs_decod_3x8.bdf  ;         ;
 +----------------------------------+-----------------+------------------------------------------+-----------------------------------------------+---------+
 
 
@@ -182,36 +183,42 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------+------------------+
 ; I/O pins                 ; 17               ;
 ; DSP block 9-bit elements ; 0                ;
-; Maximum fan-out node     ; sel[0]~input     ;
-; Maximum fan-out          ; 17               ;
-; Total fan-out            ; 151              ;
-; Average fan-out          ; 2.19             ;
+; Maximum fan-out node     ; sel[1]~input     ;
+; Maximum fan-out          ; 24               ;
+; Total fan-out            ; 198              ;
+; Average fan-out          ; 2.44             ;
 +--------------------------+------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                         ;
-+------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------------------------------------------------+--------------+
-; Compilation Hierarchy Node   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                   ; Library Name ;
-+------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------------------------------------------------+--------------+
-; |pfs_ula_4bits               ; 35 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 17   ; 0            ; |pfs_ula_4bits                                                        ; work         ;
-;    |pfs_ula_1bit:inst3|      ; 12 (5)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_ula_4bits|pfs_ula_1bit:inst3                                     ; work         ;
-;       |pfs_full_adder:inst7| ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_ula_4bits|pfs_ula_1bit:inst3|pfs_full_adder:inst7                ; work         ;
-;          |pfs_maj3:inst2|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_ula_4bits|pfs_ula_1bit:inst3|pfs_full_adder:inst7|pfs_maj3:inst2 ; work         ;
-;       |pfs_mux8x1:inst|      ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_ula_4bits|pfs_ula_1bit:inst3|pfs_mux8x1:inst                     ; work         ;
-;          |pfs_mux2x1:inst3|  ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_ula_4bits|pfs_ula_1bit:inst3|pfs_mux8x1:inst|pfs_mux2x1:inst3    ; work         ;
-;    |pfs_ula_1bit:inst4|      ; 5 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_ula_4bits|pfs_ula_1bit:inst4                                     ; work         ;
-;       |pfs_mux8x1:inst|      ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_ula_4bits|pfs_ula_1bit:inst4|pfs_mux8x1:inst                     ; work         ;
-;          |pfs_mux2x1:inst3|  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_ula_4bits|pfs_ula_1bit:inst4|pfs_mux8x1:inst|pfs_mux2x1:inst3    ; work         ;
-;    |pfs_ula_1bit:inst7|      ; 8 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_ula_4bits|pfs_ula_1bit:inst7                                     ; work         ;
-;       |pfs_full_adder:inst7| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_ula_4bits|pfs_ula_1bit:inst7|pfs_full_adder:inst7                ; work         ;
-;       |pfs_mux8x1:inst|      ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_ula_4bits|pfs_ula_1bit:inst7|pfs_mux8x1:inst                     ; work         ;
-;          |pfs_mux2x1:inst3|  ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_ula_4bits|pfs_ula_1bit:inst7|pfs_mux8x1:inst|pfs_mux2x1:inst3    ; work         ;
-;    |pfs_ula_1bit:inst|       ; 10 (3)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_ula_4bits|pfs_ula_1bit:inst                                      ; work         ;
-;       |pfs_full_adder:inst7| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_ula_4bits|pfs_ula_1bit:inst|pfs_full_adder:inst7                 ; work         ;
-;       |pfs_mux8x1:inst|      ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_ula_4bits|pfs_ula_1bit:inst|pfs_mux8x1:inst                      ; work         ;
-;          |pfs_mux2x1:inst3|  ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_ula_4bits|pfs_ula_1bit:inst|pfs_mux8x1:inst|pfs_mux2x1:inst3     ; work         ;
-+------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------------------------------------------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                        ;
++--------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node     ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                ; Library Name ;
++--------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+------------------------------------------------------------------------------------+--------------+
+; |pfs_ula_4bits                 ; 47 (5)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 17   ; 0            ; |pfs_ula_4bits                                                                     ; work         ;
+;    |pfs_decod_3x8:inst1|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_ula_4bits|pfs_decod_3x8:inst1                                                 ; work         ;
+;    |pfs_ula_1bit:inst3|        ; 10 (4)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_ula_4bits|pfs_ula_1bit:inst3                                                  ; work         ;
+;       |pfs_full_adder:inst7|   ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_ula_4bits|pfs_ula_1bit:inst3|pfs_full_adder:inst7                             ; work         ;
+;          |pfs_maj3:inst2|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_ula_4bits|pfs_ula_1bit:inst3|pfs_full_adder:inst7|pfs_maj3:inst2              ; work         ;
+;       |pfs_mux8x1:inst|        ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_ula_4bits|pfs_ula_1bit:inst3|pfs_mux8x1:inst                                  ; work         ;
+;          |pfs_mux2x1:inst3|    ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_ula_4bits|pfs_ula_1bit:inst3|pfs_mux8x1:inst|pfs_mux2x1:inst3                 ; work         ;
+;    |pfs_ula_1bit:inst4|        ; 7 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_ula_4bits|pfs_ula_1bit:inst4                                                  ; work         ;
+;       |pfs_mux8x1:inst|        ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_ula_4bits|pfs_ula_1bit:inst4|pfs_mux8x1:inst                                  ; work         ;
+;          |pfs_mux2x1:inst3|    ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_ula_4bits|pfs_ula_1bit:inst4|pfs_mux8x1:inst|pfs_mux2x1:inst3                 ; work         ;
+;    |pfs_ula_1bit:inst7|        ; 11 (3)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_ula_4bits|pfs_ula_1bit:inst7                                                  ; work         ;
+;       |pfs_full_adder:inst7|   ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_ula_4bits|pfs_ula_1bit:inst7|pfs_full_adder:inst7                             ; work         ;
+;          |pfs_maj3:inst2|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_ula_4bits|pfs_ula_1bit:inst7|pfs_full_adder:inst7|pfs_maj3:inst2              ; work         ;
+;       |pfs_mux8x1:inst|        ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_ula_4bits|pfs_ula_1bit:inst7|pfs_mux8x1:inst                                  ; work         ;
+;          |pfs_mux2x1:inst3|    ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_ula_4bits|pfs_ula_1bit:inst7|pfs_mux8x1:inst|pfs_mux2x1:inst3                 ; work         ;
+;          |pfs_mux4x1:inst|     ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_ula_4bits|pfs_ula_1bit:inst7|pfs_mux8x1:inst|pfs_mux4x1:inst                  ; work         ;
+;             |pfs_mux2x1:inst4| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_ula_4bits|pfs_ula_1bit:inst7|pfs_mux8x1:inst|pfs_mux4x1:inst|pfs_mux2x1:inst4 ; work         ;
+;    |pfs_ula_1bit:inst|         ; 13 (3)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_ula_4bits|pfs_ula_1bit:inst                                                   ; work         ;
+;       |pfs_full_adder:inst9|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_ula_4bits|pfs_ula_1bit:inst|pfs_full_adder:inst9                              ; work         ;
+;       |pfs_mux8x1:inst|        ; 9 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_ula_4bits|pfs_ula_1bit:inst|pfs_mux8x1:inst                                   ; work         ;
+;          |pfs_mux2x1:inst3|    ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_ula_4bits|pfs_ula_1bit:inst|pfs_mux8x1:inst|pfs_mux2x1:inst3                  ; work         ;
+;          |pfs_mux4x1:inst|     ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_ula_4bits|pfs_ula_1bit:inst|pfs_mux8x1:inst|pfs_mux4x1:inst                   ; work         ;
+;             |pfs_mux2x1:inst4| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_ula_4bits|pfs_ula_1bit:inst|pfs_mux8x1:inst|pfs_mux4x1:inst|pfs_mux2x1:inst4  ; work         ;
++--------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -254,12 +261,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Fri Apr 17 08:31:10 2026
+    Info: Processing started: Fri Apr 17 10:01:32 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pfs_ula_4bits -c pfs_ula_4bits
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file pfs_ula_4bits.bdf
     Info (12023): Found entity 1: pfs_ula_4bits
 Info (12127): Elaborating entity "pfs_ula_4bits" for the top level hierarchy
+Warning (275008): Primitive "NOT" of instance "inst11" not used
 Warning (12125): Using design file pfs_ula_1bit.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: pfs_ula_1bit
 Info (12128): Elaborating entity "pfs_ula_1bit" for hierarchy "pfs_ula_1bit:inst"
@@ -281,17 +289,20 @@ Info (12128): Elaborating entity "pfs_mux2x1" for hierarchy "pfs_ula_1bit:inst|p
 Warning (12125): Using design file pfs_mux4x1.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: pfs_mux4x1
 Info (12128): Elaborating entity "pfs_mux4x1" for hierarchy "pfs_ula_1bit:inst|pfs_mux8x1:inst|pfs_mux4x1:inst"
+Warning (12125): Using design file pfs_decod_3x8.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: pfs_decod_3x8
+Info (12128): Elaborating entity "pfs_decod_3x8" for hierarchy "pfs_decod_3x8:inst1"
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 52 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 64 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 11 input pins
     Info (21059): Implemented 6 output pins
-    Info (21061): Implemented 35 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 10 warnings
+    Info (21061): Implemented 47 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 12 warnings
     Info: Peak virtual memory: 4673 megabytes
-    Info: Processing ended: Fri Apr 17 08:31:13 2026
-    Info: Elapsed time: 00:00:03
+    Info: Processing ended: Fri Apr 17 10:01:34 2026
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 
 
