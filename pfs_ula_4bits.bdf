@@ -101,7 +101,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 592 632 768 648)
+	(rect 896 472 1072 488)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "debug" (rect 90 0 119 12)(font "Arial" ))
 	(pt 0 8)
@@ -216,7 +216,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 568 472 688 600)
+	(rect 568 488 688 616)
 	(text "pfs_ula_1bit" (rect 5 0 74 14)(font "Arial" (font_size 8)))
 	(text "inst4" (rect 8 112 31 124)(font "Arial" ))
 	(port
@@ -530,10 +530,6 @@ applicable agreement for further details.
 	(pt 488 408)
 )
 (connector
-	(pt 776 480)
-	(pt 488 480)
-)
-(connector
 	(pt 488 408)
 	(pt 488 480)
 )
@@ -677,52 +673,44 @@ applicable agreement for further details.
 	(pt 376 600)
 )
 (connector
-	(pt 480 552)
-	(pt 488 552)
-)
-(connector
-	(text "sel[2..0]" (rect 528 536 568 548)(font "Arial" ))
-	(pt 568 552)
-	(pt 520 552)
+	(text "sel[2..0]" (rect 528 552 568 564)(font "Arial" ))
+	(pt 568 568)
+	(pt 520 568)
 	(bus)
 )
 (connector
-	(text "x0" (rect 528 488 539 500)(font "Arial" ))
-	(pt 568 504)
-	(pt 520 504)
-)
-(connector
-	(text "y0" (rect 528 504 540 516)(font "Arial" ))
+	(text "x0" (rect 528 504 539 516)(font "Arial" ))
 	(pt 568 520)
 	(pt 520 520)
 )
 (connector
-	(text "s0" (rect 722 488 733 500)(font "Arial" ))
-	(pt 688 504)
-	(pt 744 504)
+	(text "y0" (rect 528 520 540 532)(font "Arial" ))
+	(pt 568 536)
+	(pt 520 536)
 )
 (connector
-	(pt 776 520)
+	(text "s0" (rect 722 504 733 516)(font "Arial" ))
 	(pt 688 520)
+	(pt 744 520)
+)
+(connector
+	(pt 776 536)
+	(pt 688 536)
 )
 (connector
 	(pt 776 480)
-	(pt 776 520)
+	(pt 776 536)
 )
 (connector
-	(pt 488 536)
-	(pt 568 536)
+	(pt 488 480)
+	(pt 776 480)
 )
 (connector
-	(pt 488 640)
-	(pt 592 640)
+	(pt 776 480)
+	(pt 896 480)
 )
 (connector
-	(pt 488 536)
-	(pt 488 552)
+	(pt 480 552)
+	(pt 568 552)
 )
-(connector
-	(pt 488 552)
-	(pt 488 640)
-)
-(junction (pt 488 552))
+(junction (pt 776 480))
