@@ -20,7 +20,7 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 136 144)
+	(rect 16 16 168 144)
 	(text "pfs_ula_1bit" (rect 5 0 74 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 112 25 124)(font "Arial" ))
 	(port
@@ -52,20 +52,27 @@ applicable agreement for further details.
 		(line (pt 0 80)(pt 16 80)(line_width 3))
 	)
 	(port
-		(pt 120 32)
+		(pt 152 32)
 		(output)
-		(text "s" (rect 0 0 7 14)(font "Arial" (font_size 8)))
-		(text "s" (rect 92 27 99 41)(font "Arial" (font_size 8)))
-		(line (pt 120 32)(pt 104 32))
+		(text "xsel[2..0]" (rect 0 0 51 14)(font "Arial" (font_size 8)))
+		(text "xsel[2..0]" (rect 80 27 131 41)(font "Arial" (font_size 8)))
+		(line (pt 152 32)(pt 136 32)(line_width 3))
 	)
 	(port
-		(pt 120 48)
+		(pt 152 48)
+		(output)
+		(text "s" (rect 0 0 7 14)(font "Arial" (font_size 8)))
+		(text "s" (rect 124 43 131 57)(font "Arial" (font_size 8)))
+		(line (pt 152 48)(pt 136 48))
+	)
+	(port
+		(pt 152 64)
 		(output)
 		(text "cout" (rect 0 0 24 14)(font "Arial" (font_size 8)))
-		(text "cout" (rect 75 43 99 57)(font "Arial" (font_size 8)))
-		(line (pt 120 48)(pt 104 48))
+		(text "cout" (rect 107 59 131 73)(font "Arial" (font_size 8)))
+		(line (pt 152 64)(pt 136 64))
 	)
 	(drawing
-		(rectangle (rect 16 16 104 112))
+		(rectangle (rect 16 16 136 112))
 	)
 )

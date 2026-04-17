@@ -5,7 +5,8 @@ entity pfs_ula_4bits is
         cout            : out    vl_logic;
         x               : in     vl_logic_vector(3 downto 0);
         y               : in     vl_logic_vector(3 downto 0);
-        s               : out    vl_logic_vector(3 downto 0);
-        sel             : in     vl_logic_vector(2 downto 0)
+        sel             : in     vl_logic_vector(2 downto 0);
+        debug           : out    vl_logic;
+        s               : out    vl_logic_vector(3 downto 0)
     );
 end pfs_ula_4bits;

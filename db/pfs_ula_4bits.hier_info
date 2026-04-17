@@ -8,30 +8,38 @@ y[0] => pfs_ula_1bit:inst4.y
 y[1] => pfs_ula_1bit:inst3.y
 y[2] => pfs_ula_1bit:inst7.y
 y[3] => pfs_ula_1bit:inst.y
-s[0] <= pfs_ula_1bit:inst4.s
-s[1] <= pfs_ula_1bit:inst3.s
-s[2] <= pfs_ula_1bit:inst7.s
-s[3] <= pfs_ula_1bit:inst.s
+sel[0] => inst11[0].IN0
+sel[0] => inst12.IN2
 sel[0] => pfs_ula_1bit:inst4.sel[0]
 sel[0] => pfs_ula_1bit:inst3.sel[0]
 sel[0] => pfs_ula_1bit:inst7.sel[0]
 sel[0] => pfs_ula_1bit:inst.sel[0]
+sel[1] => inst13.IN1
+sel[1] => inst11[1].IN0
 sel[1] => pfs_ula_1bit:inst4.sel[1]
 sel[1] => pfs_ula_1bit:inst3.sel[1]
 sel[1] => pfs_ula_1bit:inst7.sel[1]
 sel[1] => pfs_ula_1bit:inst.sel[1]
+sel[2] => inst13.IN0
+sel[2] => inst11[2].IN0
+sel[2] => inst12.IN0
 sel[2] => pfs_ula_1bit:inst4.sel[2]
 sel[2] => pfs_ula_1bit:inst3.sel[2]
 sel[2] => pfs_ula_1bit:inst7.sel[2]
 sel[2] => pfs_ula_1bit:inst.sel[2]
+debug <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+s[0] <= pfs_ula_1bit:inst4.s
+s[1] <= pfs_ula_1bit:inst3.s
+s[2] <= pfs_ula_1bit:inst7.s
+s[3] <= pfs_ula_1bit:inst.s
 
 
 |pfs_ula_4bits|pfs_ula_1bit:inst
 cout <= inst8.DB_MAX_OUTPUT_PORT_TYPE
 x => pfs_full_adder:inst5.x
+x => inst2.IN0
 x => pfs_full_adder:inst7.x
 x => pfs_mux8x1:inst.e0
-x => inst2.IN0
 x => inst1.IN0
 x => inst6.IN1
 y => inst3.IN0
@@ -40,11 +48,23 @@ y => inst1.IN1
 y => inst6.IN0
 y => pfs_mux8x1:inst.e7
 cin => pfs_full_adder:inst5.z
+cin => pfs_full_adder:inst9.z
 cin => pfs_full_adder:inst7.z
-s <= pfs_mux8x1:inst.out
+sel[0] => inst11[0].IN0
+sel[0] => inst12.IN3
 sel[0] => pfs_mux8x1:inst.s[0]
+sel[1] => inst11[1].IN0
+sel[1] => inst13.IN2
 sel[1] => pfs_mux8x1:inst.s[1]
+sel[2] => inst12.IN1
+sel[2] => inst11[2].IN0
+sel[2] => inst13.IN1
+sel[2] => inst4.IN1
 sel[2] => pfs_mux8x1:inst.s[2]
+xsel[0] <= inst11[0].DB_MAX_OUTPUT_PORT_TYPE
+xsel[1] <= inst11[1].DB_MAX_OUTPUT_PORT_TYPE
+xsel[2] <= inst11[2].DB_MAX_OUTPUT_PORT_TYPE
+s <= pfs_mux8x1:inst.out
 
 
 |pfs_ula_4bits|pfs_ula_1bit:inst|pfs_full_adder:inst5
@@ -59,6 +79,27 @@ co <= pfs_maj3:inst2.s
 
 
 |pfs_ula_4bits|pfs_ula_1bit:inst|pfs_full_adder:inst5|pfs_maj3:inst2
+s <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+a => inst1.IN0
+a => inst.IN0
+c => inst1.IN1
+c => inst2.IN1
+b => inst2.IN0
+b => inst.IN1
+
+
+|pfs_ula_4bits|pfs_ula_1bit:inst|pfs_full_adder:inst9
+sum <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => pfs_maj3:inst2.a
+y => inst.IN1
+y => pfs_maj3:inst2.b
+z => inst1.IN1
+z => pfs_maj3:inst2.c
+co <= pfs_maj3:inst2.s
+
+
+|pfs_ula_4bits|pfs_ula_1bit:inst|pfs_full_adder:inst9|pfs_maj3:inst2
 s <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 a => inst1.IN0
 a => inst.IN0
@@ -187,9 +228,9 @@ e0 => inst1.IN0
 |pfs_ula_4bits|pfs_ula_1bit:inst7
 cout <= inst8.DB_MAX_OUTPUT_PORT_TYPE
 x => pfs_full_adder:inst5.x
+x => inst2.IN0
 x => pfs_full_adder:inst7.x
 x => pfs_mux8x1:inst.e0
-x => inst2.IN0
 x => inst1.IN0
 x => inst6.IN1
 y => inst3.IN0
@@ -198,11 +239,23 @@ y => inst1.IN1
 y => inst6.IN0
 y => pfs_mux8x1:inst.e7
 cin => pfs_full_adder:inst5.z
+cin => pfs_full_adder:inst9.z
 cin => pfs_full_adder:inst7.z
-s <= pfs_mux8x1:inst.out
+sel[0] => inst11[0].IN0
+sel[0] => inst12.IN3
 sel[0] => pfs_mux8x1:inst.s[0]
+sel[1] => inst11[1].IN0
+sel[1] => inst13.IN2
 sel[1] => pfs_mux8x1:inst.s[1]
+sel[2] => inst12.IN1
+sel[2] => inst11[2].IN0
+sel[2] => inst13.IN1
+sel[2] => inst4.IN1
 sel[2] => pfs_mux8x1:inst.s[2]
+xsel[0] <= inst11[0].DB_MAX_OUTPUT_PORT_TYPE
+xsel[1] <= inst11[1].DB_MAX_OUTPUT_PORT_TYPE
+xsel[2] <= inst11[2].DB_MAX_OUTPUT_PORT_TYPE
+s <= pfs_mux8x1:inst.out
 
 
 |pfs_ula_4bits|pfs_ula_1bit:inst7|pfs_full_adder:inst5
@@ -217,6 +270,27 @@ co <= pfs_maj3:inst2.s
 
 
 |pfs_ula_4bits|pfs_ula_1bit:inst7|pfs_full_adder:inst5|pfs_maj3:inst2
+s <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+a => inst1.IN0
+a => inst.IN0
+c => inst1.IN1
+c => inst2.IN1
+b => inst2.IN0
+b => inst.IN1
+
+
+|pfs_ula_4bits|pfs_ula_1bit:inst7|pfs_full_adder:inst9
+sum <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => pfs_maj3:inst2.a
+y => inst.IN1
+y => pfs_maj3:inst2.b
+z => inst1.IN1
+z => pfs_maj3:inst2.c
+co <= pfs_maj3:inst2.s
+
+
+|pfs_ula_4bits|pfs_ula_1bit:inst7|pfs_full_adder:inst9|pfs_maj3:inst2
 s <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 a => inst1.IN0
 a => inst.IN0
@@ -345,9 +419,9 @@ e0 => inst1.IN0
 |pfs_ula_4bits|pfs_ula_1bit:inst3
 cout <= inst8.DB_MAX_OUTPUT_PORT_TYPE
 x => pfs_full_adder:inst5.x
+x => inst2.IN0
 x => pfs_full_adder:inst7.x
 x => pfs_mux8x1:inst.e0
-x => inst2.IN0
 x => inst1.IN0
 x => inst6.IN1
 y => inst3.IN0
@@ -356,11 +430,23 @@ y => inst1.IN1
 y => inst6.IN0
 y => pfs_mux8x1:inst.e7
 cin => pfs_full_adder:inst5.z
+cin => pfs_full_adder:inst9.z
 cin => pfs_full_adder:inst7.z
-s <= pfs_mux8x1:inst.out
+sel[0] => inst11[0].IN0
+sel[0] => inst12.IN3
 sel[0] => pfs_mux8x1:inst.s[0]
+sel[1] => inst11[1].IN0
+sel[1] => inst13.IN2
 sel[1] => pfs_mux8x1:inst.s[1]
+sel[2] => inst12.IN1
+sel[2] => inst11[2].IN0
+sel[2] => inst13.IN1
+sel[2] => inst4.IN1
 sel[2] => pfs_mux8x1:inst.s[2]
+xsel[0] <= inst11[0].DB_MAX_OUTPUT_PORT_TYPE
+xsel[1] <= inst11[1].DB_MAX_OUTPUT_PORT_TYPE
+xsel[2] <= inst11[2].DB_MAX_OUTPUT_PORT_TYPE
+s <= pfs_mux8x1:inst.out
 
 
 |pfs_ula_4bits|pfs_ula_1bit:inst3|pfs_full_adder:inst5
@@ -375,6 +461,27 @@ co <= pfs_maj3:inst2.s
 
 
 |pfs_ula_4bits|pfs_ula_1bit:inst3|pfs_full_adder:inst5|pfs_maj3:inst2
+s <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+a => inst1.IN0
+a => inst.IN0
+c => inst1.IN1
+c => inst2.IN1
+b => inst2.IN0
+b => inst.IN1
+
+
+|pfs_ula_4bits|pfs_ula_1bit:inst3|pfs_full_adder:inst9
+sum <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => pfs_maj3:inst2.a
+y => inst.IN1
+y => pfs_maj3:inst2.b
+z => inst1.IN1
+z => pfs_maj3:inst2.c
+co <= pfs_maj3:inst2.s
+
+
+|pfs_ula_4bits|pfs_ula_1bit:inst3|pfs_full_adder:inst9|pfs_maj3:inst2
 s <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 a => inst1.IN0
 a => inst.IN0
@@ -503,9 +610,9 @@ e0 => inst1.IN0
 |pfs_ula_4bits|pfs_ula_1bit:inst4
 cout <= inst8.DB_MAX_OUTPUT_PORT_TYPE
 x => pfs_full_adder:inst5.x
+x => inst2.IN0
 x => pfs_full_adder:inst7.x
 x => pfs_mux8x1:inst.e0
-x => inst2.IN0
 x => inst1.IN0
 x => inst6.IN1
 y => inst3.IN0
@@ -514,11 +621,23 @@ y => inst1.IN1
 y => inst6.IN0
 y => pfs_mux8x1:inst.e7
 cin => pfs_full_adder:inst5.z
+cin => pfs_full_adder:inst9.z
 cin => pfs_full_adder:inst7.z
-s <= pfs_mux8x1:inst.out
+sel[0] => inst11[0].IN0
+sel[0] => inst12.IN3
 sel[0] => pfs_mux8x1:inst.s[0]
+sel[1] => inst11[1].IN0
+sel[1] => inst13.IN2
 sel[1] => pfs_mux8x1:inst.s[1]
+sel[2] => inst12.IN1
+sel[2] => inst11[2].IN0
+sel[2] => inst13.IN1
+sel[2] => inst4.IN1
 sel[2] => pfs_mux8x1:inst.s[2]
+xsel[0] <= inst11[0].DB_MAX_OUTPUT_PORT_TYPE
+xsel[1] <= inst11[1].DB_MAX_OUTPUT_PORT_TYPE
+xsel[2] <= inst11[2].DB_MAX_OUTPUT_PORT_TYPE
+s <= pfs_mux8x1:inst.out
 
 
 |pfs_ula_4bits|pfs_ula_1bit:inst4|pfs_full_adder:inst5
@@ -533,6 +652,27 @@ co <= pfs_maj3:inst2.s
 
 
 |pfs_ula_4bits|pfs_ula_1bit:inst4|pfs_full_adder:inst5|pfs_maj3:inst2
+s <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+a => inst1.IN0
+a => inst.IN0
+c => inst1.IN1
+c => inst2.IN1
+b => inst2.IN0
+b => inst.IN1
+
+
+|pfs_ula_4bits|pfs_ula_1bit:inst4|pfs_full_adder:inst9
+sum <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => pfs_maj3:inst2.a
+y => inst.IN1
+y => pfs_maj3:inst2.b
+z => inst1.IN1
+z => pfs_maj3:inst2.c
+co <= pfs_maj3:inst2.s
+
+
+|pfs_ula_4bits|pfs_ula_1bit:inst4|pfs_full_adder:inst9|pfs_maj3:inst2
 s <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 a => inst1.IN0
 a => inst.IN0

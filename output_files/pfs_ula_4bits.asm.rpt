@@ -1,5 +1,5 @@
 Assembler report for pfs_ula_4bits
-Thu Apr 16 18:09:15 2026
+Thu Apr 16 22:53:37 2026
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -37,7 +37,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Thu Apr 16 18:09:15 2026 ;
+; Assembler Status      ; Successful - Thu Apr 16 22:53:37 2026 ;
 ; Revision Name         ; pfs_ula_4bits                         ;
 ; Top-level Entity Name ; pfs_ula_4bits                         ;
 ; Family                ; Cyclone IV GX                         ;
@@ -92,8 +92,8 @@ applicable agreement for further details.
 ; Option         ; Setting                                                            ;
 +----------------+--------------------------------------------------------------------+
 ; Device         ; EP4CGX15BF14C6                                                     ;
-; JTAG usercode  ; 0x000BFDE6                                                         ;
-; Checksum       ; 0x000BFDE6                                                         ;
+; JTAG usercode  ; 0x000C09F3                                                         ;
+; Checksum       ; 0x000C09F3                                                         ;
 +----------------+--------------------------------------------------------------------+
 
 
@@ -103,13 +103,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Thu Apr 16 18:09:14 2026
+    Info: Processing started: Thu Apr 16 22:53:36 2026
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off pfs_ula_4bits -c pfs_ula_4bits
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4633 megabytes
-    Info: Processing ended: Thu Apr 16 18:09:15 2026
+    Info: Processing ended: Thu Apr 16 22:53:37 2026
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

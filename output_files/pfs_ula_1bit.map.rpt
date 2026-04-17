@@ -1,5 +1,5 @@
 Analysis & Synthesis report for pfs_ula_1bit
-Thu Apr 16 18:27:55 2026
+Thu Apr 16 22:49:15 2026
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -41,13 +41,13 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Apr 16 18:27:55 2026      ;
+; Analysis & Synthesis Status        ; Successful - Thu Apr 16 22:49:15 2026      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; pfs_ula_1bit                               ;
 ; Top-level Entity Name              ; pfs_ula_1bit                               ;
 ; Family                             ; Cyclone IV GX                              ;
-; Total logic elements               ; 6                                          ;
-;     Total combinational functions  ; 6                                          ;
+; Total logic elements               ; 10                                         ;
+;     Total combinational functions  ; 10                                         ;
 ;     Dedicated logic registers      ; 0                                          ;
 ; Total registers                    ; 0                                          ;
 ; Total pins                         ; 11                                         ;
@@ -180,10 +180,10 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------+------------------+
 ; I/O pins                 ; 11               ;
 ; DSP block 9-bit elements ; 0                ;
-; Maximum fan-out node     ; sel[1]~input     ;
-; Maximum fan-out          ; 5                ;
-; Total fan-out            ; 37               ;
-; Average fan-out          ; 1.32             ;
+; Maximum fan-out node     ; x~input          ;
+; Maximum fan-out          ; 7                ;
+; Total fan-out            ; 52               ;
+; Average fan-out          ; 1.63             ;
 +--------------------------+------------------+
 
 
@@ -192,9 +192,10 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+------------------------------------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                            ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+------------------------------------------------+--------------+
-; |pfs_ula_1bit              ; 6 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 11   ; 0            ; |pfs_ula_1bit                                  ; work         ;
-;    |pfs_mux8x1:inst|       ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_ula_1bit|pfs_mux8x1:inst                  ; work         ;
-;       |pfs_mux2x1:inst3|   ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_ula_1bit|pfs_mux8x1:inst|pfs_mux2x1:inst3 ; work         ;
+; |pfs_ula_1bit              ; 10 (3)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 11   ; 0            ; |pfs_ula_1bit                                  ; work         ;
+;    |pfs_full_adder:inst7|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_ula_1bit|pfs_full_adder:inst7             ; work         ;
+;    |pfs_mux8x1:inst|       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_ula_1bit|pfs_mux8x1:inst                  ; work         ;
+;       |pfs_mux2x1:inst3|   ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_ula_1bit|pfs_mux8x1:inst|pfs_mux2x1:inst3 ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -229,7 +230,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Thu Apr 16 18:27:53 2026
+    Info: Processing started: Thu Apr 16 22:49:13 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pfs_ula_1bit -c pfs_ula_1bit
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file pfs_ula_1bit.bdf
@@ -256,13 +257,13 @@ Info (12128): Elaborating entity "pfs_mux4x1" for hierarchy "pfs_mux8x1:inst|pfs
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 17 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 21 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 6 input pins
     Info (21059): Implemented 5 output pins
-    Info (21061): Implemented 6 logic cells
+    Info (21061): Implemented 10 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 9 warnings
     Info: Peak virtual memory: 4669 megabytes
-    Info: Processing ended: Thu Apr 16 18:27:55 2026
+    Info: Processing ended: Thu Apr 16 22:49:15 2026
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 

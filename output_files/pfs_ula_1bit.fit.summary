@@ -1,12 +1,12 @@
-Fitter Status : Successful - Thu Apr 16 18:28:01 2026
+Fitter Status : Successful - Thu Apr 16 22:49:21 2026
 Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Web Edition
 Revision Name : pfs_ula_1bit
 Top-level Entity Name : pfs_ula_1bit
 Family : Cyclone IV GX
 Device : EP4CGX15BF14C6
 Timing Models : Final
-Total logic elements : 6 / 14,400 ( < 1 % )
-    Total combinational functions : 6 / 14,400 ( < 1 % )
+Total logic elements : 10 / 14,400 ( < 1 % )
+    Total combinational functions : 10 / 14,400 ( < 1 % )
     Dedicated logic registers : 0 / 14,400 ( 0 % )
 Total registers : 0
 Total pins : 11 / 81 ( 14 % )
