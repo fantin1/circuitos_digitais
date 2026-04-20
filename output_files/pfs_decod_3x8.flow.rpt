@@ -1,5 +1,5 @@
 Flow report for pfs_decod_3x8
-Fri Apr 17 09:41:41 2026
+Mon Apr 20 19:53:02 2026
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Fri Apr 17 09:41:41 2026      ;
+; Flow Status                        ; Successful - Mon Apr 20 19:53:02 2026      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; pfs_decod_3x8                              ;
 ; Top-level Entity Name              ; pfs_decod_3x8                              ;
@@ -68,7 +68,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/17/2026 09:41:23 ;
+; Start date & time ; 04/20/2026 19:52:40 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; pfs_decod_3x8       ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                       ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 128454786833489.177642968309876             ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 128454786833489.177672555909976             ; --            ; --          ; --             ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                          ; --            ; --          ; eda_simulation ;
 ; EDA_NETLIST_WRITER_OUTPUT_DIR       ; C:/Users/p-fan/apps/cd_pfs/simulation/qsim/ ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                                 ; --            ; --          ; eda_simulation ;
@@ -96,12 +96,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 4658 MB             ; 00:00:01                           ;
-; Fitter                    ; 00:00:05     ; 1.0                     ; 5030 MB             ; 00:00:05                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 4621 MB             ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 4635 MB             ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4576 MB             ; 00:00:01                           ;
-; Total                     ; 00:00:10     ; --                      ; --                  ; 00:00:10                           ;
+; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 4662 MB             ; 00:00:01                           ;
+; Fitter                    ; 00:00:09     ; 1.0                     ; 5019 MB             ; 00:00:06                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 4622 MB             ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 4631 MB             ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4577 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:16     ; --                      ; --                  ; 00:00:11                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
