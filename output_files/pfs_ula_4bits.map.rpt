@@ -1,5 +1,5 @@
 Analysis & Synthesis report for pfs_ula_4bits
-Mon Apr 20 20:10:48 2026
+Mon Apr 20 23:46:10 2026
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -42,13 +42,13 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Apr 20 20:10:48 2026      ;
+; Analysis & Synthesis Status        ; Successful - Mon Apr 20 23:46:10 2026      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; pfs_ula_4bits                              ;
 ; Top-level Entity Name              ; pfs_ula_4bits                              ;
 ; Family                             ; Cyclone IV GX                              ;
-; Total logic elements               ; 50                                         ;
-;     Total combinational functions  ; 50                                         ;
+; Total logic elements               ; 51                                         ;
+;     Total combinational functions  ; 51                                         ;
 ;     Dedicated logic registers      ; 0                                          ;
 ; Total registers                    ; 0                                          ;
 ; Total pins                         ; 20                                         ;
@@ -185,8 +185,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; DSP block 9-bit elements ; 0                ;
 ; Maximum fan-out node     ; sel[1]~input     ;
 ; Maximum fan-out          ; 23               ;
-; Total fan-out            ; 211              ;
-; Average fan-out          ; 2.34             ;
+; Total fan-out            ; 217              ;
+; Average fan-out          ; 2.38             ;
 +--------------------------+------------------+
 
 
@@ -195,8 +195,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node     ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                ; Library Name ;
 +--------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+------------------------------------------------------------------------------------+--------------+
-; |pfs_ula_4bits                 ; 50 (10)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 20   ; 0            ; |pfs_ula_4bits                                                                     ; work         ;
-;    |pfs_decod_3x8:inst1|       ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_ula_4bits|pfs_decod_3x8:inst1                                                 ; work         ;
+; |pfs_ula_4bits                 ; 51 (11)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 20   ; 0            ; |pfs_ula_4bits                                                                     ; work         ;
+;    |pfs_decod_3x8:inst1|       ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_ula_4bits|pfs_decod_3x8:inst1                                                 ; work         ;
 ;    |pfs_ula_1bit:inst3|        ; 8 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_ula_4bits|pfs_ula_1bit:inst3                                                  ; work         ;
 ;       |pfs_full_adder:inst7|   ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_ula_4bits|pfs_ula_1bit:inst3|pfs_full_adder:inst7                             ; work         ;
 ;          |pfs_maj3:inst2|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_ula_4bits|pfs_ula_1bit:inst3|pfs_full_adder:inst7|pfs_maj3:inst2              ; work         ;
@@ -212,10 +212,10 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;          |pfs_mux2x1:inst3|    ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_ula_4bits|pfs_ula_1bit:inst7|pfs_mux8x1:inst|pfs_mux2x1:inst3                 ; work         ;
 ;          |pfs_mux4x1:inst|     ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_ula_4bits|pfs_ula_1bit:inst7|pfs_mux8x1:inst|pfs_mux4x1:inst                  ; work         ;
 ;             |pfs_mux2x1:inst4| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_ula_4bits|pfs_ula_1bit:inst7|pfs_mux8x1:inst|pfs_mux4x1:inst|pfs_mux2x1:inst4 ; work         ;
-;    |pfs_ula_1bit:inst|         ; 11 (4)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_ula_4bits|pfs_ula_1bit:inst                                                   ; work         ;
+;    |pfs_ula_1bit:inst|         ; 10 (4)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_ula_4bits|pfs_ula_1bit:inst                                                   ; work         ;
 ;       |pfs_full_adder:inst9|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_ula_4bits|pfs_ula_1bit:inst|pfs_full_adder:inst9                              ; work         ;
-;       |pfs_mux8x1:inst|        ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_ula_4bits|pfs_ula_1bit:inst|pfs_mux8x1:inst                                   ; work         ;
-;          |pfs_mux2x1:inst3|    ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_ula_4bits|pfs_ula_1bit:inst|pfs_mux8x1:inst|pfs_mux2x1:inst3                  ; work         ;
+;       |pfs_mux8x1:inst|        ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_ula_4bits|pfs_ula_1bit:inst|pfs_mux8x1:inst                                   ; work         ;
+;          |pfs_mux2x1:inst3|    ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_ula_4bits|pfs_ula_1bit:inst|pfs_mux8x1:inst|pfs_mux2x1:inst3                  ; work         ;
 ;          |pfs_mux4x1:inst|     ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_ula_4bits|pfs_ula_1bit:inst|pfs_mux8x1:inst|pfs_mux4x1:inst                   ; work         ;
 ;             |pfs_mux2x1:inst4| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_ula_4bits|pfs_ula_1bit:inst|pfs_mux8x1:inst|pfs_mux4x1:inst|pfs_mux2x1:inst4  ; work         ;
 +--------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+------------------------------------------------------------------------------------+--------------+
@@ -261,12 +261,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Mon Apr 20 20:10:46 2026
+    Info: Processing started: Mon Apr 20 23:46:07 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pfs_ula_4bits -c pfs_ula_4bits
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file pfs_ula_4bits.bdf
     Info (12023): Found entity 1: pfs_ula_4bits
 Info (12127): Elaborating entity "pfs_ula_4bits" for the top level hierarchy
+Warning (275008): Primitive "NOT" of instance "inst11" not used
 Warning (12125): Using design file pfs_ula_1bit.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: pfs_ula_1bit
 Info (12128): Elaborating entity "pfs_ula_1bit" for hierarchy "pfs_ula_1bit:inst3"
@@ -308,14 +309,14 @@ Warning (275080): Converted elements in bus name "a" using legacy naming rules. 
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 70 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 71 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 11 input pins
     Info (21059): Implemented 9 output pins
-    Info (21061): Implemented 50 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 25 warnings
-    Info: Peak virtual memory: 4674 megabytes
-    Info: Processing ended: Mon Apr 20 20:10:48 2026
-    Info: Elapsed time: 00:00:02
+    Info (21061): Implemented 51 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 26 warnings
+    Info: Peak virtual memory: 4673 megabytes
+    Info: Processing ended: Mon Apr 20 23:46:10 2026
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:02
 
 
