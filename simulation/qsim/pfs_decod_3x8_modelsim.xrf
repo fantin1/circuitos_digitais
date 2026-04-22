@@ -1,6 +1,7 @@
 vendor_name = ModelSim
 source_file = 1, C:/Users/p-fan/apps/cd_pfs/pfs_decod_3x8.bdf
 source_file = 1, C:/Users/p-fan/apps/cd_pfs/Waveform34.vwf
+source_file = 1, C:/Users/p-fan/apps/cd_pfs/Waveform42.vwf
 source_file = 1, C:/Users/p-fan/apps/cd_pfs/db/pfs_decod_3x8.cbx.xml
 design_name = pfs_decod_3x8
 instance = comp, \out0~output , out0~output, pfs_decod_3x8, 1

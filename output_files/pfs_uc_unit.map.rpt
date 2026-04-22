@@ -1,5 +1,5 @@
 Analysis & Synthesis report for pfs_uc_unit
-Mon Apr 13 13:39:39 2026
+Tue Apr 21 17:12:12 2026
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -41,7 +41,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Apr 13 13:39:39 2026      ;
+; Analysis & Synthesis Status        ; Successful - Tue Apr 21 17:12:12 2026      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; pfs_uc_unit                                ;
 ; Top-level Entity Name              ; pfs_uc_unit                                ;
@@ -50,7 +50,7 @@ applicable agreement for further details.
 ;     Total combinational functions  ; 2                                          ;
 ;     Dedicated logic registers      ; 1                                          ;
 ; Total registers                    ; 1                                          ;
-; Total pins                         ; 6                                          ;
+; Total pins                         ; 8                                          ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
@@ -159,13 +159,14 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                         ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path               ; Library ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------+---------+
-; pfs_uc_unit.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/Users/p-fan/apps/cd_pfs/pfs_uc_unit.bdf ;         ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                ;
++----------------------------------+-----------------+------------------------------------------+---------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                ; Library ;
++----------------------------------+-----------------+------------------------------------------+---------------------------------------------+---------+
+; pfs_uc_unit.bdf                  ; yes             ; User Block Diagram/Schematic File        ; C:/Users/p-fan/apps/cd_pfs/pfs_uc_unit.bdf  ;         ;
+; pfs_decod2x4.bdf                 ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/p-fan/apps/cd_pfs/pfs_decod2x4.bdf ;         ;
++----------------------------------+-----------------+------------------------------------------+---------------------------------------------+---------+
 
 
 +---------------------------------------------+
@@ -173,12 +174,12 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------+------------------+
 ; Resource                 ; Usage            ;
 +--------------------------+------------------+
-; I/O pins                 ; 6                ;
+; I/O pins                 ; 8                ;
 ; DSP block 9-bit elements ; 0                ;
 ; Maximum fan-out node     ; inst             ;
 ; Maximum fan-out          ; 2                ;
-; Total fan-out            ; 16               ;
-; Average fan-out          ; 1.07             ;
+; Total fan-out            ; 19               ;
+; Average fan-out          ; 1.00             ;
 +--------------------------+------------------+
 
 
@@ -187,7 +188,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
-; |pfs_uc_unit               ; 2 (2)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 6    ; 0            ; |pfs_uc_unit        ; work         ;
+; |pfs_uc_unit               ; 2 (2)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 8    ; 0            ; |pfs_uc_unit        ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -222,23 +223,26 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Mon Apr 13 13:39:38 2026
+    Info: Processing started: Tue Apr 21 17:12:10 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pfs_uc_unit -c pfs_uc_unit
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file pfs_uc_unit.bdf
     Info (12023): Found entity 1: pfs_uc_unit
 Info (12127): Elaborating entity "pfs_uc_unit" for the top level hierarchy
+Warning (12125): Using design file pfs_decod2x4.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: pfs_decod2x4
+Info (12128): Elaborating entity "pfs_decod2x4" for hierarchy "pfs_decod2x4:inst5"
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 8 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 4 input pins
+Info (21057): Implemented 10 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 6 input pins
     Info (21059): Implemented 2 output pins
     Info (21061): Implemented 2 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4665 megabytes
-    Info: Processing ended: Mon Apr 13 13:39:39 2026
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 4673 megabytes
+    Info: Processing ended: Tue Apr 21 17:12:12 2026
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 

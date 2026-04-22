@@ -1,5 +1,5 @@
 Flow report for pfs_ula_4bits
-Mon Apr 20 23:48:37 2026
+Tue Apr 21 13:07:49 2026
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Mon Apr 20 23:48:37 2026      ;
+; Flow Status                        ; Successful - Tue Apr 21 13:07:49 2026      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; pfs_ula_4bits                              ;
 ; Top-level Entity Name              ; pfs_ula_4bits                              ;
@@ -107,7 +107,37 @@ applicable agreement for further details.
 ; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4588 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4588 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4588 MB             ; 00:00:01                           ;
-; Total                     ; 00:00:20     ; --                      ; --                  ; 00:00:18                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4588 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4588 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4588 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4588 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4588 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4588 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4589 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4588 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4588 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4588 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4588 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4588 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4588 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4588 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4588 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4588 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4588 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4588 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4588 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4588 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4588 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4588 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4588 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4588 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4588 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4588 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4588 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4588 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4588 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4588 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:39     ; --                      ; --                  ; 00:00:48                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -120,6 +150,36 @@ applicable agreement for further details.
 ; Fitter                    ; DESKTOP-B0TD6TU  ; Windows 7 ; 6.2        ; x86_64         ;
 ; Assembler                 ; DESKTOP-B0TD6TU  ; Windows 7 ; 6.2        ; x86_64         ;
 ; TimeQuest Timing Analyzer ; DESKTOP-B0TD6TU  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-B0TD6TU  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-B0TD6TU  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-B0TD6TU  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-B0TD6TU  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-B0TD6TU  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-B0TD6TU  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-B0TD6TU  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-B0TD6TU  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-B0TD6TU  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-B0TD6TU  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-B0TD6TU  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-B0TD6TU  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-B0TD6TU  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-B0TD6TU  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-B0TD6TU  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-B0TD6TU  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-B0TD6TU  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-B0TD6TU  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-B0TD6TU  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-B0TD6TU  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-B0TD6TU  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-B0TD6TU  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-B0TD6TU  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-B0TD6TU  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-B0TD6TU  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-B0TD6TU  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-B0TD6TU  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-B0TD6TU  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-B0TD6TU  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-B0TD6TU  ; Windows 7 ; 6.2        ; x86_64         ;
 ; EDA Netlist Writer        ; DESKTOP-B0TD6TU  ; Windows 7 ; 6.2        ; x86_64         ;
 ; EDA Netlist Writer        ; DESKTOP-B0TD6TU  ; Windows 7 ; 6.2        ; x86_64         ;
 ; EDA Netlist Writer        ; DESKTOP-B0TD6TU  ; Windows 7 ; 6.2        ; x86_64         ;
@@ -143,6 +203,36 @@ quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_
 quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog pfs_ula_4bits -c pfs_ula_4bits --vector_source=C:/Users/p-fan/apps/cd_pfs/Waveform41.vwf --testbench_file=C:/Users/p-fan/apps/cd_pfs/simulation/qsim/Waveform41.vwf.vt
 quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/p-fan/apps/cd_pfs/simulation/qsim/ pfs_ula_4bits -c pfs_ula_4bits
 quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog pfs_ula_4bits -c pfs_ula_4bits --vector_source=C:/Users/p-fan/apps/cd_pfs/Waveform41.vwf --testbench_file=C:/Users/p-fan/apps/cd_pfs/simulation/qsim/Waveform41.vwf.vt
+quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/p-fan/apps/cd_pfs/simulation/qsim/ pfs_ula_4bits -c pfs_ula_4bits
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog pfs_ula_4bits -c pfs_ula_4bits --vector_source=C:/Users/p-fan/apps/cd_pfs/SHR.vwf --testbench_file=C:/Users/p-fan/apps/cd_pfs/simulation/qsim/SHR.vwf.vt
+quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/p-fan/apps/cd_pfs/simulation/qsim/ pfs_ula_4bits -c pfs_ula_4bits
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog pfs_ula_4bits -c pfs_ula_4bits --vector_source=C:/Users/p-fan/apps/cd_pfs/Waveform43.vwf --testbench_file=C:/Users/p-fan/apps/cd_pfs/simulation/qsim/Waveform43.vwf.vt
+quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/p-fan/apps/cd_pfs/simulation/qsim/ pfs_ula_4bits -c pfs_ula_4bits
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog pfs_ula_4bits -c pfs_ula_4bits --vector_source=C:/Users/p-fan/apps/cd_pfs/Waveform43.vwf --testbench_file=C:/Users/p-fan/apps/cd_pfs/simulation/qsim/Waveform43.vwf.vt
+quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/p-fan/apps/cd_pfs/simulation/qsim/ pfs_ula_4bits -c pfs_ula_4bits
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog pfs_ula_4bits -c pfs_ula_4bits --vector_source=C:/Users/p-fan/apps/cd_pfs/Waveform43.vwf --testbench_file=C:/Users/p-fan/apps/cd_pfs/simulation/qsim/Waveform43.vwf.vt
+quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/p-fan/apps/cd_pfs/simulation/qsim/ pfs_ula_4bits -c pfs_ula_4bits
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog pfs_ula_4bits -c pfs_ula_4bits --vector_source=C:/Users/p-fan/apps/cd_pfs/Waveform43.vwf --testbench_file=C:/Users/p-fan/apps/cd_pfs/simulation/qsim/Waveform43.vwf.vt
+quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/p-fan/apps/cd_pfs/simulation/qsim/ pfs_ula_4bits -c pfs_ula_4bits
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog pfs_ula_4bits -c pfs_ula_4bits --vector_source=C:/Users/p-fan/apps/cd_pfs/Waveform43.vwf --testbench_file=C:/Users/p-fan/apps/cd_pfs/simulation/qsim/Waveform43.vwf.vt
+quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/p-fan/apps/cd_pfs/simulation/qsim/ pfs_ula_4bits -c pfs_ula_4bits
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog pfs_ula_4bits -c pfs_ula_4bits --vector_source=C:/Users/p-fan/apps/cd_pfs/Waveform43.vwf --testbench_file=C:/Users/p-fan/apps/cd_pfs/simulation/qsim/Waveform43.vwf.vt
+quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/p-fan/apps/cd_pfs/simulation/qsim/ pfs_ula_4bits -c pfs_ula_4bits
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog pfs_ula_4bits -c pfs_ula_4bits --vector_source=C:/Users/p-fan/apps/cd_pfs/Waveform43.vwf --testbench_file=C:/Users/p-fan/apps/cd_pfs/simulation/qsim/Waveform43.vwf.vt
+quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/p-fan/apps/cd_pfs/simulation/qsim/ pfs_ula_4bits -c pfs_ula_4bits
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog pfs_ula_4bits -c pfs_ula_4bits --vector_source=C:/Users/p-fan/apps/cd_pfs/Waveform43.vwf --testbench_file=C:/Users/p-fan/apps/cd_pfs/simulation/qsim/Waveform43.vwf.vt
+quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/p-fan/apps/cd_pfs/simulation/qsim/ pfs_ula_4bits -c pfs_ula_4bits
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog pfs_ula_4bits -c pfs_ula_4bits --vector_source=C:/Users/p-fan/apps/cd_pfs/Waveform43.vwf --testbench_file=C:/Users/p-fan/apps/cd_pfs/simulation/qsim/Waveform43.vwf.vt
+quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/p-fan/apps/cd_pfs/simulation/qsim/ pfs_ula_4bits -c pfs_ula_4bits
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog pfs_ula_4bits -c pfs_ula_4bits --vector_source=C:/Users/p-fan/apps/cd_pfs/Waveform43.vwf --testbench_file=C:/Users/p-fan/apps/cd_pfs/simulation/qsim/Waveform43.vwf.vt
+quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/p-fan/apps/cd_pfs/simulation/qsim/ pfs_ula_4bits -c pfs_ula_4bits
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog pfs_ula_4bits -c pfs_ula_4bits --vector_source=C:/Users/p-fan/apps/cd_pfs/Waveform43.vwf --testbench_file=C:/Users/p-fan/apps/cd_pfs/simulation/qsim/Waveform43.vwf.vt
+quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/p-fan/apps/cd_pfs/simulation/qsim/ pfs_ula_4bits -c pfs_ula_4bits
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog pfs_ula_4bits -c pfs_ula_4bits --vector_source=C:/Users/p-fan/apps/cd_pfs/Waveform43.vwf --testbench_file=C:/Users/p-fan/apps/cd_pfs/simulation/qsim/Waveform43.vwf.vt
+quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/p-fan/apps/cd_pfs/simulation/qsim/ pfs_ula_4bits -c pfs_ula_4bits
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog pfs_ula_4bits -c pfs_ula_4bits --vector_source=C:/Users/p-fan/apps/cd_pfs/Waveform43.vwf --testbench_file=C:/Users/p-fan/apps/cd_pfs/simulation/qsim/Waveform43.vwf.vt
+quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/p-fan/apps/cd_pfs/simulation/qsim/ pfs_ula_4bits -c pfs_ula_4bits
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog pfs_ula_4bits -c pfs_ula_4bits --vector_source=C:/Users/p-fan/apps/cd_pfs/Waveform43.vwf --testbench_file=C:/Users/p-fan/apps/cd_pfs/simulation/qsim/Waveform43.vwf.vt
 quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/p-fan/apps/cd_pfs/simulation/qsim/ pfs_ula_4bits -c pfs_ula_4bits
 
 

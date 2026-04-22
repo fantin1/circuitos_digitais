@@ -5,8 +5,8 @@ entity pfs_uc_unit is
         sq              : out    vl_logic;
         reset           : in     vl_logic;
         ck              : in     vl_logic;
-        eand            : in     vl_logic;
         eq              : in     vl_logic;
+        eand            : in     vl_logic;
         sand            : out    vl_logic
     );
 end pfs_uc_unit;
