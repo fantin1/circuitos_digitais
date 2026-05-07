@@ -21,7 +21,7 @@ applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 144 656 312 672)
+	(rect 24 552 192 568)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "r" (rect 5 0 8 12)(font "Arial" ))
 	(pt 168 8)
@@ -37,7 +37,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 144 632 312 648)
+	(rect 24 528 192 544)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "ck" (rect 5 0 16 12)(font "Arial" ))
 	(pt 168 8)
@@ -53,7 +53,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 144 680 312 696)
+	(rect 24 576 192 592)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "sel[1..0]" (rect 5 0 45 12)(font "Arial" ))
 	(pt 168 8)
@@ -69,9 +69,9 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 144 608 312 624)
+	(rect 24 504 192 520)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "d[3..0]" (rect 5 0 37 12)(font "Arial" ))
+	(text "d[3..0]" (rect 5 0 36 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -85,7 +85,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 464 608 640 624)
+	(rect 344 504 520 520)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "q[3..0]" (rect 90 0 121 12)(font "Arial" ))
 	(pt 0 8)
@@ -100,7 +100,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect -256 280 -136 408)
+	(rect -96 280 24 408)
 	(text "pfs_decod2x4" (rect 5 0 87 14)(font "Arial" (font_size 8)))
 	(text "inst6" (rect 8 112 31 124)(font "Arial" ))
 	(port
@@ -212,31 +212,6 @@ applicable agreement for further details.
 	(rect 96 288 144 320)
 	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
 	(text "inst13" (rect 3 21 32 33)(font "Arial" ))
-	(port
-		(pt 0 16)
-		(input)
-		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
-		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
-		(line (pt 0 16)(pt 13 16))
-	)
-	(port
-		(pt 48 16)
-		(output)
-		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(line (pt 39 16)(pt 48 16))
-	)
-	(drawing
-		(line (pt 13 25)(pt 13 7))
-		(line (pt 13 7)(pt 31 16))
-		(line (pt 13 25)(pt 31 16))
-		(circle (rect 31 12 39 20))
-	)
-)
-(symbol
-	(rect -16 448 32 480)
-	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
-	(text "inst5" (rect 3 21 26 33)(font "Arial" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -543,38 +518,8 @@ applicable agreement for further details.
 	(pt 176 336)
 )
 (connector
-	(text "sel[1..0]" (rect -296 296 -256 308)(font "Arial" ))
-	(pt -256 312)
-	(pt -304 312)
-	(bus)
-)
-(connector
-	(pt -136 328)
-	(pt -80 328)
-)
-(connector
 	(pt 176 352)
 	(pt 96 352)
-)
-(connector
-	(pt 96 304)
-	(pt 96 344)
-)
-(connector
-	(pt 96 344)
-	(pt 96 352)
-)
-(connector
-	(pt -136 344)
-	(pt 96 344)
-)
-(connector
-	(pt -80 328)
-	(pt -80 272)
-)
-(connector
-	(pt -80 272)
-	(pt 160 272)
 )
 (connector
 	(pt 264 328)
@@ -607,32 +552,6 @@ applicable agreement for further details.
 (connector
 	(pt 160 280)
 	(pt 160 336)
-)
-(connector
-	(pt -136 360)
-	(pt -64 360)
-)
-(connector
-	(pt -64 464)
-	(pt -16 464)
-)
-(connector
-	(pt -64 488)
-	(pt -64 464)
-)
-(connector
-	(pt -64 464)
-	(pt -64 360)
-)
-(connector
-	(text "xe3" (rect 40 448 57 460)(font "Arial" ))
-	(pt 32 464)
-	(pt 56 464)
-)
-(connector
-	(text "e3" (rect 40 472 51 484)(font "Arial" ))
-	(pt -64 488)
-	(pt 48 488)
 )
 (connector
 	(text "ck" (rect 496 344 507 356)(font "Arial" ))
@@ -734,6 +653,35 @@ applicable agreement for further details.
 	(pt 992 408)
 	(pt 936 408)
 )
+(connector
+	(pt 160 272)
+	(pt 56 272)
+)
+(connector
+	(pt 96 344)
+	(pt 24 344)
+)
+(connector
+	(text "sel[1..0]" (rect -136 296 -96 308)(font "Arial" ))
+	(pt -144 312)
+	(pt -96 312)
+	(bus)
+)
+(connector
+	(pt 56 328)
+	(pt 24 328)
+)
+(connector
+	(pt 56 272)
+	(pt 56 328)
+)
+(connector
+	(pt 96 304)
+	(pt 96 344)
+)
+(connector
+	(pt 96 344)
+	(pt 96 352)
+)
 (junction (pt 96 344))
 (junction (pt 160 280))
-(junction (pt -64 464))

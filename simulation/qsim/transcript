@@ -27,5 +27,5 @@
 # Loading work.pfs_uc4_vlg_check_tst
 # Loading altera_ver.PRIM_GDFF_LOW
 # Simulation passed !
-# ** Note: $finish    : Waveform2.vwf.vt(207)
+# ** Note: $finish    : Waveform6.vwf.vt(207)
 #    Time: 1 us  Iteration: 0  Instance: /pfs_uc4_vlg_vec_tst/tb_out

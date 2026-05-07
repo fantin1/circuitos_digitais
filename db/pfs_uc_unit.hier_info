@@ -1,13 +1,14 @@
 |pfs_uc_unit
-sq <= inst.DB_MAX_OUTPUT_PORT_TYPE
+sq <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+d => inst11.IN0
+sel[0] => pfs_decod2x4:inst5.sel[0]
+sel[1] => pfs_decod2x4:inst5.sel[1]
 reset => inst4.IN0
 ck => inst.CLK
 eq => inst9.IN0
 eq => inst3.IN0
 eand => inst8.IN1
 eand => inst3.IN1
-sel[0] => pfs_decod2x4:inst5.sel[0]
-sel[1] => pfs_decod2x4:inst5.sel[1]
 sand <= inst7.DB_MAX_OUTPUT_PORT_TYPE
 
 

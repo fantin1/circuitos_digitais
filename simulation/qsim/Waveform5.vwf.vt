@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "04/13/2026 13:38:06"
+// Generated on "04/22/2026 21:46:09"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    pfs_uc_unit
 // 
@@ -28,20 +28,24 @@
 `timescale 1 ps/ 1 ps
 module pfs_uc_unit_vlg_sample_tst(
 	ck,
+	d,
 	eand,
 	eq,
 	reset,
+	sel,
 	sampler_tx
 );
 input  ck;
+input  d;
 input  eand;
 input  eq;
 input  reset;
+input [1:0] sel;
 output sampler_tx;
 
 reg sample;
 time current_time;
-always @(ck or eand or eq or reset)
+always @(ck or d or eand or eq or reset or sel)
                                                                                 
 begin                                                 
  if ($realtime > 0)                                   
@@ -186,9 +190,11 @@ module pfs_uc_unit_vlg_vec_tst();
 // constants                                           
 // general purpose registers
 reg ck;
+reg d;
 reg eand;
 reg eq;
 reg reset;
+reg [1:0] sel;
 // wires                                               
 wire sand;
 wire sq;
@@ -199,10 +205,12 @@ wire sampler;
 pfs_uc_unit i1 (
 // port map - connection between master ports and signals/registers   
 	.ck(ck),
+	.d(d),
 	.eand(eand),
 	.eq(eq),
 	.reset(reset),
 	.sand(sand),
+	.sel(sel),
 	.sq(sq)
 );
 
@@ -213,26 +221,6 @@ begin
 	reset = #10000 1'b0;
 end 
 
-// eand
-always
-begin
-	eand = 1'b0;
-	eand = #100000 1'b1;
-	#100000;
-end 
-
-// eq
-initial
-begin
-	repeat(2)
-	begin
-		eq = 1'b0;
-		eq = #200000 1'b1;
-		# 200000;
-	end
-	eq = 1'b0;
-end 
-
 // ck
 always
 begin
@@ -240,12 +228,65 @@ begin
 	ck = #5000 1'b1;
 	#5000;
 end 
+// sel[ 1 ]
+initial
+begin
+	repeat(3)
+	begin
+		sel[1] = 1'b0;
+		sel[1] = #160000 1'b1;
+		# 160000;
+	end
+	sel[1] = 1'b0;
+end 
+// sel[ 0 ]
+initial
+begin
+	repeat(6)
+	begin
+		sel[0] = 1'b0;
+		sel[0] = #80000 1'b1;
+		# 80000;
+	end
+	sel[0] = 1'b0;
+end 
+
+// d
+initial
+begin
+	d = 1'b0;
+	d = #320000 1'b1;
+	d = #320000 1'b0;
+	d = #320000 1'b1;
+end 
+
+// eand
+always
+begin
+	eand = 1'b0;
+	eand = #20000 1'b1;
+	#20000;
+end 
+
+// eq
+initial
+begin
+	repeat(12)
+	begin
+		eq = 1'b0;
+		eq = #40000 1'b1;
+		# 40000;
+	end
+	eq = 1'b0;
+end 
 
 pfs_uc_unit_vlg_sample_tst tb_sample (
 	.ck(ck),
+	.d(d),
 	.eand(eand),
 	.eq(eq),
 	.reset(reset),
+	.sel(sel),
 	.sampler_tx(sampler)
 );
 
