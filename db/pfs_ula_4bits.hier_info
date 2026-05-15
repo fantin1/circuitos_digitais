@@ -70,9 +70,6 @@ sel[2] => inst11[2].IN0
 sel[2] => inst13.IN1
 sel[2] => inst4.IN1
 sel[2] => pfs_mux8x1:inst.s[2]
-xsel[0] <= inst11[0].DB_MAX_OUTPUT_PORT_TYPE
-xsel[1] <= inst11[1].DB_MAX_OUTPUT_PORT_TYPE
-xsel[2] <= inst11[2].DB_MAX_OUTPUT_PORT_TYPE
 s <= pfs_mux8x1:inst.out
 
 
@@ -287,9 +284,6 @@ sel[2] => inst11[2].IN0
 sel[2] => inst13.IN1
 sel[2] => inst4.IN1
 sel[2] => pfs_mux8x1:inst.s[2]
-xsel[0] <= inst11[0].DB_MAX_OUTPUT_PORT_TYPE
-xsel[1] <= inst11[1].DB_MAX_OUTPUT_PORT_TYPE
-xsel[2] <= inst11[2].DB_MAX_OUTPUT_PORT_TYPE
 s <= pfs_mux8x1:inst.out
 
 
@@ -478,9 +472,6 @@ sel[2] => inst11[2].IN0
 sel[2] => inst13.IN1
 sel[2] => inst4.IN1
 sel[2] => pfs_mux8x1:inst.s[2]
-xsel[0] <= inst11[0].DB_MAX_OUTPUT_PORT_TYPE
-xsel[1] <= inst11[1].DB_MAX_OUTPUT_PORT_TYPE
-xsel[2] <= inst11[2].DB_MAX_OUTPUT_PORT_TYPE
 s <= pfs_mux8x1:inst.out
 
 
@@ -669,9 +660,6 @@ sel[2] => inst11[2].IN0
 sel[2] => inst13.IN1
 sel[2] => inst4.IN1
 sel[2] => pfs_mux8x1:inst.s[2]
-xsel[0] <= inst11[0].DB_MAX_OUTPUT_PORT_TYPE
-xsel[1] <= inst11[1].DB_MAX_OUTPUT_PORT_TYPE
-xsel[2] <= inst11[2].DB_MAX_OUTPUT_PORT_TYPE
 s <= pfs_mux8x1:inst.out
 
 
