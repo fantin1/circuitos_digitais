@@ -9,6 +9,8 @@ entity pfs_neander_control_vlg_check_tst is
         cg_RI           : in     vl_logic;
         inc_PC          : in     vl_logic;
         mux_REM         : in     vl_logic;
+        t               : in     vl_logic_vector(7 downto 0);
+        temp_in         : in     vl_logic_vector(2 downto 0);
         sampler_rx      : in     vl_logic
     );
 end pfs_neander_control_vlg_check_tst;

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for pfs_neander_control
-Thu May 21 22:21:33 2026
+Sun Jun 07 07:58:19 2026
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -41,16 +41,16 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu May 21 22:21:33 2026      ;
+; Analysis & Synthesis Status        ; Successful - Sun Jun 07 07:58:19 2026      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; pfs_neander_control                        ;
 ; Top-level Entity Name              ; pfs_neander_control                        ;
 ; Family                             ; Cyclone IV GX                              ;
-; Total logic elements               ; 16                                         ;
-;     Total combinational functions  ; 16                                         ;
-;     Dedicated logic registers      ; 0                                          ;
-; Total registers                    ; 0                                          ;
-; Total pins                         ; 17                                         ;
+; Total logic elements               ; 25                                         ;
+;     Total combinational functions  ; 25                                         ;
+;     Dedicated logic registers      ; 3                                          ;
+; Total registers                    ; 3                                          ;
+; Total pins                         ; 29                                         ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
@@ -167,31 +167,38 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; pfs_neander_control.bdf          ; yes             ; User Block Diagram/Schematic File        ; C:/Users/p-fan/apps/cd_pfs/pfs_neander_control.bdf ;         ;
 ; pfs_decod4x16.bdf                ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/p-fan/apps/cd_pfs/pfs_decod4x16.bdf       ;         ;
 ; pfs_decod_3x8.bdf                ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/p-fan/apps/cd_pfs/pfs_decod_3x8.bdf       ;         ;
+; pfs_neander_temp.bdf             ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/p-fan/apps/cd_pfs/pfs_neander_temp.bdf    ;         ;
+; pfs_uc_unit.bdf                  ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/p-fan/apps/cd_pfs/pfs_uc_unit.bdf         ;         ;
+; pfs_decod2x4.bdf                 ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/p-fan/apps/cd_pfs/pfs_decod2x4.bdf        ;         ;
 +----------------------------------+-----------------+------------------------------------------+----------------------------------------------------+---------+
 
 
-+---------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary ;
-+--------------------------+------------------+
-; Resource                 ; Usage            ;
-+--------------------------+------------------+
-; I/O pins                 ; 17               ;
-; DSP block 9-bit elements ; 0                ;
-; Maximum fan-out node     ; temp_in[2]~input ;
-; Maximum fan-out          ; 8                ;
-; Total fan-out            ; 84               ;
-; Average fan-out          ; 1.68             ;
-+--------------------------+------------------+
++--------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                              ;
++--------------------------+-----------------------------------------------+
+; Resource                 ; Usage                                         ;
++--------------------------+-----------------------------------------------+
+; I/O pins                 ; 29                                            ;
+; DSP block 9-bit elements ; 0                                             ;
+; Maximum fan-out node     ; pfs_neander_temp:inst1|pfs_uc_unit:inst2|inst ;
+; Maximum fan-out          ; 16                                            ;
+; Total fan-out            ; 140                                           ;
+; Average fan-out          ; 1.63                                          ;
++--------------------------+-----------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                     ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------------------+--------------+
-; |pfs_neander_control       ; 16 (15)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 17   ; 0            ; |pfs_neander_control                    ; work         ;
-;    |pfs_decod_3x8:inst|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_neander_control|pfs_decod_3x8:inst ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                ;
++-----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node  ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                                           ; Library Name ;
++-----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------------------------------------------------+--------------+
+; |pfs_neander_control        ; 25 (14)           ; 3 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 29   ; 0            ; |pfs_neander_control                                          ; work         ;
+;    |pfs_decod_3x8:inst|     ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_neander_control|pfs_decod_3x8:inst                       ; work         ;
+;    |pfs_neander_temp:inst1| ; 3 (0)             ; 3 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_neander_control|pfs_neander_temp:inst1                   ; work         ;
+;       |pfs_uc_unit:inst2|   ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_neander_control|pfs_neander_temp:inst1|pfs_uc_unit:inst2 ; work         ;
+;       |pfs_uc_unit:inst3|   ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_neander_control|pfs_neander_temp:inst1|pfs_uc_unit:inst3 ; work         ;
+;       |pfs_uc_unit:inst4|   ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_neander_control|pfs_neander_temp:inst1|pfs_uc_unit:inst4 ; work         ;
++-----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -200,10 +207,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
+; Total registers                              ; 3     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 3     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
@@ -225,7 +232,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Thu May 21 22:21:31 2026
+    Info: Processing started: Sun Jun 07 07:58:15 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pfs_neander_control -c pfs_neander_control
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file pfs_neander_control.bdf
@@ -253,17 +260,30 @@ Warning (275083): Bus "a1" found using same base name as "a1", which might lead 
 Warning (275083): Bus "a0" found using same base name as "a0", which might lead to a name conflict.
 Warning (275080): Converted elements in bus name "a" using legacy naming rules. Make any assignments on the new names, not on the original names.
     Warning (275081): Converted element name(s) from "a[2..0]" to "a2..0"
+Warning (12125): Using design file pfs_neander_temp.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: pfs_neander_temp
+Info (12128): Elaborating entity "pfs_neander_temp" for hierarchy "pfs_neander_temp:inst1"
+Warning (12125): Using design file pfs_uc_unit.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: pfs_uc_unit
+Info (12128): Elaborating entity "pfs_uc_unit" for hierarchy "pfs_neander_temp:inst1|pfs_uc_unit:inst2"
+Warning (12125): Using design file pfs_decod2x4.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: pfs_decod2x4
+Info (12128): Elaborating entity "pfs_decod2x4" for hierarchy "pfs_neander_temp:inst1|pfs_uc_unit:inst2|pfs_decod2x4:inst5"
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 33 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 10 input pins
-    Info (21059): Implemented 7 output pins
-    Info (21061): Implemented 16 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 19 warnings
+Warning (21074): Design contains 3 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "cg_temp[2]"
+    Warning (15610): No output dependent on input pin "cg_temp[1]"
+    Warning (15610): No output dependent on input pin "cg_temp[0]"
+Info (21057): Implemented 54 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 11 input pins
+    Info (21059): Implemented 18 output pins
+    Info (21061): Implemented 25 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 26 warnings
     Info: Peak virtual memory: 4673 megabytes
-    Info: Processing ended: Thu May 21 22:21:33 2026
-    Info: Elapsed time: 00:00:02
+    Info: Processing ended: Sun Jun 07 07:58:19 2026
+    Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:02
 
 

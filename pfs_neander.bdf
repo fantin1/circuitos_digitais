@@ -1,0 +1,305 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "graphic" (version "1.4"))
+(symbol
+	(rect 672 352 888 544)
+	(text "pfs_neander_control" (rect 5 0 124 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 176 25 188)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "cg_temp[2..0]" (rect 0 0 76 14)(font "Arial" (font_size 8)))
+		(text "cg_temp[2..0]" (rect 21 27 97 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "ck" (rect 0 0 12 14)(font "Arial" (font_size 8)))
+		(text "ck" (rect 21 43 33 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "reset" (rect 0 0 29 14)(font "Arial" (font_size 8)))
+		(text "reset" (rect 21 59 50 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "instruction[3..0]" (rect 0 0 87 14)(font "Arial" (font_size 8)))
+		(text "instruction[3..0]" (rect 21 75 108 89)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "z" (rect 0 0 7 14)(font "Arial" (font_size 8)))
+		(text "z" (rect 21 91 28 105)(font "Arial" (font_size 8)))
+		(line (pt 0 96)(pt 16 96))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "n" (rect 0 0 7 14)(font "Arial" (font_size 8)))
+		(text "n" (rect 21 107 28 121)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 16 112))
+	)
+	(port
+		(pt 216 32)
+		(output)
+		(text "cg_REM" (rect 0 0 46 14)(font "Arial" (font_size 8)))
+		(text "cg_REM" (rect 149 27 195 41)(font "Arial" (font_size 8)))
+		(line (pt 216 32)(pt 200 32))
+	)
+	(port
+		(pt 216 48)
+		(output)
+		(text "cg_RDM" (rect 0 0 47 14)(font "Arial" (font_size 8)))
+		(text "cg_RDM" (rect 148 43 195 57)(font "Arial" (font_size 8)))
+		(line (pt 216 48)(pt 200 48))
+	)
+	(port
+		(pt 216 64)
+		(output)
+		(text "cg_RI" (rect 0 0 31 14)(font "Arial" (font_size 8)))
+		(text "cg_RI" (rect 164 59 195 73)(font "Arial" (font_size 8)))
+		(line (pt 216 64)(pt 200 64))
+	)
+	(port
+		(pt 216 80)
+		(output)
+		(text "cg_AC" (rect 0 0 38 14)(font "Arial" (font_size 8)))
+		(text "cg_AC" (rect 157 75 195 89)(font "Arial" (font_size 8)))
+		(line (pt 216 80)(pt 200 80))
+	)
+	(port
+		(pt 216 96)
+		(output)
+		(text "cg_PC" (rect 0 0 36 14)(font "Arial" (font_size 8)))
+		(text "cg_PC" (rect 159 91 195 105)(font "Arial" (font_size 8)))
+		(line (pt 216 96)(pt 200 96))
+	)
+	(port
+		(pt 216 112)
+		(output)
+		(text "inc_PC" (rect 0 0 38 14)(font "Arial" (font_size 8)))
+		(text "inc_PC" (rect 157 107 195 121)(font "Arial" (font_size 8)))
+		(line (pt 216 112)(pt 200 112))
+	)
+	(port
+		(pt 216 128)
+		(output)
+		(text "mux_REM" (rect 0 0 55 14)(font "Arial" (font_size 8)))
+		(text "mux_REM" (rect 140 123 195 137)(font "Arial" (font_size 8)))
+		(line (pt 216 128)(pt 200 128))
+	)
+	(port
+		(pt 216 144)
+		(output)
+		(text "temp_in[2..0]" (rect 0 0 71 14)(font "Arial" (font_size 8)))
+		(text "temp_in[2..0]" (rect 124 139 195 153)(font "Arial" (font_size 8)))
+		(line (pt 216 144)(pt 200 144)(line_width 3))
+	)
+	(port
+		(pt 216 160)
+		(output)
+		(text "t[7..0]" (rect 0 0 31 14)(font "Arial" (font_size 8)))
+		(text "t[7..0]" (rect 164 155 195 169)(font "Arial" (font_size 8)))
+		(line (pt 216 160)(pt 200 160)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 200 176))
+	)
+)
+(symbol
+	(rect 104 80 248 208)
+	(text "pfs_neander_pc" (rect 5 0 99 14)(font "Arial" (font_size 8)))
+	(text "inst1" (rect 8 112 31 124)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "pc_inc" (rect 0 0 37 14)(font "Arial" (font_size 8)))
+		(text "pc_inc" (rect 21 27 58 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "pc_carga" (rect 0 0 54 14)(font "Arial" (font_size 8)))
+		(text "pc_carga" (rect 21 43 75 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "d[7..0]" (rect 0 0 35 14)(font "Arial" (font_size 8)))
+		(text "d[7..0]" (rect 21 59 56 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "ck" (rect 0 0 12 14)(font "Arial" (font_size 8)))
+		(text "ck" (rect 21 75 33 89)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "r" (rect 0 0 4 14)(font "Arial" (font_size 8)))
+		(text "r" (rect 21 91 25 105)(font "Arial" (font_size 8)))
+		(line (pt 0 96)(pt 16 96))
+	)
+	(port
+		(pt 144 32)
+		(output)
+		(text "q[7..0]" (rect 0 0 35 14)(font "Arial" (font_size 8)))
+		(text "q[7..0]" (rect 88 27 123 41)(font "Arial" (font_size 8)))
+		(line (pt 144 32)(pt 128 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 128 112))
+	)
+)
+(symbol
+	(rect 112 352 240 512)
+	(text "pfs_neander_ula" (rect 5 0 101 14)(font "Arial" (font_size 8)))
+	(text "inst2" (rect 8 144 31 156)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "i_not" (rect 0 0 27 14)(font "Arial" (font_size 8)))
+		(text "i_not" (rect 21 27 48 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "i_and" (rect 0 0 30 14)(font "Arial" (font_size 8)))
+		(text "i_and" (rect 21 43 51 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "i_or" (rect 0 0 21 14)(font "Arial" (font_size 8)))
+		(text "i_or" (rect 21 59 42 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "i_add" (rect 0 0 30 14)(font "Arial" (font_size 8)))
+		(text "i_add" (rect 21 75 51 89)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "i_lda" (rect 0 0 25 14)(font "Arial" (font_size 8)))
+		(text "i_lda" (rect 21 91 46 105)(font "Arial" (font_size 8)))
+		(line (pt 0 96)(pt 16 96))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "x[7..0]" (rect 0 0 35 14)(font "Arial" (font_size 8)))
+		(text "x[7..0]" (rect 21 107 56 121)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "y[7..0]" (rect 0 0 35 14)(font "Arial" (font_size 8)))
+		(text "y[7..0]" (rect 21 123 56 137)(font "Arial" (font_size 8)))
+		(line (pt 0 128)(pt 16 128)(line_width 3))
+	)
+	(port
+		(pt 128 32)
+		(output)
+		(text "s[7..0]" (rect 0 0 35 14)(font "Arial" (font_size 8)))
+		(text "s[7..0]" (rect 72 27 107 41)(font "Arial" (font_size 8)))
+		(line (pt 128 32)(pt 112 32)(line_width 3))
+	)
+	(port
+		(pt 128 48)
+		(output)
+		(text "c" (rect 0 0 7 14)(font "Arial" (font_size 8)))
+		(text "c" (rect 100 43 107 57)(font "Arial" (font_size 8)))
+		(line (pt 128 48)(pt 112 48))
+	)
+	(port
+		(pt 128 64)
+		(output)
+		(text "n" (rect 0 0 7 14)(font "Arial" (font_size 8)))
+		(text "n" (rect 100 59 107 73)(font "Arial" (font_size 8)))
+		(line (pt 128 64)(pt 112 64))
+	)
+	(port
+		(pt 128 80)
+		(output)
+		(text "b" (rect 0 0 7 14)(font "Arial" (font_size 8)))
+		(text "b" (rect 100 75 107 89)(font "Arial" (font_size 8)))
+		(line (pt 128 80)(pt 112 80))
+	)
+	(port
+		(pt 128 96)
+		(output)
+		(text "z" (rect 0 0 7 14)(font "Arial" (font_size 8)))
+		(text "z" (rect 100 91 107 105)(font "Arial" (font_size 8)))
+		(line (pt 128 96)(pt 112 96))
+	)
+	(port
+		(pt 128 112)
+		(output)
+		(text "v" (rect 0 0 7 14)(font "Arial" (font_size 8)))
+		(text "v" (rect 100 107 107 121)(font "Arial" (font_size 8)))
+		(line (pt 128 112)(pt 112 112))
+	)
+	(drawing
+		(rectangle (rect 16 16 112 144))
+	)
+)
+(symbol
+	(rect 640 96 832 176)
+	(text "pfs_neander_memory" (rect 5 0 113 12)(font "Arial" ))
+	(text "inst3" (rect 8 64 31 76)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "entrada[7..0]" (rect 0 0 62 12)(font "Arial" ))
+		(text "entrada[7..0]" (rect 21 27 83 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 192 32)
+		(output)
+		(text "saida[7..0]" (rect 0 0 51 12)(font "Arial" ))
+		(text "saida[7..0]" (rect 128 27 179 39)(font "Arial" ))
+		(line (pt 192 32)(pt 176 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 176 64))
+	)
+)
