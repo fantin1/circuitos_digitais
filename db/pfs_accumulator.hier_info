@@ -1,0 +1,274 @@
+|pfs_accumulator
+q[0] <= pfs_uc_unit:inst2.sq
+q[1] <= pfs_uc_unit:inst3.sq
+q[2] <= pfs_uc_unit:inst4.sq
+q[3] <= pfs_uc_unit:inst5.sq
+q[4] <= pfs_uc_unit:inst8.sq
+q[5] <= pfs_uc_unit:inst9.sq
+q[6] <= pfs_uc_unit:inst12.sq
+q[7] <= pfs_uc_unit:inst14.sq
+cg => inst.IN0
+cg => pfs_decod2x4:inst6.sel[1]
+cg => pfs_uc_unit:inst2.sel[1]
+cg => pfs_uc_unit:inst3.sel[1]
+cg => pfs_uc_unit:inst4.sel[1]
+cg => pfs_uc_unit:inst5.sel[1]
+cg => pfs_uc_unit:inst8.sel[1]
+cg => pfs_uc_unit:inst9.sel[1]
+cg => pfs_uc_unit:inst12.sel[1]
+cg => pfs_uc_unit:inst14.sel[1]
+ck => pfs_uc_unit:inst2.ck
+ck => pfs_uc_unit:inst3.ck
+ck => pfs_uc_unit:inst4.ck
+ck => pfs_uc_unit:inst5.ck
+ck => pfs_uc_unit:inst8.ck
+ck => pfs_uc_unit:inst9.ck
+ck => pfs_uc_unit:inst12.ck
+ck => pfs_uc_unit:inst14.ck
+r => pfs_uc_unit:inst2.reset
+r => pfs_uc_unit:inst3.reset
+r => pfs_uc_unit:inst4.reset
+r => pfs_uc_unit:inst5.reset
+r => pfs_uc_unit:inst8.reset
+r => pfs_uc_unit:inst9.reset
+r => pfs_uc_unit:inst12.reset
+r => pfs_uc_unit:inst14.reset
+d[0] => pfs_uc_unit:inst2.d
+d[1] => pfs_uc_unit:inst3.d
+d[2] => pfs_uc_unit:inst4.d
+d[3] => pfs_uc_unit:inst5.d
+d[4] => pfs_uc_unit:inst8.d
+d[5] => pfs_uc_unit:inst9.d
+d[6] => pfs_uc_unit:inst12.d
+d[7] => pfs_uc_unit:inst14.d
+
+
+|pfs_accumulator|pfs_uc_unit:inst2
+sq <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+d => inst11.IN0
+sel[0] => pfs_decod2x4:inst5.sel[0]
+sel[1] => pfs_decod2x4:inst5.sel[1]
+reset => inst4.IN0
+ck => inst.CLK
+eq => inst9.IN0
+eq => inst3.IN0
+eand => inst8.IN1
+eand => inst3.IN1
+sand <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pfs_accumulator|pfs_uc_unit:inst2|pfs_decod2x4:inst5
+out0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => inst4[0].IN0
+sel[0] => inst1.IN1
+sel[0] => inst3.IN1
+sel[1] => inst4[1].IN0
+sel[1] => inst2.IN0
+sel[1] => inst3.IN0
+out1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+out2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+out3 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pfs_accumulator|pfs_decod2x4:inst6
+out0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => inst4[0].IN0
+sel[0] => inst1.IN1
+sel[0] => inst3.IN1
+sel[1] => inst4[1].IN0
+sel[1] => inst2.IN0
+sel[1] => inst3.IN0
+out1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+out2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+out3 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pfs_accumulator|pfs_uc_unit:inst3
+sq <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+d => inst11.IN0
+sel[0] => pfs_decod2x4:inst5.sel[0]
+sel[1] => pfs_decod2x4:inst5.sel[1]
+reset => inst4.IN0
+ck => inst.CLK
+eq => inst9.IN0
+eq => inst3.IN0
+eand => inst8.IN1
+eand => inst3.IN1
+sand <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pfs_accumulator|pfs_uc_unit:inst3|pfs_decod2x4:inst5
+out0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => inst4[0].IN0
+sel[0] => inst1.IN1
+sel[0] => inst3.IN1
+sel[1] => inst4[1].IN0
+sel[1] => inst2.IN0
+sel[1] => inst3.IN0
+out1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+out2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+out3 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pfs_accumulator|pfs_uc_unit:inst4
+sq <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+d => inst11.IN0
+sel[0] => pfs_decod2x4:inst5.sel[0]
+sel[1] => pfs_decod2x4:inst5.sel[1]
+reset => inst4.IN0
+ck => inst.CLK
+eq => inst9.IN0
+eq => inst3.IN0
+eand => inst8.IN1
+eand => inst3.IN1
+sand <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pfs_accumulator|pfs_uc_unit:inst4|pfs_decod2x4:inst5
+out0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => inst4[0].IN0
+sel[0] => inst1.IN1
+sel[0] => inst3.IN1
+sel[1] => inst4[1].IN0
+sel[1] => inst2.IN0
+sel[1] => inst3.IN0
+out1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+out2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+out3 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pfs_accumulator|pfs_uc_unit:inst5
+sq <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+d => inst11.IN0
+sel[0] => pfs_decod2x4:inst5.sel[0]
+sel[1] => pfs_decod2x4:inst5.sel[1]
+reset => inst4.IN0
+ck => inst.CLK
+eq => inst9.IN0
+eq => inst3.IN0
+eand => inst8.IN1
+eand => inst3.IN1
+sand <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pfs_accumulator|pfs_uc_unit:inst5|pfs_decod2x4:inst5
+out0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => inst4[0].IN0
+sel[0] => inst1.IN1
+sel[0] => inst3.IN1
+sel[1] => inst4[1].IN0
+sel[1] => inst2.IN0
+sel[1] => inst3.IN0
+out1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+out2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+out3 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pfs_accumulator|pfs_uc_unit:inst8
+sq <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+d => inst11.IN0
+sel[0] => pfs_decod2x4:inst5.sel[0]
+sel[1] => pfs_decod2x4:inst5.sel[1]
+reset => inst4.IN0
+ck => inst.CLK
+eq => inst9.IN0
+eq => inst3.IN0
+eand => inst8.IN1
+eand => inst3.IN1
+sand <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pfs_accumulator|pfs_uc_unit:inst8|pfs_decod2x4:inst5
+out0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => inst4[0].IN0
+sel[0] => inst1.IN1
+sel[0] => inst3.IN1
+sel[1] => inst4[1].IN0
+sel[1] => inst2.IN0
+sel[1] => inst3.IN0
+out1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+out2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+out3 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pfs_accumulator|pfs_uc_unit:inst9
+sq <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+d => inst11.IN0
+sel[0] => pfs_decod2x4:inst5.sel[0]
+sel[1] => pfs_decod2x4:inst5.sel[1]
+reset => inst4.IN0
+ck => inst.CLK
+eq => inst9.IN0
+eq => inst3.IN0
+eand => inst8.IN1
+eand => inst3.IN1
+sand <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pfs_accumulator|pfs_uc_unit:inst9|pfs_decod2x4:inst5
+out0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => inst4[0].IN0
+sel[0] => inst1.IN1
+sel[0] => inst3.IN1
+sel[1] => inst4[1].IN0
+sel[1] => inst2.IN0
+sel[1] => inst3.IN0
+out1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+out2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+out3 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pfs_accumulator|pfs_uc_unit:inst12
+sq <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+d => inst11.IN0
+sel[0] => pfs_decod2x4:inst5.sel[0]
+sel[1] => pfs_decod2x4:inst5.sel[1]
+reset => inst4.IN0
+ck => inst.CLK
+eq => inst9.IN0
+eq => inst3.IN0
+eand => inst8.IN1
+eand => inst3.IN1
+sand <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pfs_accumulator|pfs_uc_unit:inst12|pfs_decod2x4:inst5
+out0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => inst4[0].IN0
+sel[0] => inst1.IN1
+sel[0] => inst3.IN1
+sel[1] => inst4[1].IN0
+sel[1] => inst2.IN0
+sel[1] => inst3.IN0
+out1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+out2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+out3 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pfs_accumulator|pfs_uc_unit:inst14
+sq <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+d => inst11.IN0
+sel[0] => pfs_decod2x4:inst5.sel[0]
+sel[1] => pfs_decod2x4:inst5.sel[1]
+reset => inst4.IN0
+ck => inst.CLK
+eq => inst9.IN0
+eq => inst3.IN0
+eand => inst8.IN1
+eand => inst3.IN1
+sand <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pfs_accumulator|pfs_uc_unit:inst14|pfs_decod2x4:inst5
+out0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => inst4[0].IN0
+sel[0] => inst1.IN1
+sel[0] => inst3.IN1
+sel[1] => inst4[1].IN0
+sel[1] => inst2.IN0
+sel[1] => inst3.IN0
+out1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+out2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+out3 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+

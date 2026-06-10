@@ -1,0 +1,171 @@
+|pfs_8bit_reg
+q[0] <= pfs_ff_enable:inst8.q
+q[1] <= pfs_ff_enable:inst7.q
+q[2] <= pfs_ff_enable:inst6.q
+q[3] <= pfs_ff_enable:inst5.q
+q[4] <= pfs_ff_enable:inst4.q
+q[5] <= pfs_ff_enable:inst3.q
+q[6] <= pfs_ff_enable:inst2.q
+q[7] <= pfs_ff_enable:inst.q
+d[0] => pfs_ff_enable:inst8.d
+d[1] => pfs_ff_enable:inst7.d
+d[2] => pfs_ff_enable:inst6.d
+d[3] => pfs_ff_enable:inst5.d
+d[4] => pfs_ff_enable:inst4.d
+d[5] => pfs_ff_enable:inst3.d
+d[6] => pfs_ff_enable:inst2.d
+d[7] => pfs_ff_enable:inst.d
+ck => pfs_ff_enable:inst.ck
+ck => pfs_ff_enable:inst2.ck
+ck => pfs_ff_enable:inst3.ck
+ck => pfs_ff_enable:inst4.ck
+ck => pfs_ff_enable:inst5.ck
+ck => pfs_ff_enable:inst6.ck
+ck => pfs_ff_enable:inst7.ck
+ck => pfs_ff_enable:inst8.ck
+reset => pfs_ff_enable:inst.r
+reset => pfs_ff_enable:inst2.r
+reset => pfs_ff_enable:inst3.r
+reset => pfs_ff_enable:inst4.r
+reset => pfs_ff_enable:inst5.r
+reset => pfs_ff_enable:inst6.r
+reset => pfs_ff_enable:inst7.r
+reset => pfs_ff_enable:inst8.r
+cg => pfs_ff_enable:inst.e
+cg => pfs_ff_enable:inst2.e
+cg => pfs_ff_enable:inst3.e
+cg => pfs_ff_enable:inst4.e
+cg => pfs_ff_enable:inst5.e
+cg => pfs_ff_enable:inst6.e
+cg => pfs_ff_enable:inst7.e
+cg => pfs_ff_enable:inst8.e
+
+
+|pfs_8bit_reg|pfs_ff_enable:inst
+q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+r => inst8.IN0
+ck => inst.CLK
+d => pfs_mux2x1:inst2.e1
+e => pfs_mux2x1:inst2.sel
+
+
+|pfs_8bit_reg|pfs_ff_enable:inst|pfs_mux2x1:inst2
+out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+sel => inst2.IN0
+sel => inst3.IN0
+e1 => inst2.IN1
+e0 => inst1.IN0
+
+
+|pfs_8bit_reg|pfs_ff_enable:inst2
+q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+r => inst8.IN0
+ck => inst.CLK
+d => pfs_mux2x1:inst2.e1
+e => pfs_mux2x1:inst2.sel
+
+
+|pfs_8bit_reg|pfs_ff_enable:inst2|pfs_mux2x1:inst2
+out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+sel => inst2.IN0
+sel => inst3.IN0
+e1 => inst2.IN1
+e0 => inst1.IN0
+
+
+|pfs_8bit_reg|pfs_ff_enable:inst3
+q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+r => inst8.IN0
+ck => inst.CLK
+d => pfs_mux2x1:inst2.e1
+e => pfs_mux2x1:inst2.sel
+
+
+|pfs_8bit_reg|pfs_ff_enable:inst3|pfs_mux2x1:inst2
+out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+sel => inst2.IN0
+sel => inst3.IN0
+e1 => inst2.IN1
+e0 => inst1.IN0
+
+
+|pfs_8bit_reg|pfs_ff_enable:inst4
+q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+r => inst8.IN0
+ck => inst.CLK
+d => pfs_mux2x1:inst2.e1
+e => pfs_mux2x1:inst2.sel
+
+
+|pfs_8bit_reg|pfs_ff_enable:inst4|pfs_mux2x1:inst2
+out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+sel => inst2.IN0
+sel => inst3.IN0
+e1 => inst2.IN1
+e0 => inst1.IN0
+
+
+|pfs_8bit_reg|pfs_ff_enable:inst5
+q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+r => inst8.IN0
+ck => inst.CLK
+d => pfs_mux2x1:inst2.e1
+e => pfs_mux2x1:inst2.sel
+
+
+|pfs_8bit_reg|pfs_ff_enable:inst5|pfs_mux2x1:inst2
+out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+sel => inst2.IN0
+sel => inst3.IN0
+e1 => inst2.IN1
+e0 => inst1.IN0
+
+
+|pfs_8bit_reg|pfs_ff_enable:inst6
+q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+r => inst8.IN0
+ck => inst.CLK
+d => pfs_mux2x1:inst2.e1
+e => pfs_mux2x1:inst2.sel
+
+
+|pfs_8bit_reg|pfs_ff_enable:inst6|pfs_mux2x1:inst2
+out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+sel => inst2.IN0
+sel => inst3.IN0
+e1 => inst2.IN1
+e0 => inst1.IN0
+
+
+|pfs_8bit_reg|pfs_ff_enable:inst7
+q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+r => inst8.IN0
+ck => inst.CLK
+d => pfs_mux2x1:inst2.e1
+e => pfs_mux2x1:inst2.sel
+
+
+|pfs_8bit_reg|pfs_ff_enable:inst7|pfs_mux2x1:inst2
+out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+sel => inst2.IN0
+sel => inst3.IN0
+e1 => inst2.IN1
+e0 => inst1.IN0
+
+
+|pfs_8bit_reg|pfs_ff_enable:inst8
+q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+r => inst8.IN0
+ck => inst.CLK
+d => pfs_mux2x1:inst2.e1
+e => pfs_mux2x1:inst2.sel
+
+
+|pfs_8bit_reg|pfs_ff_enable:inst8|pfs_mux2x1:inst2
+out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+sel => inst2.IN0
+sel => inst3.IN0
+e1 => inst2.IN1
+e0 => inst1.IN0
+
+

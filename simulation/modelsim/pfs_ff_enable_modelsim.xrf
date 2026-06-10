@@ -1,0 +1,11 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/p-fan/apps/cd_pfs/pfs_ff_enable.bdf
+source_file = 1, C:/Users/p-fan/apps/cd_pfs/db/pfs_ff_enable.cbx.xml
+source_file = 1, C:/Users/p-fan/apps/cd_pfs/pfs_mux2x1.bdf
+design_name = pfs_ff_enable
+instance = comp, \q~output\, q~output, pfs_ff_enable, 1
+instance = comp, \ck~input\, ck~input, pfs_ff_enable, 1
+instance = comp, \e~input\, e~input, pfs_ff_enable, 1
+instance = comp, \d~input\, d~input, pfs_ff_enable, 1
+instance = comp, \inst~0\, inst~0, pfs_ff_enable, 1
+instance = comp, \r~input\, r~input, pfs_ff_enable, 1

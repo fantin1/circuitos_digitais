@@ -1,15 +1,15 @@
-Fitter Status : Successful - Sun Jun 07 07:58:31 2026
+Fitter Status : Successful - Wed Jun 10 13:23:37 2026
 Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Web Edition
 Revision Name : pfs_neander_control
 Top-level Entity Name : pfs_neander_control
 Family : Cyclone IV GX
 Device : EP4CGX15BF14C6
 Timing Models : Final
-Total logic elements : 25 / 14,400 ( < 1 % )
-    Total combinational functions : 25 / 14,400 ( < 1 % )
+Total logic elements : 29 / 14,400 ( < 1 % )
+    Total combinational functions : 29 / 14,400 ( < 1 % )
     Dedicated logic registers : 3 / 14,400 ( < 1 % )
 Total registers : 3
-Total pins : 29 / 81 ( 36 % )
+Total pins : 34 / 81 ( 42 % )
 Total virtual pins : 0
 Total memory bits : 0 / 552,960 ( 0 % )
 Embedded Multiplier 9-bit elements : 0

@@ -1,6 +1,8 @@
 vendor_name = ModelSim
 source_file = 1, C:/Users/p-fan/apps/cd_pfs/pfs_neander_ula.bdf
 source_file = 1, C:/Users/p-fan/apps/cd_pfs/Waveform11.vwf
+source_file = 1, C:/Users/p-fan/apps/cd_pfs/Waveform36.vwf
+source_file = 1, C:/Users/p-fan/apps/cd_pfs/Waveform39.vwf
 source_file = 1, C:/Users/p-fan/apps/cd_pfs/db/pfs_neander_ula.cbx.xml
 source_file = 1, C:/Users/p-fan/apps/cd_pfs/pfs_ula_8bits.bdf
 source_file = 1, C:/Users/p-fan/apps/cd_pfs/pfs_ula_1bit.bdf

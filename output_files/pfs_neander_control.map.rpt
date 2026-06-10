@@ -1,5 +1,5 @@
 Analysis & Synthesis report for pfs_neander_control
-Sun Jun 07 07:58:19 2026
+Wed Jun 10 13:23:30 2026
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -41,16 +41,16 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Jun 07 07:58:19 2026      ;
+; Analysis & Synthesis Status        ; Successful - Wed Jun 10 13:23:30 2026      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; pfs_neander_control                        ;
 ; Top-level Entity Name              ; pfs_neander_control                        ;
 ; Family                             ; Cyclone IV GX                              ;
-; Total logic elements               ; 25                                         ;
-;     Total combinational functions  ; 25                                         ;
+; Total logic elements               ; 29                                         ;
+;     Total combinational functions  ; 29                                         ;
 ;     Dedicated logic registers      ; 3                                          ;
 ; Total registers                    ; 3                                          ;
-; Total pins                         ; 29                                         ;
+; Total pins                         ; 34                                         ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
@@ -178,12 +178,12 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------+-----------------------------------------------+
 ; Resource                 ; Usage                                         ;
 +--------------------------+-----------------------------------------------+
-; I/O pins                 ; 29                                            ;
+; I/O pins                 ; 34                                            ;
 ; DSP block 9-bit elements ; 0                                             ;
 ; Maximum fan-out node     ; pfs_neander_temp:inst1|pfs_uc_unit:inst2|inst ;
-; Maximum fan-out          ; 16                                            ;
-; Total fan-out            ; 140                                           ;
-; Average fan-out          ; 1.63                                          ;
+; Maximum fan-out          ; 15                                            ;
+; Total fan-out            ; 166                                           ;
+; Average fan-out          ; 1.66                                          ;
 +--------------------------+-----------------------------------------------+
 
 
@@ -192,7 +192,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node  ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                                           ; Library Name ;
 +-----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------------------------------------------------+--------------+
-; |pfs_neander_control        ; 25 (14)           ; 3 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 29   ; 0            ; |pfs_neander_control                                          ; work         ;
+; |pfs_neander_control        ; 29 (13)           ; 3 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 34   ; 0            ; |pfs_neander_control                                          ; work         ;
+;    |pfs_decod4x16:inst30|   ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_neander_control|pfs_decod4x16:inst30                     ; work         ;
 ;    |pfs_decod_3x8:inst|     ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_neander_control|pfs_decod_3x8:inst                       ; work         ;
 ;    |pfs_neander_temp:inst1| ; 3 (0)             ; 3 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_neander_control|pfs_neander_temp:inst1                   ; work         ;
 ;       |pfs_uc_unit:inst2|   ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pfs_neander_control|pfs_neander_temp:inst1|pfs_uc_unit:inst2 ; work         ;
@@ -232,7 +233,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Sun Jun 07 07:58:15 2026
+    Info: Processing started: Wed Jun 10 13:23:28 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pfs_neander_control -c pfs_neander_control
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file pfs_neander_control.bdf
@@ -276,14 +277,14 @@ Warning (21074): Design contains 3 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "cg_temp[2]"
     Warning (15610): No output dependent on input pin "cg_temp[1]"
     Warning (15610): No output dependent on input pin "cg_temp[0]"
-Info (21057): Implemented 54 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 63 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 11 input pins
-    Info (21059): Implemented 18 output pins
-    Info (21061): Implemented 25 logic cells
+    Info (21059): Implemented 23 output pins
+    Info (21061): Implemented 29 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 26 warnings
-    Info: Peak virtual memory: 4673 megabytes
-    Info: Processing ended: Sun Jun 07 07:58:19 2026
-    Info: Elapsed time: 00:00:04
+    Info: Peak virtual memory: 4665 megabytes
+    Info: Processing ended: Wed Jun 10 13:23:30 2026
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 
 

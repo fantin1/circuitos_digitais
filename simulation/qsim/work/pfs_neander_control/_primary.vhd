@@ -3,7 +3,11 @@ use verilog.vl_types.all;
 entity pfs_neander_control is
     port(
         cg_REM          : out    vl_logic;
+        iLDA            : out    vl_logic;
         instruction     : in     vl_logic_vector(3 downto 0);
+        iOR             : out    vl_logic;
+        iAND            : out    vl_logic;
+        iADD            : out    vl_logic;
         t               : out    vl_logic_vector(7 downto 0);
         temp_in         : out    vl_logic_vector(2 downto 0);
         ck              : in     vl_logic;
@@ -14,6 +18,7 @@ entity pfs_neander_control is
         cg_RDM          : out    vl_logic;
         cg_RI           : out    vl_logic;
         cg_AC           : out    vl_logic;
+        iNOT            : out    vl_logic;
         cg_PC           : out    vl_logic;
         inc_PC          : out    vl_logic;
         mux_REM         : out    vl_logic

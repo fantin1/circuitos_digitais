@@ -1,0 +1,8 @@
+|pfs_reg
+q <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+reset => inst9.IN0
+e => inst.IN0
+ck => inst.IN1
+d => inst2.DATAIN
+
+

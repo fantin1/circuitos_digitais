@@ -1,0 +1,16 @@
+|pfs_ff_enable
+q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+r => inst8.IN0
+ck => inst.CLK
+d => pfs_mux2x1:inst2.e1
+e => pfs_mux2x1:inst2.sel
+
+
+|pfs_ff_enable|pfs_mux2x1:inst2
+out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+sel => inst2.IN0
+sel => inst3.IN0
+e1 => inst2.IN1
+e0 => inst1.IN0
+
+

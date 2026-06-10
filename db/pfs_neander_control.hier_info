@@ -1,9 +1,13 @@
 |pfs_neander_control
 cg_REM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+iLDA <= pfs_decod4x16:inst30.out2
 instruction[0] => pfs_decod4x16:inst30.in0
 instruction[1] => pfs_decod4x16:inst30.in1
 instruction[2] => pfs_decod4x16:inst30.in2
 instruction[3] => pfs_decod4x16:inst30.in3
+iOR <= pfs_decod4x16:inst30.out4
+iAND <= pfs_decod4x16:inst30.out5
+iADD <= pfs_decod4x16:inst30.out3
 t[0] <= pfs_decod_3x8:inst.out0
 t[1] <= pfs_decod_3x8:inst.out1
 t[2] <= pfs_decod_3x8:inst.out2
@@ -27,6 +31,7 @@ z => inst13.IN0
 cg_RDM <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 cg_RI <= pfs_decod_3x8:inst.out1
 cg_AC <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+iNOT <= pfs_decod4x16:inst30.out6
 cg_PC <= inst22.DB_MAX_OUTPUT_PORT_TYPE
 inc_PC <= inst23.DB_MAX_OUTPUT_PORT_TYPE
 mux_REM <= inst26.DB_MAX_OUTPUT_PORT_TYPE
