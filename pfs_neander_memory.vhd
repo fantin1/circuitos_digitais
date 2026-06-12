@@ -12,7 +12,7 @@ BEGIN
 	WITH entrada SELECT
 				   --	saida			 entrada
 		saida <=	"00100000" WHEN "00000000", -- mem0   LDA
-					"10000000" WHEN "00000001", -- mem1   128
+					"10000000" WHEN "00000001", -- mem1   128 (7)
 					"00110000" WHEN "00000010", -- mem2   ADD
 					"10000001" WHEN "00000011", -- mem3   129 (3)
 					"01000000" WHEN "00000100", -- mem4   OR
